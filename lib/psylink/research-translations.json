@@ -1,0 +1,194 @@
+{
+  "研究发现": {
+    "en-US": "What the study found",
+    "es": "Qué encontró el estudio",
+    "ja": "研究でわかったこと",
+    "ko": "연구에서 확인한 점"
+  },
+  "适用范围": {
+    "en-US": "Who was studied",
+    "es": "A quién se estudió",
+    "ja": "研究の対象",
+    "ko": "연구 대상"
+  },
+  "如何理解": {
+    "en-US": "How to interpret it",
+    "es": "Cómo interpretarlo",
+    "ja": "結果の受け止め方",
+    "ko": "결과를 이해하는 방법"
+  },
+  "一起读书，\n一起说话": {
+    "en-US": "Read together,\ntalk together",
+    "es": "Leer juntos,\nhablar juntos",
+    "ja": "一緒に読んで、\n一緒に話そう",
+    "ko": "함께 읽고,\n함께 이야기해요"
+  },
+  "亲子共读与语言发展：一项系统综述。": {
+    "en-US": "Shared reading and language: a systematic review.",
+    "es": "Lectura compartida y lenguaje: una revisión sistemática.",
+    "ja": "親子の読書と言語発達に関するシステマティックレビュー。",
+    "ko": "함께 읽기와 언어 발달에 관한 체계적 문헌고찰."
+  },
+  "这项综述汇总了19项随机对照试验。接受亲子共读训练的家庭，孩子的表达和理解语言能力平均有所改善，家长的共读技巧也有进步。": {
+    "en-US": "This review combined 19 randomized trials. Children in families receiving shared-reading training showed average improvements in expressive and receptive language, and caregivers improved their book-sharing skills.",
+    "es": "Esta revisión reunió 19 ensayos aleatorizados. Las familias que recibieron formación en lectura compartida mostraron mejoras promedio en el lenguaje expresivo y receptivo infantil y en las habilidades de lectura de los cuidadores.",
+    "ja": "19件のランダム化比較試験をまとめた研究です。親子で読むための指導を受けた家庭では、子どもの表現・理解の言語能力と、保護者の読み聞かせの技能に平均的な改善がみられました。",
+    "ko": "19건의 무작위 대조시험을 종합한 연구예요. 함께 읽기 교육을 받은 가정에서는 아이의 표현·이해 언어 능력과 보호자의 책 읽기 기술이 평균적으로 개선되었어요."
+  },
+  "研究涉及约2594名儿童，年龄范围主要为1至6岁；它考察的是有指导的共读干预，而不只是家里有没有书。": {
+    "en-US": "The trials included about 2,594 children, mainly ages 1–6. They studied guided book-sharing interventions, rather than simply whether a family owned books.",
+    "es": "Los ensayos incluyeron unos 2.594 niños, principalmente de 1 a 6 años. Estudiaron intervenciones guiadas, no solo la presencia de libros en casa.",
+    "ja": "対象は主に1〜6歳の約2,594人です。家庭に本があるかではなく、指導を伴う親子の読書を調べています。",
+    "ko": "주로 1~6세 아동 약 2,594명이 참여했어요. 집에 책이 있는지보다 지도가 포함된 함께 읽기 프로그램을 살펴본 연구예요."
+  },
+  "可以把共读看成语言互动的机会，而不是考试。平均改善不保证每个孩子同样受益；这项研究也不能替代对语言发展担忧的专业评估。": {
+    "en-US": "Think of shared reading as an opportunity for language interaction, rather than a test. Average gains do not guarantee the same benefit for every child or replace professional assessment of language concerns.",
+    "es": "La lectura compartida puede ser una oportunidad para conversar, no un examen. Las mejoras promedio no garantizan el mismo beneficio para cada niño ni sustituyen una evaluación profesional.",
+    "ja": "親子の読書はテストではなく、言葉を交わす機会と考えられます。平均的な改善は全員に同じ効果を保証せず、言語発達の心配に対する専門的評価の代わりにはなりません。",
+    "ko": "함께 읽기는 시험보다 언어로 소통하는 기회로 볼 수 있어요. 평균적인 개선이 모든 아이에게 같은 효과를 보장하거나 언어 발달에 대한 전문 평가를 대신하지는 않아요."
+  },
+  "睡前的规律，\n温柔的过渡": {
+    "en-US": "A steady routine,\na gentler bedtime",
+    "es": "Una rutina estable,\nuna noche más tranquila",
+    "ja": "寝る前の習慣で、\n穏やかな切り替えを",
+    "ko": "일정한 잠자리,\n부드러운 전환"
+  },
+  "睡前规律研究，及它能说明和不能说明的事。": {
+    "en-US": "Bedtime routines: findings and their limits.",
+    "es": "Rutinas al acostarse: resultados y límites.",
+    "ja": "就寝前の習慣に関する研究と、その限界。",
+    "ko": "잠자리 일과 연구와 그 한계."
+  },
+  "一项随机分组研究发现，实施固定睡前流程的家庭，孩子入睡和夜间醒来的情况有所改善，母亲的情绪也有改善。": {
+    "en-US": "A randomized study found improvements in falling asleep and night waking after families introduced a consistent bedtime routine. Mothers also reported improved mood.",
+    "es": "Un estudio aleatorizado observó mejoras al conciliar el sueño y en los despertares nocturnos tras introducir una rutina constante. Las madres también informaron mejoras del ánimo.",
+    "ja": "ランダムに群分けした研究では、一定の就寝前の流れを取り入れた家庭で、寝つきや夜間の目覚め、母親の気分に改善がみられました。",
+    "ko": "무작위로 집단을 나눈 연구에서 일정한 잠자리 일과를 도입한 가정은 잠들기와 밤중 깨기, 어머니의 기분에서 개선을 보였어요."
+  },
+  "研究包含405名母亲和7至36个月大的孩子，总时长只有3周，主要依据母亲报告。对更大儿童的效果，不能直接由此推断。": {
+    "en-US": "The study involved 405 mothers and children ages 7–36 months, lasted three weeks and relied mainly on maternal reports. Its findings cannot directly establish effects for older children.",
+    "es": "Participaron 405 madres y niños de 7 a 36 meses durante tres semanas, con datos principalmente informados por las madres. No permite concluir directamente efectos en niños mayores.",
+    "ja": "対象は405組の母親と生後7〜36か月の子どもで、期間は3週間、主に母親の報告を用いました。年長の子どもへの効果は直接推定できません。",
+    "ko": "어머니 405명과 생후 7~36개월 아이가 참여했고, 기간은 3주였으며 주로 어머니의 보고를 사용했어요. 더 큰 아이에게 같은 효과가 있다고 직접 추론할 수는 없어요."
+  },
+  "这支持把规律看成可尝试的日常安排，不支持保证整夜安睡。持续睡眠困难或呼吸异常，需要专业评估，不能只靠调整作息解释。": {
+    "en-US": "The findings support trying consistency as a daily habit, not promising uninterrupted sleep. Persistent sleep problems or unusual breathing need professional assessment, rather than explanations based only on routines.",
+    "es": "Los resultados apoyan probar la constancia, no prometen dormir toda la noche. Las dificultades persistentes o la respiración anormal requieren evaluación profesional.",
+    "ja": "規則的な習慣を試す根拠にはなりますが、朝まで眠れる保証ではありません。続く睡眠の問題や呼吸の異常は、生活習慣だけで説明せず専門家に相談してください。",
+    "ko": "규칙적인 생활을 시도할 근거는 되지만 밤새 잠든다는 보장은 아니에요. 지속적인 수면 문제나 이상 호흡은 일과만으로 설명하지 말고 전문 평가를 받아야 해요."
+  },
+  "给家长的压力，\n留一点空间": {
+    "en-US": "Make room for\nparenting stress",
+    "es": "Dar espacio\nal estrés parental",
+    "ja": "親のストレスに、\n少し余白を",
+    "ko": "양육 스트레스에,\n조금의 여유를"
+  },
+  "正念与家长压力：有希望，但证据仍有限。": {
+    "en-US": "Mindfulness and parenting stress: promising, with limited evidence.",
+    "es": "Atención plena y estrés parental: prometedor, con evidencia limitada.",
+    "ja": "マインドフルネスと育児ストレス：期待と限界。",
+    "ko": "마음챙김과 양육 스트레스: 가능성과 한계."
+  },
+  "这项综述纳入25项研究，发现面向家长的正念干预可能与养育压力减轻有关；部分儿童心理结局也有小幅改善。": {
+    "en-US": "A review of 25 studies found that mindfulness interventions for parents may reduce parenting stress, with small improvements in some child psychological outcomes.",
+    "es": "Una revisión de 25 estudios encontró que las intervenciones de atención plena para padres podrían reducir el estrés parental, con pequeñas mejoras en algunos resultados psicológicos infantiles.",
+    "ja": "25件の研究をまとめたレビューでは、親向けのマインドフルネス介入が育児ストレスを減らす可能性と、子どもの心理面での小さな改善が示されました。",
+    "ko": "25건의 연구를 종합한 문헌고찰에서 부모 대상 마음챙김 프로그램이 양육 스트레스를 줄일 가능성과 일부 아동 심리 결과의 작은 개선이 나타났어요."
+  },
+  "只有6项研究是随机对照试验，多数采用单组设计；参与者背景和孩子年龄不同，整体偏倚风险较高。": {
+    "en-US": "Only six studies were randomized trials; most used single-group designs. Families and child ages varied, and overall risk of bias was serious.",
+    "es": "Solo seis estudios fueron ensayos aleatorizados; la mayoría usó un único grupo. Las familias y edades variaron y el riesgo global de sesgo fue importante.",
+    "ja": "ランダム化比較試験は6件のみで、多くは比較群のない研究でした。家庭の背景や子どもの年齢も異なり、全体的なバイアスのリスクは高いと評価されました。",
+    "ko": "무작위 대조시험은 6건뿐이고 대부분은 단일 집단 연구였어요. 가족 배경과 아이 나이가 다양했고 전체적인 편향 위험이 높았어요."
+  },
+  "可以把它理解为值得继续研究的支持方式，而不是已经证实的治疗。一个短暂呼吸练习不等于研究中的完整课程；持续困扰仍可寻求专业帮助。": {
+    "en-US": "Treat this as a support approach worth further study, not an established treatment. A brief breathing exercise is not equivalent to a full study program; ongoing distress may still warrant professional help.",
+    "es": "Es un enfoque de apoyo que merece más investigación, no un tratamiento establecido. Respirar brevemente no equivale al programa completo; el malestar persistente puede requerir ayuda profesional.",
+    "ja": "今後の研究が期待される支援方法であり、確立した治療と同じではありません。短い呼吸練習は研究の全プログラムとは異なります。つらさが続く場合は専門的な支援も検討してください。",
+    "ko": "추가 연구가 필요한 지원 방법이지 확립된 치료는 아니에요. 짧은 호흡 연습은 연구의 전체 프로그램과 같지 않으며, 어려움이 지속되면 전문적인 도움을 고려할 수 있어요."
+  },
+  "屏幕之外，\n还有真实互动": {
+    "en-US": "Beyond screens,\nreal interaction",
+    "es": "Más allá de pantallas,\ninteracción real",
+    "ja": "画面の外にも、\n本当のやりとりを",
+    "ko": "화면 밖에도,\n실제 상호작용을"
+  },
+  "屏幕时间研究：分清关联与因果。": {
+    "en-US": "Screen-time research: association is not causation.",
+    "es": "Tiempo de pantalla: asociación no es causalidad.",
+    "ja": "スクリーンタイム研究：関連と因果を区別する。",
+    "ko": "화면 시간 연구: 연관성과 인과관계 구분하기."
+  },
+  "加拿大一项纵向研究发现，较早年龄的屏幕时间较多，与之后发展筛查分数较低存在关联。研究提示值得关注家庭媒介使用，而不是给孩子贴标签。": {
+    "en-US": "A Canadian longitudinal study linked higher screen time at earlier ages with lower later developmental screening scores. It highlights family media habits, rather than labeling individual children.",
+    "es": "Un estudio longitudinal canadiense relacionó más tiempo de pantalla a edades tempranas con puntuaciones posteriores más bajas en un cribado del desarrollo. Invita a revisar hábitos, no a etiquetar al niño.",
+    "ja": "カナダの縦断研究では、早い時期のスクリーンタイムの多さと、その後の発達スクリーニング得点の低さに関連がみられました。家庭の利用習慣を考える研究で、個々の子どもに診断をつけるものではありません。",
+    "ko": "캐나다의 종단 연구에서 이른 나이의 긴 화면 시간과 이후 낮은 발달 선별검사 점수 사이에 연관성이 나타났어요. 가정의 미디어 습관을 돌아보는 근거이지 아이에게 진단을 붙이는 연구는 아니에요."
+  },
+  "研究跟踪2441个家庭，在孩子24、36和60个月时收集资料；屏幕时间和筛查结果主要由母亲报告。": {
+    "en-US": "Researchers followed 2,441 families at child ages 24, 36 and 60 months. Screen exposure and screening results were mainly mother-reported.",
+    "es": "Se siguió a 2.441 familias a los 24, 36 y 60 meses del niño. La exposición y los resultados fueron principalmente informados por las madres.",
+    "ja": "2,441家庭を追跡し、子どもが24・36・60か月の時点で資料を集めました。利用時間とスクリーニング結果は主に母親の報告でした。",
+    "ko": "2,441가정을 아이의 24, 36, 60개월 시점에 추적했어요. 화면 노출과 선별검사 결과는 주로 어머니가 보고했어요."
+  },
+  "这是观察性研究，不能证明屏幕直接造成发育迟缓，也不能凭使用时长诊断孩子。它没有确定某个分钟数是安全与不安全的分界。": {
+    "en-US": "This observational study does not prove that screens cause developmental delay or allow diagnosis from viewing time. It did not establish a minute-based cutoff between safe and unsafe use.",
+    "es": "Este estudio observacional no prueba que las pantallas causen retrasos ni permite diagnosticar por el tiempo de uso. No estableció un límite de minutos entre uso seguro e inseguro.",
+    "ja": "観察研究なので、画面が発達の遅れを直接引き起こすとは証明できず、時間だけで診断もできません。安全と危険を分ける分数を定めた研究でもありません。",
+    "ko": "관찰 연구이므로 화면이 발달 지연을 직접 일으킨다고 증명하거나 사용 시간으로 진단할 수는 없어요. 안전과 위험을 나누는 특정 분 단위 기준도 정하지 않았어요."
+  },
+  "看见信号，\n回应孩子": {
+    "en-US": "Notice the signals,\nrespond to your child",
+    "es": "Notar las señales,\nresponder al niño",
+    "ja": "サインに気づいて、\n子どもに応える",
+    "ko": "신호를 알아보고,\n아이에게 반응해요"
+  },
+  "回应式养育：全球随机试验的共同线索。": {
+    "en-US": "Responsive caregiving: insights from global trials.",
+    "es": "Cuidado receptivo: hallazgos de ensayos globales.",
+    "ja": "応答的な養育：世界の比較試験から。",
+    "ko": "반응적 양육: 세계의 시험 연구에서 얻은 통찰."
+  },
+  "汇总102项随机试验的研究发现，早期养育干预对儿童多项发展结局和亲子互动有平均改善。强调回应式照护的项目，在一些结局上的效果更好。": {
+    "en-US": "A review of 102 randomized trials found average improvements in several developmental outcomes and parent–child interactions. Programs emphasizing responsive caregiving did better on some outcomes.",
+    "es": "Una revisión de 102 ensayos aleatorizados encontró mejoras promedio en varios resultados del desarrollo y en la interacción familiar. Los programas centrados en cuidado receptivo destacaron en algunos resultados.",
+    "ja": "102件のランダム化試験をまとめた研究では、複数の発達指標と親子のやりとりに平均的な改善がみられました。応答的な養育を重視するプログラムは、一部の指標でより良い結果でした。",
+    "ko": "102건의 무작위 시험을 종합한 연구에서 여러 발달 결과와 부모·자녀 상호작용이 평균적으로 개선되었어요. 반응적 돌봄을 강조한 프로그램은 일부 결과에서 더 좋은 효과를 보였어요."
+  },
+  "这些干预在儿童生命最初3年实施，项目内容、国家和证据质量差异很大。不能把平均效果直接套到所有3至6岁儿童。": {
+    "en-US": "Interventions were delivered in the first three years of life. Programs, countries and evidence quality varied substantially. Average effects cannot simply be applied to all children ages 3–6.",
+    "es": "Las intervenciones se aplicaron en los primeros tres años de vida. Los programas, países y calidad variaron mucho. No se pueden trasladar los promedios a todos los niños de 3 a 6 años.",
+    "ja": "介入は生後3年間に行われ、内容、国、証拠の質は大きく異なりました。平均効果を3〜6歳の全員にそのまま当てはめることはできません。",
+    "ko": "개입은 생후 첫 3년 동안 이루어졌고 프로그램, 국가, 근거의 질이 크게 달랐어요. 평균 효과를 모든 3~6세 아이에게 그대로 적용할 수는 없어요."
+  },
+  "研究支持重视日常互动，但并未发现家长抑郁症状有显著改善。养育建议不能替代家长自身的心理支持，也不是判断孩子是否有障碍的工具。": {
+    "en-US": "The findings support attention to everyday interaction, but did not show a significant improvement in parental depressive symptoms. Parenting advice cannot replace parental mental health support or diagnose a child.",
+    "es": "Los hallazgos respaldan la interacción cotidiana, pero no mostraron mejora significativa de síntomas depresivos parentales. Los consejos no sustituyen apoyo psicológico ni diagnostican al niño.",
+    "ja": "日常のやりとりを大切にする根拠にはなりますが、親の抑うつ症状には有意な改善がみられませんでした。養育の助言は親自身への心理的支援や子どもの診断の代わりにはなりません。",
+    "ko": "일상적 상호작용을 중시할 근거는 있지만 부모의 우울 증상은 유의하게 개선되지 않았어요. 양육 조언은 부모의 정신건강 지원을 대신하거나 아이를 진단하는 도구가 아니에요."
+  },
+  "论文导读": {
+    "en-US": "Research digest",
+    "es": "Lectura de investigación",
+    "ja": "論文ガイド",
+    "ko": "연구 읽기"
+  },
+  "研究摘要整理与翻译，非论文逐字摘录；待专业复核。": {
+    "en-US": "Research summary and translation, not a verbatim excerpt; awaiting professional review.",
+    "es": "Resumen y traducción, no un extracto literal; pendiente de revisión profesional.",
+    "ja": "研究の要約と翻訳であり、逐語的な引用ではありません。専門家による確認待ちです。",
+    "ko": "연구 요약과 번역이며 원문을 그대로 인용한 내용이 아닙니다. 전문가 검토를 기다리고 있어요."
+  },
+  "· 摘要依据，编辑整理，非作者官方译文。": {
+    "en-US": " · Based on the abstract; editorial summary, not an author-approved translation.",
+    "es": " · Basado en el resumen; elaboración editorial, no traducción oficial de los autores.",
+    "ja": "・要旨に基づく編集要約で、著者の公式翻訳ではありません。",
+    "ko": " · 초록에 기반한 편집 요약이며 저자의 공식 번역은 아닙니다."
+  },
+  "书目信息核验：": {
+    "en-US": "Bibliographic record checked: ",
+    "es": "Registro bibliográfico verificado: ",
+    "ja": "書誌情報の確認：",
+    "ko": "서지 정보 확인: "
+  }
+}

@@ -1,0 +1,2390 @@
+{
+  "登录链接已失效或未能验证，请重新获取登录链接。": {
+    "en-US": "Your sign-in link has expired. Please request another.",
+    "es": "Tu enlace de acceso caducó. Solicita otro.",
+    "ja": "ログインリンクが無効です。再度取得してください。",
+    "ko": "로그인 링크가 만료되었습니다. 다시 요청해 주세요."
+  },
+  "云端书架暂时无法读取，收藏操作已暂停。请检查连接或重新登录。": {
+    "en-US": "Your cloud shelf is unavailable. Saving is paused; reconnect or sign in again.",
+    "es": "Tu biblioteca en la nube no está disponible. Vuelve a conectarte o inicia sesión.",
+    "ja": "クラウドの本棚を読み込めません。再接続か再ログインをお願いします。",
+    "ko": "클라우드 책장을 불러올 수 없습니다. 다시 연결하거나 로그인해 주세요."
+  },
+  "给自己留几分钟：今天的阅读在书架等你。你也可以晚一点再看。": {
+    "en-US": "Take a few minutes for yourself. Today's reading is waiting; later is fine too.",
+    "es": "Dedícate unos minutos. Tu lectura te espera; también puedes leer más tarde.",
+    "ja": "少しだけ自分の時間を。今日の読書は本棚で待っています。後でも大丈夫です。",
+    "ko": "잠시 나를 위한 시간을 가져 보세요. 오늘의 읽을거리가 기다리고 있어요. 나중에 읽어도 괜찮아요."
+  },
+  "书架正在连接，暂时不能保存。": {
+    "en-US": "Your shelf is connecting. Please wait before saving.",
+    "es": "Tu biblioteca se está conectando. Espera para guardar.",
+    "ja": "本棚に接続中です。保存は少しお待ちください。",
+    "ko": "책장에 연결 중입니다. 잠시 후 저장해 주세요."
+  },
+  "已从书架移除": {
+    "en-US": "Removed from your shelf",
+    "es": "Eliminado de tu biblioteca",
+    "ja": "本棚から削除しました",
+    "ko": "책장에서 삭제했습니다"
+  },
+  "已放入你的书架 · 保存在当前浏览器": {
+    "en-US": "Saved to your shelf · This browser only",
+    "es": "Guardado · Solo en este navegador",
+    "ja": "本棚に保存しました · このブラウザのみ",
+    "ko": "책장에 저장했습니다 · 현재 브라우저만"
+  },
+  "浏览器不允许保存。请检查存储设置。": {
+    "en-US": "Saving is blocked. Check your browser storage settings.",
+    "es": "No se puede guardar. Revisa el almacenamiento del navegador.",
+    "ja": "保存できません。ブラウザの保存設定をご確認ください。",
+    "ko": "저장할 수 없습니다. 브라우저 저장 설정을 확인해 주세요."
+  },
+  "云端保存失败，这次操作已撤回。": {
+    "en-US": "Cloud saving failed. This change was undone.",
+    "es": "No se pudo guardar en la nube. Se deshizo el cambio.",
+    "ja": "クラウドに保存できず、操作を取り消しました。",
+    "ko": "클라우드 저장에 실패하여 변경을 취소했습니다."
+  },
+  "已从云端书架移除": {
+    "en-US": "Removed from your cloud shelf",
+    "es": "Eliminado de tu biblioteca en la nube",
+    "ja": "クラウドの本棚から削除しました",
+    "ko": "클라우드 책장에서 삭제했습니다"
+  },
+  "已放入你的云端书架": {
+    "en-US": "Saved to your cloud shelf",
+    "es": "Guardado en tu biblioteca en la nube",
+    "ja": "クラウドの本棚に保存しました",
+    "ko": "클라우드 책장에 저장했습니다"
+  },
+  "云端连接中断，请重新登录后检查收藏。": {
+    "en-US": "Cloud connection interrupted. Sign in again to check your shelf.",
+    "es": "Se interrumpió la conexión. Inicia sesión para revisar tu biblioteca.",
+    "ja": "接続が切れました。再ログインして本棚をご確認ください。",
+    "ko": "연결이 끊겼습니다. 다시 로그인하여 책장을 확인해 주세요."
+  },
+  "自然语音尚未接入，文字内容仍可阅读。": {
+    "en-US": "Natural voice is not connected yet. You can still read the article.",
+    "es": "La voz natural aún no está conectada. Puedes seguir leyendo.",
+    "ja": "自然な音声は未接続です。記事は引き続き読めます。",
+    "ko": "자연스러운 음성이 아직 연결되지 않았습니다. 글은 계속 읽을 수 있어요."
+  },
+  "请先同意使用 OpenAI 生成语音。": {
+    "en-US": "Please agree to use OpenAI to generate audio first.",
+    "es": "Acepta primero que OpenAI genere el audio.",
+    "ja": "OpenAI による音声生成に同意してください。",
+    "ko": "먼저 OpenAI 음성 생성에 동의해 주세요."
+  },
+  "自然语音暂时无法生成，请重试或继续阅读。": {
+    "en-US": "Audio could not be generated. Try again or continue reading.",
+    "es": "No se pudo generar el audio. Inténtalo de nuevo o sigue leyendo.",
+    "ja": "音声を生成できませんでした。再試行するか、読み進めてください。",
+    "ko": "음성을 생성하지 못했습니다. 다시 시도하거나 계속 읽어 주세요."
+  },
+  "播放暂时不可用，文字内容仍可阅读。": {
+    "en-US": "Playback is unavailable. You can still read the article.",
+    "es": "La reproducción no está disponible. Puedes seguir leyendo.",
+    "ja": "再生できません。記事は引き続き読めます。",
+    "ko": "재생할 수 없습니다. 글은 계속 읽을 수 있어요."
+  },
+  "暂时无法发送登录邮件，请稍后再试。": {
+    "en-US": "The sign-in email could not be sent. Please try later.",
+    "es": "No se pudo enviar el correo de acceso. Inténtalo más tarde.",
+    "ja": "ログインメールを送信できませんでした。後ほどお試しください。",
+    "ko": "로그인 메일을 보내지 못했습니다. 나중에 다시 시도해 주세요."
+  },
+  "登录链接已发送，请检查邮箱。链接仅用于登录。": {
+    "en-US": "Sign-in link sent. Check your inbox. The link is only for signing in.",
+    "es": "Enlace enviado. Revisa tu correo; solo sirve para iniciar sesión.",
+    "ja": "ログインリンクを送信しました。メールをご確認ください。",
+    "ko": "로그인 링크를 보냈습니다. 메일을 확인해 주세요. 로그인에만 사용됩니다."
+  },
+  "连接失败，请稍后再试。": {
+    "en-US": "Connection failed. Please try later.",
+    "es": "No se pudo conectar. Inténtalo más tarde.",
+    "ja": "接続できませんでした。後ほどお試しください。",
+    "ko": "연결에 실패했습니다. 나중에 다시 시도해 주세요."
+  },
+  "聊一聊": {
+    "en-US": "Let's talk",
+    "es": "Conversemos",
+    "ja": "話してみる",
+    "ko": "이야기해요"
+  },
+  "让心事有处安放": {
+    "en-US": "A place for what's on your mind",
+    "es": "Un lugar para lo que sientes",
+    "ja": "気持ちを置ける場所",
+    "ko": "마음을 편히 놓는 곳"
+  },
+  "小小书架": {
+    "en-US": "Little library",
+    "es": "Biblioteca",
+    "ja": "小さな本棚",
+    "ko": "작은 책장"
+  },
+  "一点知识，一点陪伴": {
+    "en-US": "A little knowledge, a little company",
+    "es": "Ideas y compañía",
+    "ja": "少しの知識と、寄り添う時間",
+    "ko": "작은 배움과 따뜻한 동행"
+  },
+  "找到支持": {
+    "en-US": "Find support",
+    "es": "Buscar apoyo",
+    "ja": "支えを探す",
+    "ko": "도움 찾기"
+  },
+  "多一个人，一起想办法": {
+    "en-US": "Someone to think it through with",
+    "es": "Alguien para pensarlo contigo",
+    "ja": "一緒に考えてくれる人を",
+    "ko": "함께 생각해 줄 사람"
+  },
+  "跳到主要内容": {
+    "en-US": "Skip to main content",
+    "es": "Ir al contenido principal",
+    "ja": "本文へ移動",
+    "ko": "본문으로 이동"
+  },
+  "Bloomie首页": {
+    "en-US": "Bloomie home",
+    "es": "Inicio de Bloomie",
+    "ja": "Bloomie ホーム",
+    "ko": "Bloomie 홈"
+  },
+  "Bloomie": {
+    "en-US": "Bloomie",
+    "es": "Bloomie",
+    "ja": "Bloomie",
+    "ko": "Bloomie"
+  },
+  "给家庭一处安心的空间": {
+    "en-US": "A softer space for your family",
+    "es": "Un espacio tranquilo para tu familia",
+    "ja": "家族のための、安心できる場所",
+    "ko": "가족을 위한 편안한 공간"
+  },
+  "主导航": {
+    "en-US": "Main navigation",
+    "es": "Navegación principal",
+    "ja": "メインナビゲーション",
+    "ko": "주 메뉴"
+  },
+  "慢慢来，": {
+    "en-US": "Take your time.",
+    "es": "Ve a tu ritmo.",
+    "ja": "ゆっくりで大丈夫。",
+    "ko": "천천히 해도 괜찮아요."
+  },
+  "你已经在用心了。": {
+    "en-US": "Your care already matters.",
+    "es": "Tu cuidado ya cuenta.",
+    "ja": "その思いは、もう届いています。",
+    "ko": "당신의 마음은 이미 소중해요."
+  },
+  "安全与求助": {
+    "en-US": "Safety & help",
+    "es": "Seguridad y ayuda",
+    "ja": "安全と相談先",
+    "ko": "안전과 도움"
+  },
+  "偏好设置": {
+    "en-US": "Preferences",
+    "es": "Preferencias",
+    "ja": "設定",
+    "ko": "설정"
+  },
+  "关于Bloomie": {
+    "en-US": "About Bloomie",
+    "es": "Acerca de Bloomie",
+    "ja": "Bloomie について",
+    "ko": "Bloomie 소개"
+  },
+  "试用版": {
+    "en-US": "Early access",
+    "es": "Acceso anticipado",
+    "ja": "試用版",
+    "ko": "체험판"
+  },
+  "体验版": {
+    "en-US": "Preview",
+    "es": "Vista previa",
+    "ja": "プレビュー",
+    "ko": "미리보기"
+  },
+  "打开账户设置": {
+    "en-US": "Open account settings",
+    "es": "Abrir ajustes de cuenta",
+    "ja": "アカウント設定を開く",
+    "ko": "계정 설정 열기"
+  },
+  "登录或了解本地模式": {
+    "en-US": "Sign in or learn about local mode",
+    "es": "Iniciar sesión o conocer el modo local",
+    "ja": "ログイン・ローカル利用について",
+    "ko": "로그인 또는 로컬 이용 안내"
+  },
+  "你": {
+    "en-US": "You",
+    "es": "Tú",
+    "ja": "あなた",
+    "ko": "나"
+  },
+  "陪伴家庭的每一个小小日常": {
+    "en-US": "Here for your family's everyday moments",
+    "es": "Contigo en el día a día de tu familia",
+    "ja": "家族の日々に、そっと寄り添う",
+    "ko": "가족의 작은 일상과 함께"
+  },
+  "使用边界与演示说明": {
+    "en-US": "Scope & demo information",
+    "es": "Alcance e información de la demo",
+    "ja": "利用範囲とデモの説明",
+    "ko": "이용 범위와 데모 안내"
+  },
+  "移动端主导航": {
+    "en-US": "Mobile navigation",
+    "es": "Navegación móvil",
+    "ja": "モバイルナビゲーション",
+    "ko": "모바일 메뉴"
+  },
+  "小小书架 · 阅读": {
+    "en-US": "Little library · Read",
+    "es": "Biblioteca · Leer",
+    "ja": "小さな本棚 · 読む",
+    "ko": "작은 책장 · 읽기"
+  },
+  "分钟": {
+    "en-US": "min",
+    "es": "min",
+    "ja": "分",
+    "ko": "분"
+  },
+  "取消生成": {
+    "en-US": "Cancel generation",
+    "es": "Cancelar generación",
+    "ja": "生成を中止",
+    "ko": "생성 취소"
+  },
+  "停止朗读": {
+    "en-US": "Stop listening",
+    "es": "Detener audio",
+    "ja": "読み上げを停止",
+    "ko": "읽어 주기 중지"
+  },
+  "自然语音朗读": {
+    "en-US": "Listen naturally",
+    "es": "Escuchar",
+    "ja": "自然な声で聴く",
+    "ko": "자연스러운 음성으로 듣기"
+  },
+  "已收藏": {
+    "en-US": "Saved",
+    "es": "Guardado",
+    "ja": "保存済み",
+    "ko": "저장됨"
+  },
+  "放入书架": {
+    "en-US": "Add to shelf",
+    "es": "Guardar",
+    "ja": "本棚に入れる",
+    "ko": "책장에 담기"
+  },
+  "同意使用 OpenAI 生成本文语音，不发送聊天内容。": {
+    "en-US": "I agree to OpenAI generating this article's audio. No chat content is sent.",
+    "es": "Acepto que OpenAI genere el audio de este artículo. No se envía el chat.",
+    "ja": "この記事の OpenAI 音声生成に同意します。会話内容は送信されません。",
+    "ko": "OpenAI의 이 글 음성 생성에 동의합니다. 대화 내용은 전송되지 않습니다."
+  },
+  "正在生成温和的声音…": {
+    "en-US": "Preparing a gentle voice…",
+    "es": "Preparando una voz suave…",
+    "ja": "やさしい声を準備しています…",
+    "ko": "편안한 목소리를 준비하고 있어요…"
+  },
+  "AI 生成语音，非真人录音。一般教育资料，编辑整理待专业复核。": {
+    "en-US": "AI-generated voice, not a human recording. Educational summaries await professional review.",
+    "es": "Voz generada por IA, no una grabación humana. Los resúmenes educativos requieren revisión profesional.",
+    "ja": "AI 生成音声です。人の録音ではありません。教育用の要約は専門家の確認待ちです。",
+    "ko": "AI 생성 음성이며 사람의 녹음이 아닙니다. 교육용 요약은 전문가 검토를 기다리고 있습니다."
+  },
+  "资料出处": {
+    "en-US": "Sources",
+    "es": "Fuentes",
+    "ja": "資料の出典",
+    "ko": "자료 출처"
+  },
+  "链接核验：": {
+    "en-US": "Link checked:",
+    "es": "Enlace verificado:",
+    "ja": "リンク確認日：",
+    "ko": "링크 확인일:"
+  },
+  "· 编辑整理，非 UNICEF 官方译文。": {
+    "en-US": "· Editorial adaptation, not an official UNICEF translation.",
+    "es": "· Adaptación editorial, no traducción oficial de UNICEF.",
+    "ja": "· 編集による要約です。UNICEF の公式訳ではありません。",
+    "ko": "· 편집 요약이며 UNICEF 공식 번역이 아닙니다."
+  },
+  "按你的节奏来": {
+    "en-US": "At your own pace",
+    "es": "A tu ritmo",
+    "ja": "あなたのペースで",
+    "ko": "나의 속도에 맞게"
+  },
+  "立即获得帮助": {
+    "en-US": "Get immediate help",
+    "es": "Obtener ayuda inmediata",
+    "ja": "今すぐ助けを求める",
+    "ko": "즉시 도움받기"
+  },
+  "给阅读留一点时间": {
+    "en-US": "Make a little time to read",
+    "es": "Un momento para leer",
+    "ja": "読書の時間を少しだけ",
+    "ko": "읽기를 위한 작은 시간"
+  },
+  "把陪伴留在身边": {
+    "en-US": "Keep support close",
+    "es": "Lleva el apoyo contigo",
+    "ja": "支えをそばに",
+    "ko": "늘 곁에 두는 응원"
+  },
+  "先确保你和孩子的安全": {
+    "en-US": "First, make sure you and your child are safe",
+    "es": "Primero, asegúrate de que tú y tu hijo estén a salvo",
+    "ja": "まず、あなたとお子さんの安全を",
+    "ko": "먼저 나와 아이의 안전을 확인하세요"
+  },
+  "当前尚未上线经本地核验的热线目录": {
+    "en-US": "A locally verified hotline directory is not available yet",
+    "es": "Aún no hay un directorio local de líneas de ayuda verificadas",
+    "ja": "地域で確認済みの相談窓口一覧は未公開です",
+    "ko": "현지에서 확인한 상담 전화 목록은 아직 제공되지 않습니다"
+  },
+  "不能用测试联系人代替求助。请使用你所在地的官方急救、警方或医疗机构渠道。平台不能呼叫救援，没有真人值守。": {
+    "en-US": "Demo contacts cannot provide help. Use official local emergency, police, or healthcare channels. The platform cannot call for rescue and has no live staff.",
+    "es": "Los contactos de demo no ofrecen ayuda. Usa los servicios oficiales locales de emergencias, policía o salud. La plataforma no llama a rescate ni tiene personal en directo.",
+    "ja": "デモの連絡先では助けを得られません。地域の公式な救急・警察・医療窓口を利用してください。このサービスは救援を呼べず、有人対応もありません。",
+    "ko": "데모 연락처로 도움을 받을 수 없습니다. 현지 공식 응급 서비스, 경찰 또는 의료 기관에 연락하세요. 플랫폼은 구조를 요청할 수 없으며 실시간 담당자가 없습니다."
+  },
+  "聊天中的风险识别可能漏判或误判。无需等待系统识别，你随时可以主动寻求紧急帮助。": {
+    "en-US": "Risk detection can miss or misread danger. You can seek urgent help at any time without waiting for the system.",
+    "es": "La detección puede equivocarse. Puedes pedir ayuda urgente en cualquier momento sin esperar al sistema.",
+    "ja": "危険の検出には見落としや誤りがあります。判定を待たず、いつでも緊急の助けを求めてください。",
+    "ko": "위험 감지에는 누락이나 오류가 있을 수 있습니다. 시스템 판단을 기다리지 않고 언제든 긴급 도움을 요청하세요."
+  },
+  "已启用": {
+    "en-US": "Enabled",
+    "es": "Activado",
+    "ja": "有効",
+    "ko": "사용 가능"
+  },
+  "待接入": {
+    "en-US": "Pending",
+    "es": "Pendiente",
+    "ja": "接続待ち",
+    "ko": "연결 대기"
+  },
+  "自然语音已启用 · AI 生成": {
+    "en-US": "Natural voice enabled · AI-generated",
+    "es": "Voz natural activada · Generada por IA",
+    "ja": "自然音声が有効 · AI 生成",
+    "ko": "자연스러운 음성 사용 가능 · AI 생성"
+  },
+  "自然语音尚未接入": {
+    "en-US": "Natural voice not connected yet",
+    "es": "Voz natural aún no conectada",
+    "ja": "自然音声は未接続",
+    "ko": "자연스러운 음성 미연결"
+  },
+  "可用：阅读、本地收藏、应用内提醒": {
+    "en-US": "Available: reading, local bookmarks, in-app reminders",
+    "es": "Disponible: lectura, favoritos locales y recordatorios en la app",
+    "ja": "利用可能：読書、ローカル保存、アプリ内リマインダー",
+    "ko": "이용 가능: 읽기, 로컬 저장, 앱 내 알림"
+  },
+  "演示": {
+    "en-US": "Demo",
+    "es": "Demo",
+    "ja": "デモ",
+    "ko": "데모"
+  },
+  "预约、视频房间、示例会后回顾": {
+    "en-US": "Appointments, video room, sample session notes",
+    "es": "Citas, sala de video y notas de ejemplo",
+    "ja": "予約、ビデオルーム、振り返りのサンプル",
+    "ko": "예약, 영상 상담실, 상담 메모 예시"
+  },
+  "AI 聊天已启用，仍可能出错": {
+    "en-US": "AI chat is enabled and can still make mistakes",
+    "es": "El chat con IA está activado y puede equivocarse",
+    "ja": "AI チャットは有効ですが、誤りの可能性があります",
+    "ko": "AI 채팅을 사용할 수 있지만 오류가 있을 수 있습니다"
+  },
+  "聊天为预设回复，尚未启用真实 AI": {
+    "en-US": "Chat uses preset replies; live AI is not enabled yet",
+    "es": "El chat usa respuestas de ejemplo; la IA aún no está activada",
+    "ja": "チャットは定型デモです。AI はまだ有効ではありません",
+    "ko": "채팅은 예시 응답이며 실제 AI는 아직 연결되지 않았습니다"
+  },
+  "面向成年照护者。不是诊断或治疗工具，不替代专业评估。内容链接经过核验，但编辑整理尚待专业复核。联网搜索、真实专业人员、音视频咨询和后台审核工作流尚未上线。": {
+    "en-US": "For adult caregivers. This is not a diagnostic or treatment tool and does not replace professional assessment. Source links were checked; editorial summaries await professional review. Web search, real practitioners, video consultations, and editorial review workflows are not available yet.",
+    "es": "Para cuidadores adultos. No diagnostica ni trata, ni sustituye una evaluación profesional. Se comprobaron las fuentes; los resúmenes requieren revisión profesional. Aún no hay búsqueda web, profesionales reales, videoconsultas ni un flujo de revisión editorial.",
+    "ja": "成人の養育者向けです。診断や治療、専門家による評価の代わりにはなりません。出典リンクは確認済みですが、要約は専門家の確認待ちです。ウェブ検索、実在の専門家、ビデオ相談、編集審査の仕組みは未公開です。",
+    "ko": "성인 보호자를 위한 서비스입니다. 진단이나 치료 도구가 아니며 전문 평가를 대신하지 않습니다. 출처 링크는 확인했지만 편집 요약은 전문가 검토 전입니다. 웹 검색, 실제 전문가, 영상 상담 및 편집 검토 절차는 아직 제공되지 않습니다."
+  },
+  "聊天不自动保存；收藏和偏好默认保存在当前浏览器。清理浏览器存储会移除这些记录。接入并登录 Supabase 后，收藏可保存在云端。": {
+    "en-US": "Chats are not saved automatically. Bookmarks and preferences stay in this browser by default. Clearing browser storage removes them. With Supabase connected and signed in, bookmarks can be saved in the cloud.",
+    "es": "Los chats no se guardan automáticamente. Los favoritos y ajustes se guardan en este navegador; borrar sus datos los elimina. Con Supabase conectado y sesión iniciada, los favoritos pueden guardarse en la nube.",
+    "ja": "会話は自動保存されません。保存した記事と設定はこのブラウザに残り、ブラウザのデータ削除で消えます。Supabase 接続後にログインするとクラウド保存が可能です。",
+    "ko": "대화는 자동 저장되지 않습니다. 즐겨찾기와 설정은 기본적으로 이 브라우저에 저장되며 브라우저 데이터를 지우면 사라집니다. Supabase 연결 후 로그인하면 클라우드에 저장할 수 있습니다."
+  },
+  "阅读提醒": {
+    "en-US": "Reading reminders",
+    "es": "Recordatorios de lectura",
+    "ja": "読書リマインダー",
+    "ko": "읽기 알림"
+  },
+  "已开启 · 仅应用打开时提醒": {
+    "en-US": "On · Only while the app is open",
+    "es": "Activado · Solo con la app abierta",
+    "ja": "有効 · アプリを開いている間のみ",
+    "ko": "켜짐 · 앱이 열려 있을 때만"
+  },
+  "默认关闭，按你的节奏来": {
+    "en-US": "Off by default. Your pace, your choice.",
+    "es": "Desactivado por defecto. Tú marcas el ritmo.",
+    "ja": "初期設定はオフ。あなたのペースで。",
+    "ko": "기본값은 꺼짐입니다. 내 속도에 맞게 선택하세요."
+  },
+  "设置": {
+    "en-US": "Set up",
+    "es": "Configurar",
+    "ja": "設定する",
+    "ko": "설정하기"
+  },
+  "云端书架": {
+    "en-US": "Cloud shelf",
+    "es": "Biblioteca en la nube",
+    "ja": "クラウドの本棚",
+    "ko": "클라우드 책장"
+  },
+  "本地书架": {
+    "en-US": "Local shelf",
+    "es": "Biblioteca local",
+    "ja": "ローカルの本棚",
+    "ko": "로컬 책장"
+  },
+  "收藏只保存在当前浏览器": {
+    "en-US": "Bookmarks stay in this browser only",
+    "es": "Los favoritos solo se guardan en este navegador",
+    "ja": "保存はこのブラウザのみ",
+    "ko": "즐겨찾기는 현재 브라우저에만 저장됩니다"
+  },
+  "已退出账户，返回本地书架。": {
+    "en-US": "Signed out. Back to your local shelf.",
+    "es": "Sesión cerrada. Regresas a tu biblioteca local.",
+    "ja": "ログアウトしました。ローカルの本棚に戻ります。",
+    "ko": "로그아웃했습니다. 로컬 책장으로 돌아갑니다."
+  },
+  "退出": {
+    "en-US": "Sign out",
+    "es": "Cerrar sesión",
+    "ja": "ログアウト",
+    "ko": "로그아웃"
+  },
+  "登录": {
+    "en-US": "Sign in",
+    "es": "Iniciar sesión",
+    "ja": "ログイン",
+    "ko": "로그인"
+  },
+  "清空本地收藏与提醒": {
+    "en-US": "Clear local bookmarks & reminders",
+    "es": "Borrar favoritos y recordatorios locales",
+    "ja": "ローカル保存とリマインダーを消去",
+    "ko": "로컬 즐겨찾기와 알림 지우기"
+  },
+  "不删除云端收藏；当前聊天仅在内存中。": {
+    "en-US": "Cloud bookmarks remain. This chat is only in memory.",
+    "es": "Los favoritos en la nube permanecen. El chat solo está en memoria.",
+    "ja": "クラウド保存は残ります。会話はメモリ内のみです。",
+    "ko": "클라우드 즐겨찾기는 유지됩니다. 대화는 메모리에만 있습니다."
+  },
+  "清空本地收藏与提醒？这不会删除云端数据。": {
+    "en-US": "Clear local bookmarks and reminders? Cloud data will remain.",
+    "es": "¿Borrar favoritos y recordatorios locales? Se conservarán los datos de la nube.",
+    "ja": "ローカル保存とリマインダーを消去しますか？クラウドのデータは残ります。",
+    "ko": "로컬 즐겨찾기와 알림을 지울까요? 클라우드 데이터는 유지됩니다."
+  },
+  "本地收藏与提醒已清空。": {
+    "en-US": "Local bookmarks and reminders cleared.",
+    "es": "Favoritos y recordatorios locales borrados.",
+    "ja": "ローカル保存とリマインダーを消去しました。",
+    "ko": "로컬 즐겨찾기와 알림을 지웠습니다."
+  },
+  "无法清理浏览器存储。": {
+    "en-US": "Could not clear browser storage.",
+    "es": "No se pudieron borrar los datos del navegador.",
+    "ja": "ブラウザのデータを消去できませんでした。",
+    "ko": "브라우저 데이터를 지우지 못했습니다."
+  },
+  "清空": {
+    "en-US": "Clear",
+    "es": "Borrar",
+    "ja": "消去",
+    "ko": "지우기"
+  },
+  "留几分钟给自己，也可以随时暂停。第一版仅在应用打开且可见时提醒，不发送系统通知。": {
+    "en-US": "Make a few minutes for yourself, and pause whenever you like. This version reminds you only while the app is open and visible; no system notifications are sent.",
+    "es": "Dedícate unos minutos y pausa cuando quieras. Esta versión solo recuerda cuando la app está abierta y visible; no envía notificaciones del sistema.",
+    "ja": "自分のための数分を。いつでも休めます。この版ではアプリが開いて表示されている間だけお知らせします。システム通知は送りません。",
+    "ko": "잠시 나를 위한 시간을 가져 보세요. 언제든 멈춰도 괜찮아요. 이 버전은 앱이 열려 화면에 보일 때만 알려 주며 시스템 알림은 보내지 않습니다."
+  },
+  "开启应用内提醒": {
+    "en-US": "Enable in-app reminders",
+    "es": "Activar recordatorios en la app",
+    "ja": "アプリ内リマインダーを有効にする",
+    "ko": "앱 내 알림 켜기"
+  },
+  "时间以当前设备时区为准": {
+    "en-US": "Times use your device's time zone",
+    "es": "Se usa la zona horaria de tu dispositivo",
+    "ja": "時刻は端末のタイムゾーンに従います",
+    "ko": "기기 시간대를 기준으로 합니다"
+  },
+  "第一次提醒": {
+    "en-US": "First reminder",
+    "es": "Primer recordatorio",
+    "ja": "最初のリマインダー",
+    "ko": "첫 번째 알림"
+  },
+  "增加晚间提醒": {
+    "en-US": "Add an evening reminder",
+    "es": "Añadir recordatorio nocturno",
+    "ja": "夜のリマインダーを追加",
+    "ko": "저녁 알림 추가"
+  },
+  "第二次提醒": {
+    "en-US": "Second reminder",
+    "es": "Segundo recordatorio",
+    "ja": "2回目のリマインダー",
+    "ko": "두 번째 알림"
+  },
+  "阅读偏好已保存 · 仅在应用打开时提醒": {
+    "en-US": "Preferences saved · Reminders only while open",
+    "es": "Preferencias guardadas · Solo con la app abierta",
+    "ja": "設定を保存しました · アプリを開いている間のみ",
+    "ko": "설정을 저장했습니다 · 앱이 열려 있을 때만 알림"
+  },
+  "偏好未能保存，请检查浏览器存储设置。": {
+    "en-US": "Preferences could not be saved. Check browser storage settings.",
+    "es": "No se guardaron los ajustes. Revisa el almacenamiento del navegador.",
+    "ja": "設定を保存できませんでした。ブラウザの保存設定をご確認ください。",
+    "ko": "설정을 저장하지 못했습니다. 브라우저 저장 설정을 확인해 주세요."
+  },
+  "保存偏好": {
+    "en-US": "Save preferences",
+    "es": "Guardar preferencias",
+    "ja": "設定を保存",
+    "ko": "설정 저장"
+  },
+  "你的书架，可以随身带着。": {
+    "en-US": "Take your library with you.",
+    "es": "Tu biblioteca puede acompañarte.",
+    "ja": "本棚を、いつもそばに。",
+    "ko": "어디서든 내 책장과 함께."
+  },
+  "用邮箱接收登录链接，无需设置密码。登录后使用云端书架；本地收藏不会自动上传。": {
+    "en-US": "Get an email sign-in link; no password needed. Sign in to use your cloud shelf. Local bookmarks are not uploaded automatically.",
+    "es": "Recibe un enlace por correo, sin contraseña. Inicia sesión para usar la nube. Los favoritos locales no se suben automáticamente.",
+    "ja": "メールのリンクでログインできます。パスワードは不要です。ローカル保存は自動アップロードされません。",
+    "ko": "이메일 링크로 로그인하며 비밀번호는 필요하지 않습니다. 로컬 즐겨찾기는 자동 업로드되지 않습니다."
+  },
+  "邮箱地址": {
+    "en-US": "Email address",
+    "es": "Correo electrónico",
+    "ja": "メールアドレス",
+    "ko": "이메일 주소"
+  },
+  "正在发送…": {
+    "en-US": "Sending…",
+    "es": "Enviando…",
+    "ja": "送信中…",
+    "ko": "전송 중…"
+  },
+  "发送登录链接": {
+    "en-US": "Send sign-in link",
+    "es": "Enviar enlace de acceso",
+    "ja": "ログインリンクを送信",
+    "ko": "로그인 링크 보내기"
+  },
+  "云端登录尚未开放": {
+    "en-US": "Cloud sign-in is not available yet",
+    "es": "El acceso a la nube aún no está disponible",
+    "ja": "クラウドログインは未公開です",
+    "ko": "클라우드 로그인은 아직 제공되지 않습니다"
+  },
+  "当前可以直接阅读和收藏。收藏保存在此浏览器；接入 Supabase 后再开放邮箱登录与云端同步。": {
+    "en-US": "You can read and bookmark now. Bookmarks stay in this browser. Email sign-in and cloud sync will be available after Supabase is connected.",
+    "es": "Ya puedes leer y guardar favoritos en este navegador. El acceso por correo y la sincronización estarán disponibles al conectar Supabase.",
+    "ja": "今すぐ読書と保存ができます。保存はこのブラウザのみです。Supabase 接続後にメールログインと同期が利用できます。",
+    "ko": "지금 읽고 저장할 수 있습니다. 현재 브라우저에 저장되며 Supabase 연결 후 이메일 로그인과 클라우드 동기화를 이용할 수 있습니다."
+  },
+  "先使用本地书架": {
+    "en-US": "Use my local shelf",
+    "es": "Usar biblioteca local",
+    "ja": "ローカルの本棚を使う",
+    "ko": "로컬 책장 사용하기"
+  },
+  "这段对话已达到长度上限。请开启新对话。": {
+    "en-US": "This conversation has reached its limit. Start a new chat.",
+    "es": "Esta conversación llegó al límite. Inicia otra.",
+    "ja": "会話の上限に達しました。新しい会話を始めてください。",
+    "ko": "대화 길이 한도에 도달했습니다. 새 대화를 시작해 주세요."
+  },
+  "暂时无法回复，请重试。": {
+    "en-US": "Unable to reply right now. Please try again.",
+    "es": "No se puede responder ahora. Inténtalo de nuevo.",
+    "ja": "今は返信できません。もう一度お試しください。",
+    "ko": "지금 응답할 수 없습니다. 다시 시도해 주세요."
+  },
+  "连接暂时中断，你的文字已保留，可以重试。": {
+    "en-US": "Connection interrupted. Your text is still here; you can retry.",
+    "es": "Conexión interrumpida. Tu texto sigue aquí; puedes reintentar.",
+    "ja": "接続が切れました。入力文は残っています。再試行できます。",
+    "ko": "연결이 끊겼습니다. 입력한 글은 남아 있으니 다시 시도할 수 있어요."
+  },
+  "AI 家庭支持": {
+    "en-US": "AI family support",
+    "es": "Apoyo familiar con IA",
+    "ja": "AI による家族サポート",
+    "ko": "AI 가족 지원"
+  },
+  "聊天体验 · 演示": {
+    "en-US": "Chat preview · Demo",
+    "es": "Vista previa del chat · Demo",
+    "ja": "チャット体験 · デモ",
+    "ko": "채팅 체험 · 데모"
+  },
+  "新对话": {
+    "en-US": "New chat",
+    "es": "Nuevo chat",
+    "ja": "新しい会話",
+    "ko": "새 대화"
+  },
+  "把心里的小事，": {
+    "en-US": "What's on your mind?",
+    "es": "¿Qué tienes en mente?",
+    "ja": "心にあることを、",
+    "ko": "마음속 이야기를,"
+  },
+  "慢慢说出来。": {
+    "en-US": "There's room to talk.",
+    "es": "Aquí puedes hablar.",
+    "ja": "ゆっくり話そう。",
+    "ko": "천천히 꺼내 보세요."
+  },
+  "育儿的困惑、家人的关系，或一点说不清的担心。": {
+    "en-US": "Parenting questions, family relationships, or a worry you can't quite name.",
+    "es": "Dudas de crianza, relaciones familiares o una preocupación difícil de explicar.",
+    "ja": "子育ての疑問、家族との関係、うまく言葉にできない心配。",
+    "ko": "육아 고민, 가족 관계, 말로 설명하기 어려운 걱정까지."
+  },
+  "在这里，可以从任何一句话开始。": {
+    "en-US": "You can begin with any words that feel right.",
+    "es": "Puedes empezar con las palabras que te salgan.",
+    "ja": "どんなひと言からでも大丈夫です。",
+    "ko": "어떤 말로 시작해도 괜찮아요."
+  },
+  "最近育儿有点累": {
+    "en-US": "Parenting has felt tiring lately",
+    "es": "Últimamente criar me cansa",
+    "ja": "育児に少し疲れた",
+    "ko": "요즘 육아가 조금 지쳐요"
+  },
+  "孩子总是发脾气": {
+    "en-US": "My child has frequent tantrums",
+    "es": "Mi hijo tiene muchas rabietas",
+    "ja": "子どもの癇癪",
+    "ko": "아이가 자주 짜증을 내요"
+  },
+  "和家人育儿意见不同": {
+    "en-US": "We disagree about parenting",
+    "es": "No coincidimos en cómo criar",
+    "ja": "育児の意見が違う",
+    "ko": "가족과 육아 방식이 달라요"
+  },
+  "我担心孩子的发展": {
+    "en-US": "I'm worried about my child's development",
+    "es": "Me preocupa el desarrollo de mi hijo",
+    "ja": "発達が気になる",
+    "ko": "아이 발달이 걱정돼요"
+  },
+  "本次对话": {
+    "en-US": "This conversation",
+    "es": "Esta conversación",
+    "ja": "今回の会話",
+    "ko": "현재 대화"
+  },
+  "Bloomie ·": {
+    "en-US": "Bloomie ·",
+    "es": "Bloomie ·",
+    "ja": "Bloomie ·",
+    "ko": "Bloomie ·"
+  },
+  "预设演示回答": {
+    "en-US": "Preset demo reply",
+    "es": "Respuesta de ejemplo",
+    "ja": "定型デモ回答",
+    "ko": "미리 작성된 데모 응답"
+  },
+  "安全支持": {
+    "en-US": "Safety support",
+    "es": "Apoyo de seguridad",
+    "ja": "安全サポート",
+    "ko": "안전 지원"
+  },
+  "安全检查": {
+    "en-US": "Safety check",
+    "es": "Revisión de seguridad",
+    "ja": "安全確認",
+    "ko": "안전 확인"
+  },
+  "AI 回答": {
+    "en-US": "AI reply",
+    "es": "Respuesta de IA",
+    "ja": "AI の回答",
+    "ko": "AI 응답"
+  },
+  "资料依据 ·": {
+    "en-US": "References ·",
+    "es": "Referencias ·",
+    "ja": "参考資料 ·",
+    "ko": "참고 자료 ·"
+  },
+  "项": {
+    "en-US": "sources",
+    "es": "fuentes",
+    "ja": "件",
+    "ko": "개"
+  },
+  "参考资料不代表完成个体评估。": {
+    "en-US": "References do not constitute an individual assessment.",
+    "es": "Las fuentes no constituyen una evaluación individual.",
+    "ja": "参考資料は個別評価の代わりにはなりません。",
+    "ko": "참고 자료가 개별 평가를 의미하지는 않습니다."
+  },
+  "想了解真人支持？体验咨询流程": {
+    "en-US": "Want human support? Explore the consultation demo",
+    "es": "¿Buscas apoyo humano? Explora la demo",
+    "ja": "人の支えが気になりますか？相談デモへ",
+    "ko": "사람의 도움이 필요하신가요? 상담 흐름 체험하기"
+  },
+  "查看立即求助说明": {
+    "en-US": "View immediate-help guidance",
+    "es": "Ver cómo pedir ayuda inmediata",
+    "ja": "緊急時の案内を見る",
+    "ko": "즉시 도움 안내 보기"
+  },
+  "正在整理回应…": {
+    "en-US": "Preparing a response…",
+    "es": "Preparando una respuesta…",
+    "ja": "お返事を準備しています…",
+    "ko": "응답을 준비하고 있어요…"
+  },
+  "同意将本次会话发送给 OpenAI 处理；请勿输入姓名、住址等身份信息。": {
+    "en-US": "I agree to sending this chat to OpenAI. Please leave out names, addresses, and other identifying details.",
+    "es": "Acepto enviar este chat a OpenAI. Evita nombres, direcciones y datos que identifiquen a alguien.",
+    "ja": "この会話の OpenAI への送信に同意します。名前や住所など個人を特定できる情報は入力しないでください。",
+    "ko": "이 대화를 OpenAI에 보내는 데 동의합니다. 이름, 주소 등 신원을 확인할 수 있는 정보는 입력하지 마세요."
+  },
+  "输入你想聊的事": {
+    "en-US": "Write what you'd like to talk about",
+    "es": "Escribe lo que quieres conversar",
+    "ja": "話したいことを入力",
+    "ko": "하고 싶은 이야기 입력"
+  },
+  "今天，有什么想聊聊的？": {
+    "en-US": "What would you like to talk about today?",
+    "es": "¿De qué te gustaría hablar hoy?",
+    "ja": "今日は、どんなことを話そう？",
+    "ko": "오늘은 어떤 이야기를 나누고 싶나요?"
+  },
+  "本次对话不会自动保存": {
+    "en-US": "This chat is not saved automatically",
+    "es": "Este chat no se guarda automáticamente",
+    "ja": "この会話は自動保存されません",
+    "ko": "이 대화는 자동 저장되지 않습니다"
+  },
+  "发送消息": {
+    "en-US": "Send message",
+    "es": "Enviar mensaje",
+    "ja": "メッセージを送信",
+    "ko": "메시지 보내기"
+  },
+  "AI 可能出错，不提供诊断；没有真人实时监看。": {
+    "en-US": "AI can make mistakes and cannot diagnose. No human is monitoring this chat live.",
+    "es": "La IA puede equivocarse y no diagnostica. Nadie supervisa este chat en directo.",
+    "ja": "AI は誤ることがあり、診断はできません。会話をリアルタイムで見守る担当者はいません。",
+    "ko": "AI는 오류가 있을 수 있으며 진단하지 않습니다. 실시간으로 대화를 확인하는 담당자는 없습니다."
+  },
+  "不必做完美的家长。": {
+    "en-US": "You don't need to be a perfect parent.",
+    "es": "No necesitas ser un padre perfecto.",
+    "ja": "完璧な親でなくて大丈夫。",
+    "ko": "완벽한 부모가 될 필요는 없어요."
+  },
+  "也给自己一点温柔。": {
+    "en-US": "Offer yourself a little kindness, too.",
+    "es": "También mereces un poco de amabilidad.",
+    "ja": "自分にも、少しのやさしさを。",
+    "ko": "나에게도 조금 다정해져요."
+  },
+  "有时，一次被听见，": {
+    "en-US": "Sometimes, being heard",
+    "es": "A veces, sentirte escuchado",
+    "ja": "話を聞いてもらうことが、",
+    "ko": "때로는 누군가 들어 주는 것만으로"
+  },
+  "就是改变的开始。": {
+    "en-US": "is where change begins.",
+    "es": "es el comienzo del cambio.",
+    "ja": "変化の始まりになります。",
+    "ko": "변화가 시작돼요."
+  },
+  "给今天的你": {
+    "en-US": "For you, today",
+    "es": "Para ti, hoy",
+    "ja": "今日のあなたへ",
+    "ko": "오늘의 당신에게"
+  },
+  "先照顾自己，": {
+    "en-US": "Care for yourself,",
+    "es": "Cuídate primero,",
+    "ja": "まず自分をいたわって、",
+    "ko": "나를 먼저 돌보고,"
+  },
+  "再拥抱孩子": {
+    "en-US": "then hold your child close",
+    "es": "después abraza a tu hijo",
+    "ja": "子どもを抱きしめよう",
+    "ko": "아이를 안아 주세요"
+  },
+  "3 分钟阅读 · 可自然语音朗读": {
+    "en-US": "3-minute read · Natural voice available",
+    "es": "3 min de lectura · Voz natural",
+    "ja": "3分の読書 · 自然音声対応",
+    "ko": "3분 읽기 · 자연스러운 음성 지원"
+  },
+  "让每一份建议有出处": {
+    "en-US": "Every suggestion needs a source",
+    "es": "Cada sugerencia necesita una fuente",
+    "ja": "助言には、確かな出典を",
+    "ko": "모든 조언에는 출처가 있어야 해요"
+  },
+  "参考 UNICEF 公开资料": {
+    "en-US": "Based on public UNICEF resources",
+    "es": "Basado en recursos públicos de UNICEF",
+    "ja": "UNICEF の公開資料を参考に",
+    "ko": "UNICEF 공개 자료 참고"
+  },
+  "编辑整理待专业复核": {
+    "en-US": "Editorial summaries await professional review",
+    "es": "Resúmenes pendientes de revisión profesional",
+    "ja": "編集要約は専門家の確認待ち",
+    "ko": "편집 요약은 전문가 검토 전"
+  },
+  "发现": {
+    "en-US": "Discover",
+    "es": "Descubrir",
+    "ja": "見つける",
+    "ko": "발견하기"
+  },
+  "全部": {
+    "en-US": "All",
+    "es": "Todo",
+    "ja": "すべて",
+    "ko": "전체"
+  },
+  "我的书架": {
+    "en-US": "My shelf",
+    "es": "Mi biblioteca",
+    "ja": "自分の本棚",
+    "ko": "내 책장"
+  },
+  "内容视图": {
+    "en-US": "Content view",
+    "es": "Vista de contenido",
+    "ja": "コンテンツ表示",
+    "ko": "콘텐츠 보기"
+  },
+  "给自己留一页，": {
+    "en-US": "A page for yourself.",
+    "es": "Una página para ti.",
+    "ja": "自分のための一ページ。",
+    "ko": "나를 위한 한 페이지,"
+  },
+  "让日子慢一点。": {
+    "en-US": "A slower moment today.",
+    "es": "Un momento más tranquilo.",
+    "ja": "日々に、ひと息を。",
+    "ko": "하루를 조금 천천히."
+  },
+  "不急着学会所有答案。今天，读一点就好。": {
+    "en-US": "No need to learn every answer. A little reading is enough today.",
+    "es": "No tienes que saberlo todo. Hoy basta con leer un poco.",
+    "ja": "すべての答えを急がなくて大丈夫。今日は少しだけ読もう。",
+    "ko": "모든 답을 알 필요는 없어요. 오늘은 조금만 읽어도 충분해요."
+  },
+  "开始今天的阅读": {
+    "en-US": "Start today's reading",
+    "es": "Empezar la lectura de hoy",
+    "ja": "今日の読書を始める",
+    "ko": "오늘의 읽기 시작"
+  },
+  "来源可查 · 编辑整理 · 待专业复核": {
+    "en-US": "Sources linked · Editorial summary · Review pending",
+    "es": "Fuentes enlazadas · Resumen editorial · Revisión pendiente",
+    "ja": "出典付き · 編集要約 · 専門家の確認待ち",
+    "ko": "출처 제공 · 편집 요약 · 검토 대기"
+  },
+  "给自己一点温柔": {
+    "en-US": "A little kindness for yourself",
+    "es": "Un poco de cariño para ti",
+    "ja": "自分に少しのやさしさを",
+    "ko": "나에게 조금 다정하게"
+  },
+  "把喜欢的，留在这里": {
+    "en-US": "Keep what speaks to you",
+    "es": "Guarda lo que te acompaña",
+    "ja": "心に残ったものを、ここに",
+    "ko": "마음에 드는 것을 여기에"
+  },
+  "搜索内容": {
+    "en-US": "Search the library",
+    "es": "Buscar en la biblioteca",
+    "ja": "本棚を検索",
+    "ko": "책장 검색"
+  },
+  "找一本想读的": {
+    "en-US": "Find something to read",
+    "es": "Busca algo para leer",
+    "ja": "読みたい一冊を探す",
+    "ko": "읽고 싶은 글 찾기"
+  },
+  "内容分类": {
+    "en-US": "Content categories",
+    "es": "Categorías de contenido",
+    "ja": "コンテンツの分類",
+    "ko": "콘텐츠 분류"
+  },
+  "照顾自己": {
+    "en-US": "Self-care",
+    "es": "Autocuidado",
+    "ja": "自分をいたわる",
+    "ko": "나 돌보기"
+  },
+  "亲子沟通": {
+    "en-US": "Communication",
+    "es": "Comunicación",
+    "ja": "親子の会話",
+    "ko": "부모와 아이 대화"
+  },
+  "日常养育": {
+    "en-US": "Everyday parenting",
+    "es": "Crianza diaria",
+    "ja": "日々の子育て",
+    "ko": "일상의 육아"
+  },
+  "Bloomie · 日 常 文 库": {
+    "en-US": "BLOOMIE · EVERYDAY LIBRARY",
+    "es": "BLOOMIE · BIBLIOTECA COTIDIANA",
+    "ja": "BLOOMIE · 日々の本棚",
+    "ko": "BLOOMIE · 일상의 책장"
+  },
+  "分钟 · 可朗读": {
+    "en-US": "min · Listen available",
+    "es": "min · Audio disponible",
+    "ja": "分 · 音声対応",
+    "ko": "분 · 듣기 지원"
+  },
+  "你的书架，等着第一本书": {
+    "en-US": "Your shelf is waiting for its first book",
+    "es": "Tu biblioteca espera su primer libro",
+    "ja": "最初の一冊を待っています",
+    "ko": "첫 번째 책을 기다리는 책장"
+  },
+  "暂时没有找到相关内容": {
+    "en-US": "No matching content yet",
+    "es": "No hay resultados",
+    "ja": "該当する記事がありません",
+    "ko": "관련 글을 찾지 못했어요"
+  },
+  "在发现页点一下收藏，喜欢的内容就会留在这里。": {
+    "en-US": "Bookmark something in Discover, and it will be waiting here.",
+    "es": "Guarda algo en Descubrir y lo encontrarás aquí.",
+    "ja": "「見つける」で保存すると、ここに並びます。",
+    "ko": "발견하기에서 저장하면 여기에 모여요."
+  },
+  "试试其他分类，或换一个关键词。": {
+    "en-US": "Try another category or search term.",
+    "es": "Prueba otra categoría o palabra.",
+    "ja": "別の分類やキーワードをお試しください。",
+    "ko": "다른 분류나 검색어로 찾아보세요."
+  },
+  "浏览全部内容": {
+    "en-US": "Browse all content",
+    "es": "Ver todo el contenido",
+    "ja": "すべての記事を見る",
+    "ko": "전체 글 보기"
+  },
+  "小小的阅读，也是一种照顾。": {
+    "en-US": "A little reading is a little care.",
+    "es": "Leer un poco también es cuidarte.",
+    "ja": "少しの読書も、自分をいたわる時間。",
+    "ko": "조금 읽는 것도 나를 돌보는 일이에요."
+  },
+  "AI 语音不是专家录音；播客、视频和班级消息将在后续版本推出。": {
+    "en-US": "AI voice is not an expert recording. Podcasts, videos, and class messages are planned for a later version.",
+    "es": "La voz de IA no es una grabación de un experto. Los pódcasts, videos y mensajes escolares llegarán después.",
+    "ja": "AI 音声は専門家の録音ではありません。ポッドキャスト、動画、学校からのお知らせは今後の版で提供予定です。",
+    "ko": "AI 음성은 전문가의 녹음이 아닙니다. 팟캐스트, 영상, 학급 소식은 이후 버전에서 제공할 예정입니다."
+  },
+  "今天讨论了什么\n照护者描述了晚间收拾玩具时的沟通困难。\n\n示例中约定的小尝试\n使用一条具体、适龄的提示，并观察孩子的反应。\n\n下次可以继续聊\n哪些情境更容易发生分歧，以及家长需要什么支持。\n\n这是预设对话的示例笔记，不来自真实咨询，不是诊断或治疗建议。": {
+    "en-US": "What we discussed\nA caregiver described difficulty communicating during evening toy cleanup.\n\nA small example to try\nUse one specific, age-appropriate prompt and observe the child's response.\n\nFor a future conversation\nSituations where disagreements arise and support the parent needs.\n\nPreset sample notes, not a real consultation, diagnosis, or treatment advice.",
+    "es": "Qué se conversó\nUn cuidador describió dificultades al recoger juguetes por la noche.\n\nUn pequeño intento de ejemplo\nUsar una indicación concreta y adecuada a la edad, y observar la respuesta.\n\nPara otra conversación\nCuándo surgen desacuerdos y qué apoyo necesita el cuidador.\n\nNotas de ejemplo, no una consulta real ni consejos de diagnóstico o tratamiento.",
+    "ja": "話したこと\n夜の片付けで子どもとのやり取りが難しいという例。\n\n試してみる小さなこと\n年齢に合う具体的なひと言で伝え、反応を見守る。\n\n次に話せること\n意見が分かれる場面と、養育者が必要とする支え。\n\n定型のサンプルです。実際の相談記録や診断・治療の助言ではありません。",
+    "ko": "오늘 나눈 이야기\n저녁 장난감 정리 중 소통의 어려움을 설명한 예시입니다.\n\n작게 시도할 예시\n나이에 맞는 구체적인 요청을 한 가지 전달하고 아이의 반응을 관찰합니다.\n\n다음에 나눌 이야기\n의견이 엇갈리는 상황과 보호자에게 필요한 지원.\n\n실제 상담 기록이 아닌 예시 메모이며 진단이나 치료 조언이 아닙니다."
+  },
+  "多一个人，": {
+    "en-US": "One more person,",
+    "es": "Una persona más,",
+    "ja": "もうひとりと、",
+    "ko": "한 사람이 더 있으면,"
+  },
+  "一起想想办法。": {
+    "en-US": "to think with you.",
+    "es": "para pensarlo contigo.",
+    "ja": "一緒に考えよう。",
+    "ko": "함께 생각할 수 있어요."
+  },
+  "不必独自找到所有答案。": {
+    "en-US": "You don't have to find every answer alone.",
+    "es": "No tienes que encontrar todas las respuestas a solas.",
+    "ja": "ひとりですべての答えを探さなくて大丈夫。",
+    "ko": "모든 답을 혼자 찾을 필요는 없어요."
+  },
+  "从一次轻松的沟通，开始了解适合你的支持。": {
+    "en-US": "Start with a simple conversation to explore support that fits.",
+    "es": "Empieza con una conversación sencilla para explorar el apoyo adecuado.",
+    "ja": "気軽な会話から、あなたに合う支えを探そう。",
+    "ko": "가벼운 대화부터 나에게 맞는 도움을 찾아보세요."
+  },
+  "帮我选择支持": {
+    "en-US": "Help me choose support",
+    "es": "Ayúdame a elegir apoyo",
+    "ja": "支え選びを手伝って",
+    "ko": "도움 선택하기"
+  },
+  "服务演示": {
+    "en-US": "Service demo",
+    "es": "Demo del servicio",
+    "ja": "サービスのデモ",
+    "ko": "서비스 데모"
+  },
+  "以下人员、时间与预约均为虚构示例。当前没有真人接待，不会产生真实预约或收费。": {
+    "en-US": "All people, times, and appointments below are fictional. No real practitioner is available; no real booking or charge is made.",
+    "es": "Las personas, horarios y citas son ficticios. No hay profesionales reales disponibles ni reservas o cargos reales.",
+    "ja": "以下の人物・時間・予約はすべて架空です。実際の担当者はおらず、予約や料金は発生しません。",
+    "ko": "아래 인물, 시간, 예약은 모두 가상입니다. 실제 담당자는 없으며 예약이나 요금이 발생하지 않습니다."
+  },
+  "找到适合的支持": {
+    "en-US": "Support that fits you",
+    "es": "Apoyo adecuado para ti",
+    "ja": "あなたに合う支えを",
+    "ko": "나에게 맞는 도움"
+  },
+  "先了解，再选择": {
+    "en-US": "Get to know, then choose",
+    "es": "Conoce antes de elegir",
+    "ja": "知ってから、選ぼう",
+    "ko": "알아보고 선택해요"
+  },
+  "家庭沟通支持": {
+    "en-US": "Family communication",
+    "es": "Comunicación familiar",
+    "ja": "家族の会話サポート",
+    "ko": "가족 소통 지원"
+  },
+  "儿童发展咨询": {
+    "en-US": "Child development",
+    "es": "Desarrollo infantil",
+    "ja": "子どもの発達相談",
+    "ko": "아동 발달 상담"
+  },
+  "照护者情绪支持": {
+    "en-US": "Caregiver well-being",
+    "es": "Bienestar del cuidador",
+    "ja": "養育者の心のサポート",
+    "ko": "보호자 정서 지원"
+  },
+  "示例人员": {
+    "en-US": "Sample person",
+    "es": "Persona de ejemplo",
+    "ja": "架空の人物",
+    "ko": "예시 인물"
+  },
+  "站内视频 · 演示": {
+    "en-US": "In-app video · Demo",
+    "es": "Video en la app · Demo",
+    "ja": "アプリ内ビデオ · デモ",
+    "ko": "앱 내 영상 · 데모"
+  },
+  "无需付费 · 不提供真实服务": {
+    "en-US": "Free preview · No real service",
+    "es": "Demo gratuita · Sin servicio real",
+    "ja": "無料体験 · 実際のサービスなし",
+    "ko": "무료 체험 · 실제 서비스 없음"
+  },
+  "了解并体验预约": {
+    "en-US": "Explore booking",
+    "es": "Explorar la reserva",
+    "ja": "予約を体験する",
+    "ko": "예약 체험하기"
+  },
+  "有些帮助，不应该等待。": {
+    "en-US": "Some help shouldn't wait.",
+    "es": "Hay ayuda que no debe esperar.",
+    "ja": "待ってはいけない助けもあります。",
+    "ko": "기다려서는 안 되는 도움도 있어요."
+  },
+  "如果你或孩子正处于危险中，请联系当地紧急服务。演示预约不能提供救援。": {
+    "en-US": "If you or your child are in danger, contact local emergency services. Demo bookings cannot provide rescue.",
+    "es": "Si tú o tu hijo están en peligro, contacta a emergencias locales. Las reservas de demo no ofrecen rescate.",
+    "ja": "あなたやお子さんが危険な状況にいる場合は、地域の緊急サービスへ。デモ予約では救援できません。",
+    "ko": "나 또는 아이가 위험한 상황이라면 현지 응급 서비스에 연락하세요. 데모 예약은 구조를 제공할 수 없습니다."
+  },
+  "立即求助说明": {
+    "en-US": "Immediate-help guidance",
+    "es": "Ayuda inmediata",
+    "ja": "緊急時の案内",
+    "ko": "즉시 도움 안내"
+  },
+  "先从你关心的事开始": {
+    "en-US": "Start with what matters to you",
+    "es": "Empieza por lo que te preocupa",
+    "ja": "気になることから始めよう",
+    "ko": "걱정되는 것부터 시작해요"
+  },
+  "这是匹配流程演示，不是临床分诊。选择后会展示相关的虚构人员。": {
+    "en-US": "This is a matching demo, not clinical triage. Your choice shows relevant fictional people.",
+    "es": "Es una demo de selección, no un triaje clínico. Se mostrarán personas ficticias relacionadas.",
+    "ja": "選択の流れを体験するデモです。医療的な判断は行いません。関連する架空の人物を表示します。",
+    "ko": "매칭 흐름 데모이며 임상 분류가 아닙니다. 선택하면 관련 가상 인물을 보여 줍니다."
+  },
+  "体验第一次预约": {
+    "en-US": "Try a first booking",
+    "es": "Probar una primera reserva",
+    "ja": "初めての予約を体験",
+    "ko": "첫 예약 체험"
+  },
+  "演示预约已完成": {
+    "en-US": "Demo booking complete",
+    "es": "Reserva de demo completada",
+    "ja": "デモ予約が完了しました",
+    "ko": "데모 예약 완료"
+  },
+  "视频咨询体验": {
+    "en-US": "Video consultation preview",
+    "es": "Vista previa de videoconsulta",
+    "ja": "ビデオ相談の体験",
+    "ko": "영상 상담 체험"
+  },
+  "会后回顾 · 示例草稿": {
+    "en-US": "Session review · Sample draft",
+    "es": "Resumen · Borrador de ejemplo",
+    "ja": "相談の振り返り · サンプル",
+    "ko": "상담 회고 · 예시 초안"
+  },
+  "全程演示 · 没有真人接入": {
+    "en-US": "Demo throughout · No live practitioner",
+    "es": "Todo es demo · Sin profesional conectado",
+    "ja": "すべてデモ · 実際の担当者はいません",
+    "ko": "전체 데모 · 실제 담당자 없음"
+  },
+  "选择一个示例时段": {
+    "en-US": "Choose a sample time",
+    "es": "Elige un horario de ejemplo",
+    "ja": "サンプルの時間を選択",
+    "ko": "예시 시간 선택"
+  },
+  "示例日 A · 10:00": {
+    "en-US": "Sample day A · 10:00",
+    "es": "Día de ejemplo A · 10:00",
+    "ja": "サンプル日 A · 10:00",
+    "ko": "예시 날짜 A · 10:00"
+  },
+  "示例日 A · 15:00": {
+    "en-US": "Sample day A · 15:00",
+    "es": "Día de ejemplo A · 15:00",
+    "ja": "サンプル日 A · 15:00",
+    "ko": "예시 날짜 A · 15:00"
+  },
+  "示例日 B · 09:30": {
+    "en-US": "Sample day B · 09:30",
+    "es": "Día de ejemplo B · 09:30",
+    "ja": "サンプル日 B · 09:30",
+    "ko": "예시 날짜 B · 09:30"
+  },
+  "示例日 B · 14:00": {
+    "en-US": "Sample day B · 14:00",
+    "es": "Día de ejemplo B · 14:00",
+    "ja": "サンプル日 B · 14:00",
+    "ko": "예시 날짜 B · 14:00"
+  },
+  "仅展示流程，不发送通知、不收费，也不会创建真实预约。": {
+    "en-US": "Preview only. No notifications, charges, or real bookings.",
+    "es": "Solo demo. Sin notificaciones, cargos ni reservas reales.",
+    "ja": "流れの体験のみ。通知・料金・実際の予約はありません。",
+    "ko": "흐름 체험만 제공합니다. 알림, 요금 또는 실제 예약은 없습니다."
+  },
+  "确认演示预约": {
+    "en-US": "Confirm demo booking",
+    "es": "Confirmar reserva de demo",
+    "ja": "デモ予約を確定",
+    "ko": "데모 예약 확인"
+  },
+  "你已走完预约体验": {
+    "en-US": "You've finished the booking preview",
+    "es": "Completaste la demo de reserva",
+    "ja": "予約体験が完了しました",
+    "ko": "예약 체험을 마쳤어요"
+  },
+  "下一步可以预览视频房间。不会连接真人，也不会调用摄像头、麦克风或录音。": {
+    "en-US": "Next, preview the video room. No real person connects, and no camera, microphone, or recording is used.",
+    "es": "Ahora puedes ver la sala de video. No se conecta nadie ni se usa cámara, micrófono o grabación.",
+    "ja": "次はビデオルームの体験です。実際の人にはつながらず、カメラ・マイク・録音も使いません。",
+    "ko": "다음은 영상 상담실 미리보기입니다. 실제 사람과 연결되지 않으며 카메라, 마이크, 녹음을 사용하지 않습니다."
+  },
+  "进入演示视频房间": {
+    "en-US": "Enter demo video room",
+    "es": "Entrar a la sala de demo",
+    "ja": "デモのビデオルームへ",
+    "ko": "데모 영상 상담실 입장"
+  },
+  "演示画面 · 未连接": {
+    "en-US": "Demo scene · Not connected",
+    "es": "Escena de demo · Sin conexión",
+    "ja": "デモ画面 · 未接続",
+    "ko": "데모 화면 · 연결 안 됨"
+  },
+  "未来，我们会在这里面对面。": {
+    "en-US": "Someday, we'll meet face to face here.",
+    "es": "Más adelante podremos vernos aquí.",
+    "ja": "いつか、ここで顔を合わせて。",
+    "ko": "앞으로는 여기서 얼굴을 마주할 거예요."
+  },
+  "你的画面 · 演示": {
+    "en-US": "Your view · Demo",
+    "es": "Tu imagen · Demo",
+    "ja": "あなたの画面 · デモ",
+    "ko": "내 화면 · 데모"
+  },
+  "打开演示麦克风": {
+    "en-US": "Turn demo microphone on",
+    "es": "Activar micrófono de demo",
+    "ja": "デモマイクをオン",
+    "ko": "데모 마이크 켜기"
+  },
+  "关闭演示麦克风": {
+    "en-US": "Turn demo microphone off",
+    "es": "Desactivar micrófono de demo",
+    "ja": "デモマイクをオフ",
+    "ko": "데모 마이크 끄기"
+  },
+  "关闭演示摄像头": {
+    "en-US": "Turn demo camera off",
+    "es": "Desactivar cámara de demo",
+    "ja": "デモカメラをオフ",
+    "ko": "데모 카메라 끄기"
+  },
+  "打开演示摄像头": {
+    "en-US": "Turn demo camera on",
+    "es": "Activar cámara de demo",
+    "ja": "デモカメラをオン",
+    "ko": "데모 카메라 켜기"
+  },
+  "结束演示": {
+    "en-US": "End demo",
+    "es": "Terminar demo",
+    "ja": "デモを終了",
+    "ko": "데모 종료"
+  },
+  "当前没有音视频传输或 AI 转写。结束后可查看预设会后回顾。": {
+    "en-US": "No audio/video transmission or AI transcription is active. View preset sample notes after ending.",
+    "es": "No hay transmisión ni transcripción con IA. Al terminar verás notas de ejemplo.",
+    "ja": "音声・映像の送受信や AI 文字起こしはありません。終了後に定型の振り返りを見られます。",
+    "ko": "음성·영상 전송이나 AI 전사는 작동하지 않습니다. 종료 후 예시 메모를 볼 수 있습니다."
+  },
+  "以下内容来自预设示例，不是本次聊天的记录。可编辑后下载，体验未来的会后回顾。": {
+    "en-US": "These preset notes are not a record of this chat. Edit and download them to preview a future session review.",
+    "es": "Estas notas no registran este chat. Edítalas y descárgalas para probar un futuro resumen.",
+    "ja": "この内容は定型のサンプルで、この会話の記録ではありません。編集・保存して振り返りを体験できます。",
+    "ko": "이 내용은 미리 작성된 예시이며 이 대화의 기록이 아닙니다. 편집하고 다운로드하여 향후 회고 기능을 체험하세요."
+  },
+  "编辑示例会后笔记": {
+    "en-US": "Edit sample session notes",
+    "es": "Editar notas de ejemplo",
+    "ja": "サンプルのメモを編集",
+    "ko": "예시 상담 메모 편집"
+  },
+  "真实咨询中，AI 注记须先征得双方同意，并由咨询人员复核。": {
+    "en-US": "In real consultations, AI notes require both parties' consent and practitioner review.",
+    "es": "En consultas reales, las notas de IA requieren consentimiento de ambas partes y revisión profesional.",
+    "ja": "実際の相談では、AI メモに双方の同意と担当者の確認が必要です。",
+    "ko": "실제 상담에서는 AI 메모에 양측의 동의와 상담자의 검토가 필요합니다."
+  },
+  "【演示笔记】\n": {
+    "en-US": "[DEMO NOTES]\n",
+    "es": "[NOTAS DE DEMO]\n",
+    "ja": "【デモのメモ】\n",
+    "ko": "[데모 메모]\n"
+  },
+  "Bloomie-演示会后回顾.txt": {
+    "en-US": "Bloomie-demo-notes.txt",
+    "es": "Bloomie-notas-demo.txt",
+    "ja": "Bloomie-デモメモ.txt",
+    "ko": "Bloomie-데모메모.txt"
+  },
+  "示例笔记已下载，没有上传或分享。": {
+    "en-US": "Sample notes downloaded. Nothing was uploaded or shared.",
+    "es": "Notas descargadas. No se subió ni compartió nada.",
+    "ja": "サンプルを保存しました。アップロードや共有はしていません。",
+    "ko": "예시 메모를 다운로드했습니다. 업로드하거나 공유하지 않았습니다."
+  },
+  "下载示例笔记": {
+    "en-US": "Download sample notes",
+    "es": "Descargar notas de ejemplo",
+    "ja": "サンプルのメモを保存",
+    "ko": "예시 메모 다운로드"
+  },
+  "关闭弹窗": {
+    "en-US": "Close dialog",
+    "es": "Cerrar ventana",
+    "ja": "ダイアログを閉じる",
+    "ko": "창 닫기"
+  },
+  "先照顾自己，\n再拥抱孩子": {
+    "en-US": "Care for yourself,\nthen hold your child close",
+    "es": "Cuídate primero,\ndespués abraza a tu hijo",
+    "ja": "まず自分をいたわって、\n子どもを抱きしめよう",
+    "ko": "나를 먼저 돌보고,\n아이를 안아 주세요"
+  },
+  "给忙碌的你，留一点呼吸的空间。": {
+    "en-US": "A little room to breathe in a busy day.",
+    "es": "Un respiro en un día lleno.",
+    "ja": "忙しい日にも、ひと息つく場所を。",
+    "ko": "바쁜 하루 속에 숨 쉴 공간을."
+  },
+  "从一个小小的停顿开始": {
+    "en-US": "Begin with a small pause",
+    "es": "Empieza con una pequeña pausa",
+    "ja": "小さなひと休みから",
+    "ko": "작은 멈춤부터 시작해요"
+  },
+  "照顾自己也可以是日常中短暂的休息：走一会儿、放下手机，或联系一位信任的人。不必把它变成新的任务。": {
+    "en-US": "Self-care can be a short everyday break: a walk, putting your phone down, or contacting someone you trust. It doesn't need to become another task.",
+    "es": "Cuidarte puede ser una pausa breve: caminar, dejar el teléfono o hablar con alguien de confianza. No tiene que ser otra tarea.",
+    "ja": "自分をいたわる時間は、散歩やスマホを置くこと、信頼できる人への連絡など、日常の小さな休息でも十分です。新しい義務にする必要はありません。",
+    "ko": "자기 돌봄은 짧은 산책, 휴대폰 내려놓기, 믿을 수 있는 사람에게 연락하기 같은 일상의 잠깐 쉬기일 수 있어요. 또 하나의 과제가 될 필요는 없습니다."
+  },
+  "给支持留一个位置": {
+    "en-US": "Make room for support",
+    "es": "Deja espacio para el apoyo",
+    "ja": "支えを受け取る場所を",
+    "ko": "도움받을 자리를 만들어요"
+  },
+  "需要时向家人、朋友或专业人员求助，也是自我照顾的一部分。可以先想一想：今天有什么事，可以请别人分担？": {
+    "en-US": "Asking family, friends, or a professional for help when you need it is part of caring for yourself. What could someone share with you today?",
+    "es": "Pedir ayuda a familiares, amigos o profesionales también es cuidarte. ¿Qué podría compartir alguien contigo hoy?",
+    "ja": "必要なときに家族や友人、専門家に頼ることも、自分をいたわる一部です。今日、誰かに分担してもらえることはありますか？",
+    "ko": "필요할 때 가족, 친구, 전문가에게 도움을 요청하는 것도 나를 돌보는 일입니다. 오늘 다른 사람과 나눌 수 있는 일은 무엇일까요?"
+  },
+  "今天只试一件小事": {
+    "en-US": "Try just one small thing today",
+    "es": "Prueba una pequeña cosa hoy",
+    "ja": "今日は、小さなことをひとつだけ",
+    "ko": "오늘은 작은 것 하나만"
+  },
+  "挑一个适合自己的时刻，留几分钟做能让你舒缓的事。本文是对 UNICEF 家长自我照顾资料的简短中文整理，不是个体化治疗建议。": {
+    "en-US": "Choose a moment that works for you and take a few minutes for something soothing. This editorial summary of UNICEF's parent self-care resource is not personalized treatment advice.",
+    "es": "Elige un momento y dedica unos minutos a algo que te calme. Este resumen editorial del recurso de autocuidado de UNICEF no es tratamiento personalizado.",
+    "ja": "自分に合う時間に、気持ちが和らぐことを数分だけ。この文章は UNICEF の養育者向け資料の編集要約であり、個別の治療の助言ではありません。",
+    "ko": "나에게 맞는 시간에 마음이 편안해지는 일을 몇 분 해 보세요. 이 글은 UNICEF 보호자 자기 돌봄 자료의 편집 요약이며 개인별 치료 조언이 아닙니다."
+  },
+  "听见情绪，\n也听见孩子": {
+    "en-US": "Hear the feelings,\nhear your child",
+    "es": "Escucha sus emociones,\nescucha a tu hijo",
+    "ja": "気持ちを聴いて、\n子どもの声も聴こう",
+    "ko": "감정을 듣고,\n아이의 말도 들어요"
+  },
+  "在急着讲道理之前，先试着理解。": {
+    "en-US": "Try understanding before explaining.",
+    "es": "Antes de explicar, intenta comprender.",
+    "ja": "教える前に、わかろうとしてみよう。",
+    "ko": "설명하기 전에 이해해 보세요."
+  },
+  "把注意力交给孩子": {
+    "en-US": "Give your child your attention",
+    "es": "Dedica tu atención a tu hijo",
+    "ja": "子どもに意識を向ける",
+    "ko": "아이에게 주의를 기울여요"
+  },
+  "当孩子说话时，尽可能停下手边的事，用孩子能理解的语言回应。可以复述你听到的内容，给他补充和纠正的机会。": {
+    "en-US": "When your child speaks, pause what you're doing if you can, and respond in words they understand. Reflect what you heard so they can add to or correct it.",
+    "es": "Cuando hable tu hijo, pausa lo que haces si puedes y responde con palabras que entienda. Repite lo que oíste para que pueda añadir o corregir.",
+    "ja": "子どもが話すときは、できるだけ手を止め、わかる言葉で応えましょう。聞いたことを言い直すと、子どもが補足や訂正をする機会になります。",
+    "ko": "아이가 말할 때 가능하면 하던 일을 멈추고 아이가 이해할 말로 답해 주세요. 들은 내용을 되짚어 주면 아이가 덧붙이거나 바로잡을 수 있어요."
+  },
+  "帮助情绪找到名字": {
+    "en-US": "Help feelings find a name",
+    "es": "Ayuda a poner nombre a las emociones",
+    "ja": "気持ちに名前をつける手助けを",
+    "ko": "감정에 이름을 붙여요"
+  },
+  "可以说：听起来你有些难过，我理解得对吗？描述情绪时保留询问，不急着替孩子下结论。": {
+    "en-US": "You might ask, “It sounds like you're feeling sad. Did I understand?” Stay curious rather than deciding how your child feels for them.",
+    "es": "Puedes preguntar: «Parece que estás triste, ¿entendí bien?». Mantén la curiosidad sin decidir por tu hijo qué siente.",
+    "ja": "「悲しい気持ちなのかな。合っている？」と尋ねてみましょう。気持ちを決めつけず、問いかける姿勢を大切に。",
+    "ko": "“속상한 것처럼 들리는데, 내가 맞게 이해했니?”라고 물어볼 수 있어요. 아이의 감정을 단정하지 말고 질문하는 태도를 유지해 주세요."
+  },
+  "看见具体的行动": {
+    "en-US": "Notice specific actions",
+    "es": "Observa acciones concretas",
+    "ja": "具体的な行動に目を向ける",
+    "ko": "구체적인 행동을 봐 주세요"
+  },
+  "比起笼统地评价好坏，描述你看到的行为更清楚，例如：我看到你把玩具收回盒子了。本文依据 UNICEF 沟通资料整理，待专业复核。": {
+    "en-US": "Describe what you see rather than broadly judging good or bad: “I saw you put the toys back in the box.” This editorial summary of UNICEF's communication resource awaits professional review.",
+    "es": "Describe lo que ves en lugar de juzgar: «Vi que guardaste los juguetes en la caja». Este resumen del recurso de comunicación de UNICEF requiere revisión profesional.",
+    "ja": "良い・悪いという評価より、「おもちゃを箱に戻したのを見たよ」と具体的な行動を伝えましょう。UNICEF の会話資料をもとにした編集要約で、専門家の確認待ちです。",
+    "ko": "좋고 나쁨을 막연히 평가하기보다 “장난감을 상자에 넣는 걸 봤어”처럼 본 행동을 설명해 주세요. UNICEF 소통 자료를 바탕으로 편집한 요약이며 전문가 검토 전입니다."
+  },
+  "温柔，\n也可以有边界": {
+    "en-US": "Kindness\ncan have boundaries",
+    "es": "La amabilidad\ntambién tiene límites",
+    "ja": "やさしさにも、\n境界線があっていい",
+    "ko": "다정함에도\n경계가 있어요"
+  },
+  "用清楚的期待，替代反复的责备。": {
+    "en-US": "Clear expectations instead of repeated blame.",
+    "es": "Expectativas claras en vez de reproches.",
+    "ja": "繰り返し責めるより、わかりやすい期待を。",
+    "ko": "반복되는 꾸중 대신 분명한 기대를."
+  },
+  "说清楚希望发生什么": {
+    "en-US": "Say what you'd like to happen",
+    "es": "Explica qué esperas que ocurra",
+    "ja": "してほしいことを具体的に",
+    "ko": "바라는 행동을 분명히 말해요"
+  },
+  "用具体、可做到的动作表达期待。比起不要弄乱，可以说：请把积木放回这个盒子。期待需要符合孩子的年龄和能力。": {
+    "en-US": "Express expectations through specific, achievable actions. Instead of “Don't make a mess,” try “Please put the blocks in this box.” Expectations should fit your child's age and abilities.",
+    "es": "Usa acciones concretas y posibles. En vez de «No desordenes», prueba «Pon los bloques en esta caja». Ajusta lo que esperas a su edad y capacidades.",
+    "ja": "できる具体的な行動で伝えましょう。「散らかさないで」より「積み木をこの箱に入れてね」。期待は年齢と能力に合ったものに。",
+    "ko": "구체적이고 할 수 있는 행동으로 기대를 표현하세요. “어지르지 마” 대신 “블록을 이 상자에 넣어 줘”라고 말해 보세요. 기대는 아이의 나이와 능력에 맞아야 합니다."
+  },
+  "留意做得好的时刻": {
+    "en-US": "Notice what goes well",
+    "es": "Observa lo que hace bien",
+    "ja": "できていることに気づく",
+    "ko": "잘한 순간을 알아봐 주세요"
+  },
+  "给孩子专注的一对一时间，并具体肯定他的行动。设定后果时保持平静、一致，也要确保能够合理执行。": {
+    "en-US": "Give your child focused one-on-one time and acknowledge specific actions. Be calm and consistent when setting consequences, and make sure they're reasonable to follow through.",
+    "es": "Dedica tiempo individual y reconoce acciones concretas. Mantén la calma y la coherencia al establecer consecuencias, y asegúrate de poder cumplirlas razonablemente.",
+    "ja": "一対一で向き合う時間を取り、具体的な行動を認めましょう。結果やルールを伝えるときは落ち着いて一貫性を保ち、無理なく実行できるものに。",
+    "ko": "아이에게 집중하는 일대일 시간을 주고 구체적인 행동을 인정해 주세요. 행동의 결과를 정할 때는 차분하고 일관되게, 합리적으로 실행할 수 있도록 해 주세요."
+  },
+  "大人也可以先暂停": {
+    "en-US": "Adults can pause, too",
+    "es": "Los adultos también pueden pausar",
+    "ja": "大人も、ひと休みしていい",
+    "ko": "어른도 잠시 멈춰도 돼요"
+  },
+  "感觉自己快失去耐心时，先停顿一下，再回应。本文依据 UNICEF 正向养育资料整理，不能用于判断儿童是否存在发展障碍。": {
+    "en-US": "If you're close to losing patience, pause before responding. This editorial summary of UNICEF's positive discipline resource cannot determine whether a child has a developmental condition.",
+    "es": "Si estás perdiendo la paciencia, pausa antes de responder. Este resumen del recurso de disciplina positiva de UNICEF no determina si un niño tiene una condición del desarrollo.",
+    "ja": "我慢の限界を感じたら、ひと呼吸置いてから応えましょう。UNICEF の前向きな子育て資料の編集要約であり、発達上の状態を判断するものではありません。",
+    "ko": "인내심을 잃을 것 같다면 답하기 전에 잠시 멈춰 보세요. UNICEF 긍정적 훈육 자료의 편집 요약이며 아이의 발달 상태를 판단할 수 없습니다."
+  },
+  "每天一点，\n重新靠近": {
+    "en-US": "A little each day,\na little closer",
+    "es": "Un poco cada día,\nun poco más cerca",
+    "ja": "毎日少しずつ、\nまた近づこう",
+    "ko": "매일 조금씩,\n다시 가까이"
+  },
+  "陪伴不需要完美，只需要在场。": {
+    "en-US": "You don't need perfect moments, just presence.",
+    "es": "No hace falta perfección, solo estar presente.",
+    "ja": "完璧な時間より、そこにいること。",
+    "ko": "완벽할 필요 없이 곁에 있어 주세요."
+  },
+  "专属的几分钟": {
+    "en-US": "A few minutes just for you two",
+    "es": "Unos minutos solo para ustedes",
+    "ja": "ふたりだけの数分を",
+    "ko": "둘만의 몇 분"
+  },
+  "安排一小段专注于孩子的时间：一起玩、唱歌，或聊聊他的兴趣。暂时放下手机，把注意力留给彼此。": {
+    "en-US": "Set aside a short time to focus on your child: play, sing, or talk about their interests. Put your phone aside and give each other your attention.",
+    "es": "Reserva un rato para jugar, cantar o hablar de sus intereses. Deja el teléfono y dedíquense atención.",
+    "ja": "遊んだり、歌ったり、興味のあることを話したり。子どもに集中する短い時間を作り、スマホを置いてお互いに意識を向けましょう。",
+    "ko": "함께 놀고, 노래하고, 관심사에 대해 이야기하는 짧은 시간을 마련하세요. 휴대폰을 잠시 내려놓고 서로에게 주의를 기울여 보세요."
+  },
+  "从小处开始": {
+    "en-US": "Start small",
+    "es": "Empieza con algo pequeño",
+    "ja": "小さなことから",
+    "ko": "작은 것부터 시작해요"
+  },
+  "不必每天安排复杂活动。选择一个双方都愿意的小互动，享受一起的时刻。这是依据 UNICEF 资料整理的陪伴练习，待专业复核。": {
+    "en-US": "You don't need an elaborate activity every day. Choose a small interaction you both enjoy. This companionship exercise is adapted from UNICEF resources and awaits professional review.",
+    "es": "No necesitas actividades complejas cada día. Elijan algo pequeño que ambos disfruten. Este ejercicio basado en UNICEF requiere revisión profesional.",
+    "ja": "毎日凝った活動を用意しなくても大丈夫。お互いが楽しめる小さなふれあいを。UNICEF の資料をもとにした練習で、専門家の確認待ちです。",
+    "ko": "매일 복잡한 활동을 준비하지 않아도 괜찮아요. 함께 즐길 수 있는 작은 교류를 골라 보세요. UNICEF 자료를 바탕으로 편집한 활동이며 전문가 검토 전입니다."
+  },
+  "林知遥": {
+    "en-US": "Lin Zhiyao",
+    "es": "Lin Zhiyao",
+    "ja": "リン・ジーヤオ",
+    "ko": "린 즈야오"
+  },
+  "亲子沟通 · 照护压力": {
+    "en-US": "Parent–child communication · Caregiving stress",
+    "es": "Comunicación · Estrés del cuidado",
+    "ja": "親子の会話 · 育児の負担",
+    "ko": "부모와 아이 소통 · 돌봄 스트레스"
+  },
+  "林": {
+    "en-US": "L",
+    "es": "L",
+    "ja": "L",
+    "ko": "L"
+  },
+  "演示人物，用于体验沟通支持的选择流程。没有真实执业资质或服务安排。": {
+    "en-US": "A fictional person for exploring communication support. No real license or service arrangements.",
+    "es": "Persona ficticia para explorar apoyo de comunicación. Sin licencia ni servicio real.",
+    "ja": "会話サポート選びを体験する架空の人物です。実際の資格やサービスはありません。",
+    "ko": "소통 지원 선택을 체험하기 위한 가상 인물입니다. 실제 자격이나 서비스는 없습니다."
+  },
+  "陈予安": {
+    "en-US": "Chen Yuan",
+    "es": "Chen Yuan",
+    "ja": "チェン・ユーアン",
+    "ko": "천 위안"
+  },
+  "发展担忧 · 就诊准备": {
+    "en-US": "Development concerns · Preparing for appointments",
+    "es": "Desarrollo · Preparar una consulta",
+    "ja": "発達の心配 · 受診の準備",
+    "ko": "발달 걱정 · 진료 준비"
+  },
+  "陈": {
+    "en-US": "C",
+    "es": "C",
+    "ja": "C",
+    "ko": "C"
+  },
+  "演示人物，用于体验儿童发展咨询的预约流程。不能提供评估或诊断。": {
+    "en-US": "A fictional person for exploring developmental consultation booking. Cannot assess or diagnose.",
+    "es": "Persona ficticia para explorar citas de desarrollo. No evalúa ni diagnostica.",
+    "ja": "発達相談の予約を体験する架空の人物です。評価や診断はできません。",
+    "ko": "발달 상담 예약을 체험하기 위한 가상 인물입니다. 평가나 진단을 제공하지 않습니다."
+  },
+  "周南溪": {
+    "en-US": "Zhou Nanxi",
+    "es": "Zhou Nanxi",
+    "ja": "ジョウ・ナンシー",
+    "ko": "저우 난시"
+  },
+  "情绪压力 · 家庭关系": {
+    "en-US": "Emotional stress · Family relationships",
+    "es": "Estrés emocional · Relaciones familiares",
+    "ja": "心の負担 · 家族との関係",
+    "ko": "정서적 스트레스 · 가족 관계"
+  },
+  "周": {
+    "en-US": "Z",
+    "es": "Z",
+    "ja": "Z",
+    "ko": "Z"
+  },
+  "演示人物，用于展示照护者支持服务。当前没有真人接待。": {
+    "en-US": "A fictional person showing caregiver support. No live practitioner is available.",
+    "es": "Persona ficticia que muestra apoyo al cuidador. Sin atención real.",
+    "ja": "養育者サポートの架空の人物です。実際の担当者はいません。",
+    "ko": "보호자 지원을 보여 주는 가상 인물입니다. 실제 담당자는 없습니다."
+  },
+  "如果你或孩子可能正处于危险中，请先联系当地急救或警方，或前往最近的急诊，不要等待平台预约。如果能安全地做到，联系一位信任的人陪伴你，远离可能造成伤害的物品或场所。这里没有真人实时监看，也无法提供紧急救援。你现在和孩子是否安全？": {
+    "en-US": "If you or your child may be in danger, contact local emergency services or police, or go to the nearest emergency department. Don't wait for a platform appointment. If safe, ask a trusted person to stay with you and move away from objects or places that could cause harm. No human monitors this chat live, and we cannot provide emergency rescue. Are you and your child safe right now?",
+    "es": "Si tú o tu hijo pueden estar en peligro, contacta a emergencias o policía locales, o ve a urgencias. No esperes una cita aquí. Si es seguro, pide a alguien de confianza que te acompañe y aléjate de objetos o lugares que puedan causar daño. Nadie supervisa este chat en directo y no podemos ofrecer rescate. ¿Están a salvo ahora?",
+    "ja": "あなたやお子さんが危険にさらされている可能性がある場合は、地域の救急や警察に連絡するか、近くの救急外来へ。このサービスの予約を待たないでください。安全にできるなら、信頼できる人に付き添ってもらい、危険な物や場所から離れてください。この会話には有人の見守りがなく、救援は提供できません。今、あなたとお子さんは安全ですか？",
+    "ko": "나 또는 아이가 위험할 수 있다면 현지 응급 서비스나 경찰에 연락하거나 가까운 응급실로 가세요. 플랫폼 예약을 기다리지 마세요. 안전하게 할 수 있다면 믿을 수 있는 사람에게 곁에 있어 달라고 요청하고 다칠 수 있는 물건이나 장소에서 멀어지세요. 이 대화는 실시간 담당자가 확인하지 않으며 긴급 구조를 제공할 수 없습니다. 지금 나와 아이는 안전한가요?"
+  },
+  "仅凭聊天无法判断孩子是否存在发展障碍。正式版会帮助你整理具体表现、持续时间和出现的情境，再提供经核验的专业评估路径。当前是演示回答，不作个体评估；如有持续担忧，请联系当地儿童保健或儿科服务。": {
+    "en-US": "Chat alone cannot identify a developmental condition. A future version will help organize observations, duration, and context, then offer verified assessment pathways. This is a demo reply, not an individual assessment. For ongoing concerns, contact local pediatric or child health services.",
+    "es": "El chat no identifica condiciones del desarrollo. Una versión futura organizará observaciones y ofrecerá vías de evaluación verificadas. Es una respuesta de demo, no una evaluación individual. Si la preocupación continúa, consulta servicios locales de pediatría o salud infantil.",
+    "ja": "会話だけで発達上の状態は判断できません。今後は具体的な様子や期間、場面を整理し、確認済みの評価先を案内する予定です。これは個別評価ではなくデモ回答です。心配が続く場合は、地域の小児科や子どもの保健窓口へ。",
+    "ko": "채팅만으로 발달 상태를 판단할 수 없습니다. 향후 구체적인 행동, 기간, 상황을 정리하고 확인된 평가 경로를 안내할 예정입니다. 이는 개별 평가가 아닌 데모 응답입니다. 걱정이 지속된다면 현지 소아과나 아동 보건 서비스에 문의하세요."
+  },
+  "【演示回答】照顾孩子的同时，也可以给自己留一点空间。先挑一件今天能分担出去的小事，或联系一位你信任的人。下面这篇资料介绍家长自我照顾的做法。正式版会进一步了解你的情境；当前回复是预设示例。": {
+    "en-US": "[Demo reply] While caring for your child, make a little room for yourself. Choose one task someone could share today, or contact a trusted person. The article below offers parent self-care ideas. A future version will explore your situation; this reply is preset.",
+    "es": "[Respuesta de demo] Deja un espacio para ti mientras cuidas. Comparte una tarea o contacta a alguien de confianza. El artículo ofrece ideas de autocuidado. Una versión futura explorará tu situación; esta respuesta está predefinida.",
+    "ja": "【デモ回答】子どもを育てる中で、自分のための余白も。今日ひとつ分担できることを選ぶか、信頼できる人に連絡してみましょう。下の記事は自分をいたわる工夫を紹介します。今後は状況を詳しく伺いますが、これは定型の例です。",
+    "ko": "[데모 응답] 아이를 돌보면서 나를 위한 여유도 만들어 보세요. 오늘 다른 사람과 나눌 일 하나를 고르거나 믿을 수 있는 사람에게 연락해 보세요. 아래 글은 보호자 자기 돌봄 방법을 소개합니다. 이는 미리 작성된 예시입니다."
+  },
+  "【演示回答】可以先把期待变成孩子能理解的具体动作，例如：请把积木放回盒子。留意孩子做得好的时刻，并给出具体肯定。下面这篇资料提供一般养育思路，不能用来判断孩子是否存在发展问题。": {
+    "en-US": "[Demo reply] Make expectations concrete: “Please put the blocks back in the box.” Notice what goes well and acknowledge specific actions. The article offers general parenting ideas, not a way to determine developmental conditions.",
+    "es": "[Respuesta de demo] Haz concreta tu petición: «Guarda los bloques en la caja». Observa y reconoce acciones positivas. El artículo ofrece ideas generales de crianza, no una evaluación del desarrollo.",
+    "ja": "【デモ回答】「積み木を箱に戻してね」のように、期待を具体的な行動にしてみましょう。できていることに気づき、具体的に伝えてください。下の資料は一般的な子育ての考え方で、発達の判断には使えません。",
+    "ko": "[데모 응답] “블록을 상자에 넣어 줘”처럼 기대를 구체적인 행동으로 표현해 보세요. 잘한 순간을 알아보고 구체적으로 인정해 주세요. 아래 자료는 일반 육아 정보이며 발달 상태를 판단할 수 없습니다."
+  },
+  "【演示回答】我们可以从一件具体的小事开始：当时发生了什么，你最担心的是什么？在真实聊天启用前，这里用预设回复展示体验。你也可以先看看下面的亲子沟通资料，或体验如何找到真人支持。": {
+    "en-US": "[Demo reply] Start with one moment: what happened, and what worries you most? Until live chat is enabled, these preset replies show the experience. Explore the communication article or the human support demo below.",
+    "es": "[Respuesta de demo] Empecemos con un momento: ¿qué pasó y qué te preocupa más? Estas respuestas muestran la experiencia antes de activar el chat real. Explora el artículo de comunicación o la demo de apoyo humano.",
+    "ja": "【デモ回答】ひとつの出来事から始めましょう。何が起こり、何がいちばん気になりますか？AI チャットの有効化前は定型回答で体験を示しています。下の会話資料や、人の支えを探すデモもご覧ください。",
+    "ko": "[데모 응답] 구체적인 순간 하나부터 시작해요. 무슨 일이 있었고 무엇이 가장 걱정되나요? 실제 채팅 연결 전에는 예시 응답으로 체험을 제공합니다. 아래 소통 자료나 사람의 도움을 찾는 데모를 이용해 보세요."
+  },
+  "请求来源不被允许。": {
+    "en-US": "Request origin is not allowed.",
+    "es": "Origen de solicitud no permitido.",
+    "ja": "リクエスト元が許可されていません。",
+    "ko": "허용되지 않은 요청 출처입니다."
+  },
+  "消息过长。": {
+    "en-US": "Message is too long.",
+    "es": "Mensaje demasiado largo.",
+    "ja": "メッセージが長すぎます。",
+    "ko": "메시지가 너무 깁니다."
+  },
+  "消息格式不正确。": {
+    "en-US": "Invalid message format.",
+    "es": "Formato de mensaje incorrecto.",
+    "ja": "メッセージ形式が正しくありません。",
+    "ko": "메시지 형식이 올바르지 않습니다."
+  },
+  "请发送有效消息，每条不超过 2000 字。较长会话请开启新对话。": {
+    "en-US": "Send a valid message of up to 2,000 characters. Start a new chat for longer conversations.",
+    "es": "Envía un mensaje válido de hasta 2.000 caracteres. Inicia otro chat si es más largo.",
+    "ja": "各メッセージは2000文字以内で入力してください。長い会話は新しく始めてください。",
+    "ko": "각 메시지를 2,000자 이내로 입력해 주세요. 긴 대화는 새로 시작해 주세요."
+  },
+  "请先同意将本次会话发送给 AI 服务处理。": {
+    "en-US": "Please consent to sending this chat to the AI service first.",
+    "es": "Acepta primero enviar este chat al servicio de IA.",
+    "ja": "会話の AI サービスへの送信に同意してください。",
+    "ko": "먼저 이 대화를 AI 서비스에 보내는 데 동의해 주세요."
+  },
+  "真实聊天需要配置登录服务。": {
+    "en-US": "Live chat needs sign-in service configuration.",
+    "es": "El chat real necesita configurar el inicio de sesión.",
+    "ja": "AI チャットにはログインサービスの設定が必要です。",
+    "ko": "실제 채팅에는 로그인 서비스 설정이 필요합니다."
+  },
+  "真实聊天需要先登录。": {
+    "en-US": "Please sign in to use the service.",
+    "es": "Inicia sesión para usar el servicio.",
+    "ja": "サービスを利用するにはログインしてください。",
+    "ko": "서비스 이용을 위해 로그인해 주세요."
+  },
+  "聊天服务暂时不可用，请稍后再试。": {
+    "en-US": "Chat is temporarily unavailable. Please try later.",
+    "es": "El chat no está disponible. Inténtalo más tarde.",
+    "ja": "チャットは一時的に利用できません。後ほどお試しください。",
+    "ko": "채팅을 일시적으로 이용할 수 없습니다. 나중에 다시 시도해 주세요."
+  },
+  "今天的聊天额度已用完，请稍后再试。": {
+    "en-US": "Today's chat allowance is used up. Please try later.",
+    "es": "Se agotó la cuota de chat de hoy. Inténtalo más tarde.",
+    "ja": "今日のチャット利用枠を使い切りました。",
+    "ko": "오늘의 채팅 한도를 모두 사용했습니다."
+  },
+  "这次回答未通过安全检查，我暂时无法提供它。你可以换一种方式描述，或寻求当地专业人员帮助。": {
+    "en-US": "This response did not pass the safety check. Try describing your situation differently or seek local professional help.",
+    "es": "La respuesta no pasó la revisión de seguridad. Describe la situación de otra forma o busca ayuda profesional local.",
+    "ja": "回答が安全確認を通過しませんでした。別の表現で説明するか、地域の専門家へ相談してください。",
+    "ko": "응답이 안전 확인을 통과하지 못했습니다. 다른 방식으로 설명하거나 현지 전문가에게 도움을 요청하세요."
+  },
+  "服务暂时未能完成安全检查或生成回答。请稍后再试；紧急情况请联系当地紧急服务。": {
+    "en-US": "The service could not complete safety checks or generate a reply. Try later. In an emergency, contact local emergency services.",
+    "es": "No se pudo completar la revisión de seguridad o generar una respuesta. Inténtalo más tarde. En una emergencia, contacta a los servicios locales.",
+    "ja": "安全確認または回答生成を完了できませんでした。後ほどお試しください。緊急時は地域の緊急サービスへ連絡してください。",
+    "ko": "안전 확인이나 응답 생성을 완료하지 못했습니다. 나중에 다시 시도하세요. 긴급 상황에서는 현지 응급 서비스에 연락하세요."
+  },
+  "语言": {
+    "en-US": "Language",
+    "es": "Idioma",
+    "ja": "言語",
+    "ko": "언어"
+  },
+  "阅读": {
+    "en-US": "Read",
+    "es": "Leer",
+    "ja": "読む",
+    "ko": "읽기"
+  },
+  "收藏": {
+    "en-US": "Save",
+    "es": "Guardar",
+    "ja": "保存",
+    "ko": "저장"
+  },
+  "取消收藏": {
+    "en-US": "Unsave",
+    "es": "Quitar favorito",
+    "ja": "保存を解除",
+    "ko": "저장 취소"
+  },
+  "请求过长。": {
+    "en-US": "Request too long.",
+    "es": "Solicitud demasiado larga.",
+    "ja": "リクエストが長すぎます。",
+    "ko": "요청이 너무 깁니다."
+  },
+  "请选择支持的语言。": {
+    "en-US": "Choose a supported language.",
+    "es": "Elige un idioma disponible.",
+    "ja": "対応する言語を選択してください。",
+    "ko": "지원 언어를 선택해 주세요."
+  },
+  "请选择书架中的文章。": {
+    "en-US": "Choose an article from the library.",
+    "es": "Elige un artículo de la biblioteca.",
+    "ja": "本棚の記事を選んでください。",
+    "ko": "책장의 글을 선택해 주세요."
+  },
+  "语音服务暂时不可用，请稍后再试。": {
+    "en-US": "Audio is temporarily unavailable. Try later.",
+    "es": "El audio no está disponible. Inténtalo más tarde.",
+    "ja": "音声は一時的に利用できません。",
+    "ko": "음성을 일시적으로 이용할 수 없습니다."
+  },
+  "今天的语音额度已用完。": {
+    "en-US": "Today's voice allowance is used up.",
+    "es": "Se agotó la cuota de audio de hoy.",
+    "ja": "今日の音声利用枠を使い切りました。",
+    "ko": "오늘의 음성 한도를 모두 사용했습니다."
+  },
+  "文章过长，暂时无法朗读。": {
+    "en-US": "This article is too long for audio.",
+    "es": "Este artículo es demasiado largo para audio.",
+    "ja": "記事が長いため音声にできません。",
+    "ko": "글이 너무 길어 음성으로 읽을 수 없습니다."
+  },
+  "语音配置需要检查。": {
+    "en-US": "Voice configuration needs checking.",
+    "es": "Revisa la configuración de voz.",
+    "ja": "音声の設定をご確認ください。",
+    "ko": "음성 설정을 확인해 주세요."
+  },
+  "当前为预设演示回复；请使用虚构情境体验。": {
+    "en-US": "This chat uses preset demo replies. Please use a fictional situation.",
+    "es": "Este chat usa respuestas de demo. Usa una situación ficticia.",
+    "ja": "定型回答のデモです。架空の状況でお試しください。",
+    "ko": "이 채팅은 미리 작성된 데모 응답입니다. 가상의 상황으로 이용해 주세요."
+  },
+  "Bloomie · 给家庭一处安心的空间": {
+    "en-US": "Bloomie · A softer space for your family",
+    "es": "Bloomie · Un espacio tranquilo para tu familia",
+    "ja": "Bloomie · 家族のための安心できる場所",
+    "ko": "Bloomie · 가족을 위한 편안한 공간"
+  },
+  "家长也需要充电": {
+    "en-US": "Parents need to recharge, too",
+    "es": "Los padres también necesitan recargar energías",
+    "ja": "親にも充電する時間を",
+    "ko": "부모에게도 충전이 필요해요"
+  },
+  "给自己的十分钟": {
+    "en-US": "Ten minutes for yourself",
+    "es": "Diez minutos para ti",
+    "ja": "自分のための10分",
+    "ko": "나를 위한 10분"
+  },
+  "把照顾自己的时间，放回日常里。": {
+    "en-US": "Make self-care part of your everyday life.",
+    "es": "Haz del autocuidado parte de tu día.",
+    "ja": "自分をいたわる時間を、日常に。",
+    "ko": "나를 돌보는 시간을 일상에 담아요."
+  },
+  "先听见，再回应": {
+    "en-US": "Listen first, then respond",
+    "es": "Escucha primero, responde después",
+    "ja": "まず聴いて、それから応えよう",
+    "ko": "먼저 듣고, 그다음 답해요"
+  },
+  "慢慢长大": {
+    "en-US": "Growing, gently",
+    "es": "Crecer con calma",
+    "ja": "ゆっくり育つ",
+    "ko": "천천히 자라요"
+  },
+  "在急着讲道理之前，给孩子一个被听见的时刻。": {
+    "en-US": "Before explaining, give your child a moment to feel heard.",
+    "es": "Antes de explicar, dale a tu hijo un momento para sentirse escuchado.",
+    "ja": "教える前に、子どもの声を聴くひとときを。",
+    "ko": "설명하기 전에 아이의 말에 귀 기울여 보세요."
+  },
+  "一起养育，不必同一种答案": {
+    "en-US": "Parenting together, with room for differences",
+    "es": "Criar juntos, con espacio para las diferencias",
+    "ja": "違いがあっても、一緒に育てよう",
+    "ko": "답이 달라도 함께 키워요"
+  },
+  "家里的小圆桌": {
+    "en-US": "The family table",
+    "es": "La mesa familiar",
+    "ja": "家族の小さな円卓",
+    "ko": "가족의 작은 원탁"
+  },
+  "一起聊聊家庭里的分工、期待和不同意见。": {
+    "en-US": "Talk about sharing care, expectations, and differences at home.",
+    "es": "Hablemos de las tareas, expectativas y diferencias en casa.",
+    "ja": "家庭での分担、期待、違う意見について話そう。",
+    "ko": "가족의 역할, 기대, 서로 다른 의견을 이야기해요."
+  },
+  "播客聆听区": {
+    "en-US": "Podcast listening corner",
+    "es": "Rincón de pódcasts",
+    "ja": "ポッドキャストのコーナー",
+    "ko": "팟캐스트 듣기 공간"
+  },
+  "换一种方式，慢慢听。": {
+    "en-US": "A different way to slow down.",
+    "es": "Otra forma de ir con calma.",
+    "ja": "聴く時間で、ひと息を。",
+    "ko": "이번에는 천천히 들어요."
+  },
+  "播客概念演示": {
+    "en-US": "Podcast concept demo",
+    "es": "Demo de pódcasts",
+    "ja": "ポッドキャストのデモ",
+    "ko": "팟캐스트 콘셉트 데모"
+  },
+  "选择上一期": {
+    "en-US": "Select previous episode",
+    "es": "Elegir episodio anterior",
+    "ja": "前のエピソードを選択",
+    "ko": "이전 에피소드 선택"
+  },
+  "选择下一期": {
+    "en-US": "Select next episode",
+    "es": "Elegir siguiente episodio",
+    "ja": "次のエピソードを選択",
+    "ko": "다음 에피소드 선택"
+  },
+  "试听说明": {
+    "en-US": "Listening preview",
+    "es": "Vista previa de audio",
+    "ja": "試聴について",
+    "ko": "미리 듣기 안내"
+  },
+  "黑胶机为视觉展示；尚无播客音源，不会播放或自动生成音频。": {
+    "en-US": "The turntable is a visual demo. No podcast audio is available or generated.",
+    "es": "El tocadiscos es una demo visual. No reproduce ni genera audio de pódcasts.",
+    "ja": "プレーヤーは見た目のデモです。音源は未接続で、音声の再生や生成は行いません。",
+    "ko": "턴테이블은 시각적 데모입니다. 음원이 없어 재생하거나 음성을 생성하지 않습니다."
+  },
+  "选一段想听的": {
+    "en-US": "Choose something to listen to",
+    "es": "Elige algo para escuchar",
+    "ja": "聴きたいものを選ぼう",
+    "ko": "듣고 싶은 이야기를 골라요"
+  },
+  "分钟 · 示例节目": {
+    "en-US": "min · Sample episode",
+    "es": "min · Episodio de ejemplo",
+    "ja": "分 · サンプル",
+    "ko": "분 · 예시 프로그램"
+  },
+  "未来，这里会放入经审核、获得授权的真实节目。今天也可以先读相关资料。": {
+    "en-US": "Reviewed, licensed episodes will be added here. For now, explore the related reading.",
+    "es": "Aquí habrá episodios revisados y autorizados. Por ahora, explora las lecturas relacionadas.",
+    "ja": "今後、確認と許諾を得た番組を追加します。今は関連する資料を読んでみませんか。",
+    "ko": "검토와 허가를 마친 실제 프로그램을 추가할 예정입니다. 지금은 관련 자료를 읽어 보세요."
+  },
+  "阅读相关资料": {
+    "en-US": "Read related resources",
+    "es": "Leer recursos relacionados",
+    "ja": "関連資料を読む",
+    "ko": "관련 자료 읽기"
+  },
+  "播客收藏仅保存在当前浏览器。": {
+    "en-US": "Podcast bookmarks stay in this browser only.",
+    "es": "Los pódcasts guardados solo se conservan en este navegador.",
+    "ja": "ポッドキャストの保存は、このブラウザのみです。",
+    "ko": "팟캐스트 즐겨찾기는 현재 브라우저에만 저장됩니다."
+  },
+  "这里等着你喜欢的声音": {
+    "en-US": "Room for the voices you love",
+    "es": "Un espacio para las voces que te gustan",
+    "ja": "お気に入りの声を、ここに",
+    "ko": "좋아하는 목소리를 기다려요"
+  },
+  "在发现页收藏示例播客，就会出现在这里。": {
+    "en-US": "Save a sample podcast in Discover to find it here.",
+    "es": "Guarda un pódcast en Descubrir y aparecerá aquí.",
+    "ja": "「見つける」でサンプルを保存すると、ここに並びます。",
+    "ko": "발견하기에서 예시 팟캐스트를 저장하면 여기에 나타납니다."
+  },
+  "播客试听 · 演示": {
+    "en-US": "Podcast listening · Demo",
+    "es": "Escuchar pódcasts · Demo",
+    "ja": "ポッドキャスト試聴 · デモ",
+    "ko": "팟캐스트 미리 듣기 · 데모"
+  },
+  "尚无真实音源": {
+    "en-US": "No audio connected yet",
+    "es": "Aún no hay audio real",
+    "ja": "音源は未接続です",
+    "ko": "실제 음원 미연결"
+  },
+  "这些节目是用于展示选择与收藏体验的虚构内容，并非专家录音。真实播客将在内容审核与授权后接入，当前不会播放声音。": {
+    "en-US": "These fictional episodes demonstrate selection and bookmarking. They are not expert recordings. Real podcasts will follow content review and licensing; no sound plays now.",
+    "es": "Estos episodios ficticios muestran cómo elegir y guardar. No son grabaciones de expertos. Los pódcasts reales llegarán tras la revisión y autorización; ahora no se reproduce sonido.",
+    "ja": "選択と保存の体験を示す架空の番組です。専門家の録音ではありません。内容の確認と許諾後に実際の番組を追加します。今は音は流れません。",
+    "ko": "선택과 저장을 체험하기 위한 가상 프로그램이며 전문가 녹음이 아닙니다. 내용 검토와 허가 후 실제 팟캐스트를 연결할 예정이며 지금은 소리가 재생되지 않습니다."
+  },
+  "先读相关资料": {
+    "en-US": "Start with related reading",
+    "es": "Leer primero los recursos",
+    "ja": "まずは関連資料を読む",
+    "ko": "관련 자료부터 읽기"
+  },
+  "相关资料可阅读；已接入自然语音时，可在阅读页选择 AI 朗读。": {
+    "en-US": "The related article is available to read. With natural voice connected, you can choose AI narration in the reader.",
+    "es": "Puedes leer el artículo relacionado. Con la voz natural conectada, puedes elegir la narración con IA.",
+    "ja": "関連資料は読めます。自然音声が接続されていれば、読書画面で AI 読み上げを選べます。",
+    "ko": "관련 글은 읽을 수 있습니다. 자연스러운 음성을 연결하면 읽기 화면에서 AI 읽어 주기를 선택할 수 있습니다."
+  },
+  "内容形式": {
+    "en-US": "Content format",
+    "es": "Formato de contenido",
+    "ja": "コンテンツの形式",
+    "ko": "콘텐츠 형식"
+  },
+  "全部内容": {
+    "en-US": "Everything",
+    "es": "Todo el contenido",
+    "ja": "すべてのコンテンツ",
+    "ko": "전체 콘텐츠"
+  },
+  "播客": {
+    "en-US": "Podcasts",
+    "es": "Pódcasts",
+    "ja": "ポッドキャスト",
+    "ko": "팟캐스트"
+  },
+  "搜索阅读与播客": {
+    "en-US": "Search reading & podcasts",
+    "es": "Buscar lecturas y pódcasts",
+    "ja": "記事と番組を検索",
+    "ko": "글과 팟캐스트 검색"
+  },
+  "播客收藏已更新 · 保存在当前浏览器": {
+    "en-US": "Podcast bookmarks updated · This browser only",
+    "es": "Pódcasts guardados actualizados · Solo este navegador",
+    "ja": "保存を更新しました · このブラウザのみ",
+    "ko": "팟캐스트 저장 변경됨 · 현재 브라우저만"
+  },
+  "AI 语音不是专家录音；播客为概念演示，视频和班级消息将在后续版本推出。": {
+    "en-US": "AI voice is not an expert recording. Podcasts are a concept demo; videos and class messages are planned for later.",
+    "es": "La voz de IA no es una grabación de un experto. Los pódcasts son una demo; los videos y mensajes escolares llegarán después.",
+    "ja": "AI 音声は専門家の録音ではありません。番組は概念デモで、動画と学校のお知らせは今後の予定です。",
+    "ko": "AI 음성은 전문가의 녹음이 아닙니다. 팟캐스트는 콘셉트 데모이며 영상과 학급 소식은 이후 제공할 예정입니다."
+  },
+  "还没有收藏的阅读内容": {
+    "en-US": "No reading bookmarked yet",
+    "es": "Aún no has guardado lecturas",
+    "ja": "記事はまだ保存されていません",
+    "ko": "저장한 읽을거리가 아직 없어요"
+  },
+  "你决定说多少": {
+    "en-US": "Share at your own pace",
+    "es": "Comparte a tu ritmo",
+    "ja": "話す量は、あなたのペースで",
+    "ko": "내 속도에 맞춰 이야기해요"
+  },
+  "对话不会自动保存，请避免提供个人信息。": {
+    "en-US": "Chats are not saved automatically. Please avoid personal details.",
+    "es": "Los chats no se guardan automáticamente. Evita compartir datos personales.",
+    "ja": "会話は自動保存されません。個人情報の入力はお控えください。",
+    "ko": "대화는 자동 저장되지 않아요. 개인정보는 입력하지 마세요."
+  },
+  "用熟悉的语言表达": {
+    "en-US": "Speak in a familiar language",
+    "es": "Exprésate en tu idioma",
+    "ja": "慣れた言葉で話せます",
+    "ko": "익숙한 언어로 표현해요"
+  },
+  "支持中文、美式英语、西班牙语、日语和韩语。": {
+    "en-US": "Choose Chinese, American English, Spanish, Japanese or Korean.",
+    "es": "Elige chino, inglés estadounidense, español, japonés o coreano.",
+    "ja": "中国語、アメリカ英語、スペイン語、日本語、韓国語に対応。",
+    "ko": "중국어, 미국 영어, 스페인어, 일본어, 한국어를 지원해요."
+  },
+  "安全，是陪伴的底线": {
+    "en-US": "Safety comes first",
+    "es": "La seguridad es lo primero",
+    "ja": "安全を第一に",
+    "ko": "안전을 최우선으로"
+  },
+  "遇到风险时，优先提供安全支持与求助说明。": {
+    "en-US": "When risk arises, safety guidance and help options take priority.",
+    "es": "Ante un riesgo, priorizamos orientación de seguridad y opciones de ayuda.",
+    "ja": "リスクがある場合は、安全のための案内と支援情報を優先します。",
+    "ko": "위험이 있을 때는 안전 안내와 도움 요청 방법을 먼저 제공해요."
+  },
+  "已审核资料": {
+    "en-US": "Reviewed profile",
+    "es": "Perfil revisado",
+    "ja": "確認済みプロフィール",
+    "ko": "검토된 프로필"
+  },
+  "查看联系渠道": {
+    "en-US": "View contact options",
+    "es": "Ver opciones de contacto",
+    "ja": "連絡方法を見る",
+    "ko": "연락 방법 보기"
+  },
+  "打开联系渠道": {
+    "en-US": "Open contact link",
+    "es": "Abrir enlace de contacto",
+    "ja": "連絡先を開く",
+    "ko": "연락처 열기"
+  },
+  "联系与服务安排以本人说明为准": {
+    "en-US": "Contact and service details are provided by the practitioner.",
+    "es": "Los detalles del servicio los facilita el profesional.",
+    "ja": "連絡・サービスの詳細は担当者にご確認ください。",
+    "ko": "연락 및 서비스 안내는 전문가에게 확인해 주세요."
+  },
+  "当前通过经审核的外部渠道联系，尚不提供站内真人预约或视频。": {
+    "en-US": "Contact this practitioner through the reviewed external link. In-app booking and video are not yet available.",
+    "es": "Contacta mediante el enlace externo revisado. Las reservas y el vídeo dentro de la aplicación aún no están disponibles.",
+    "ja": "確認済みの外部リンクからご連絡ください。アプリ内の予約・ビデオ相談は準備中です。",
+    "ko": "검토된 외부 링크로 연락할 수 있어요. 앱 내 예약과 영상 상담은 준비 중이에요."
+  },
+  "带有示例标记的人员与预约均为虚构，不会产生真实预约或收费。": {
+    "en-US": "Profiles and bookings labeled as examples are fictional. They do not create appointments or charges.",
+    "es": "Los perfiles y reservas marcados como ejemplos son ficticios. No generan citas ni cobros.",
+    "ja": "サンプル表示の人物・予約は架空です。実際の予約や料金は発生しません。",
+    "ko": "예시로 표시된 인물과 예약은 가상이에요. 실제 예약이나 결제는 발생하지 않아요."
+  },
+  "已授权音源": {
+    "en-US": "Licensed audio",
+    "es": "Audio autorizado",
+    "ja": "許諾済み音源",
+    "ko": "사용 허가된 음원"
+  },
+  "播放已获授权的音源，音频由提供方托管。": {
+    "en-US": "Play licensed audio hosted by its provider.",
+    "es": "Reproduce audio autorizado alojado por su proveedor.",
+    "ja": "提供元で管理されている許諾済み音源を再生します。",
+    "ko": "제공자가 호스팅하는 허가된 음원을 재생해요."
+  },
+  "已获授权的节目可直接播放，也可以阅读相关资料。": {
+    "en-US": "Listen to the licensed episode, or read related materials.",
+    "es": "Escucha el episodio autorizado o lee los materiales relacionados.",
+    "ja": "許諾済みの番組を聴くか、関連資料を読めます。",
+    "ko": "허가된 에피소드를 듣거나 관련 자료를 읽을 수 있어요."
+  },
+  "AI 生成语音，非真人录音。一般教育资料，已完成平台专业复核。": {
+    "en-US": "AI-generated voice. General educational material with staff-confirmed professional review.",
+    "es": "Voz generada por IA. Material educativo con revisión profesional confirmada por el equipo.",
+    "ja": "AI生成音声です。専門家による確認を経た一般教育資料です。",
+    "ko": "AI 생성 음성이에요. 플랫폼에서 전문 검토를 확인한 일반 교육 자료예요."
+  },
+  "研究摘要整理与翻译，非论文逐字摘录；已完成平台专业复核。": {
+    "en-US": "A paraphrase and translation of the research abstract, with staff-confirmed professional review.",
+    "es": "Resumen y traducción del abstract, con revisión profesional confirmada por el equipo.",
+    "ja": "研究抄録を要約・翻訳した資料です。専門家による確認済みです。",
+    "ko": "연구 초록을 요약하고 번역한 자료로, 플랫폼에서 전문 검토를 확인했어요."
+  },
+  "· 编辑整理，非来源机构官方译文。": {
+    "en-US": " · Editorial summary; not an official translation by the source institution.",
+    "es": " · Resumen editorial; no es una traducción oficial de la institución.",
+    "ja": " · 編集要約であり、出典機関の公式訳ではありません。",
+    "ko": " · 편집 요약이며 출처 기관의 공식 번역이 아니에요."
+  },
+  "面向成年照护者。不是诊断或治疗工具，不替代专业评估。资料出处与审核状态见各篇内容。带示例标记的咨询与视频功能为演示，真实人员通过经审核的外部渠道联系。聊天目前使用知识库检索，不提供实时联网搜索。": {
+    "en-US": "For adult caregivers. This is educational support, not a diagnostic or treatment tool. Each item lists its sources and review status. Consultations and videos marked as examples are demos; real practitioners can be contacted through reviewed external links. Chat uses knowledge-base retrieval without live web search.",
+    "es": "Para cuidadores adultos. Es apoyo educativo, no una herramienta de diagnóstico o tratamiento. Cada material indica sus fuentes y revisión. Las consultas y vídeos de ejemplo son demostraciones; los profesionales reales se contactan mediante enlaces externos revisados. El chat consulta la base de conocimiento sin búsqueda web en vivo.",
+    "ja": "成人の養育者向けです。診断・治療や専門評価を代替しません。出典と確認状況は各資料をご覧ください。サンプルの相談・動画はデモです。実在の専門家には確認済み外部リンクで連絡できます。チャットは知識ベースを検索し、リアルタイムのウェブ検索は行いません。",
+    "ko": "성인 양육자를 위한 교육적 지원이며 진단·치료나 전문 평가를 대체하지 않아요. 각 자료에서 출처와 검토 상태를 확인하세요. 예시 상담과 영상은 데모이며 실제 전문가는 검토된 외부 링크로 연락할 수 있어요. 채팅은 지식 기반을 검색하며 실시간 웹 검색은 제공하지 않아요."
+  },
+  "联网来源 · ": {
+    "en-US": "Web source · ",
+    "es": "Fuente web · ",
+    "ja": "ウェブ出典 · ",
+    "ko": "웹 출처 · "
+  },
+  "联网资料已核验来源域名，摘要未经过平台专业复核。": {
+    "en-US": "Source domains were checked; search excerpts have not received professional review.",
+    "es": "Se verificaron los dominios; los extractos no tienen revisión profesional.",
+    "ja": "出典ドメインを確認済みです。検索要約は専門家による確認を経ていません。",
+    "ko": "출처 도메인은 확인했으나 검색 요약은 전문 검토를 거치지 않았어요."
+  },
+  "本次未取得合适的联网资料；回答仅使用现有知识与一般支持。": {
+    "en-US": "No suitable web sources were retrieved this time; this reply uses existing knowledge and general support.",
+    "es": "No se obtuvieron fuentes web adecuadas; esta respuesta usa el conocimiento existente y apoyo general.",
+    "ja": "今回は適切なウェブ資料を取得できませんでした。既存の知識と一般的な支援に基づく回答です。",
+    "ko": "이번에는 적절한 웹 자료를 가져오지 못했어요. 기존 지식과 일반적인 지원을 바탕으로 답변해요."
+  },
+  "面向成年照护者。不是诊断或治疗工具，不替代专业评估。资料出处与审核状态见各篇内容。带示例标记的咨询与视频功能为演示，真实人员通过经审核的外部渠道联系。聊天使用知识库检索；启用科学来源搜索后可补充联网资料，联网摘要未经过平台专业复核。": {
+    "en-US": "For adult caregivers. This is educational support, not a diagnostic or treatment tool. Each item lists its sources and review status. Consultations and videos marked as examples are demos; real practitioners can be contacted through reviewed external links. Chat uses the knowledge base; enabled scientific search can add web sources. Search excerpts have not received professional review.",
+    "es": "Para cuidadores adultos. Es apoyo educativo, no una herramienta de diagnóstico o tratamiento. Cada material indica sus fuentes y revisión. Las consultas y vídeos de ejemplo son demostraciones; los profesionales reales se contactan mediante enlaces externos revisados. El chat consulta la base de conocimiento; la búsqueda científica habilitada puede añadir fuentes web. Sus extractos no tienen revisión profesional.",
+    "ja": "成人の養育者向けです。診断・治療や専門評価を代替しません。出典と確認状況は各資料をご覧ください。サンプルの相談・動画はデモです。実在の専門家には確認済み外部リンクで連絡できます。チャットは知識ベースを検索します。科学資料検索が有効な場合はウェブ資料も補足しますが、検索要約は専門家による確認を経ていません。",
+    "ko": "성인 양육자를 위한 교육적 지원이며 진단·치료나 전문 평가를 대체하지 않아요. 각 자료에서 출처와 검토 상태를 확인하세요. 예시 상담과 영상은 데모이며 실제 전문가는 검토된 외부 링크로 연락할 수 있어요. 채팅은 지식 기반을 검색해요. 과학 자료 검색을 활성화하면 웹 자료를 보충하지만 검색 요약은 전문 검토를 거치지 않았어요."
+  },
+  "一起参与，多一点陪伴": {
+    "en-US": "Come together, feel supported",
+    "es": "Compartir para sentir apoyo",
+    "ja": "参加して、つながりを少しずつ",
+    "ko": "함께하며 더 가까워져요"
+  },
+  "除了咨询，也可以从一次轻松的活动开始认识彼此。": {
+    "en-US": "A relaxed gathering can be another way to find connection.",
+    "es": "Una actividad tranquila también puede ser una forma de conectar.",
+    "ja": "相談だけでなく、気軽な集まりからつながることもできます。",
+    "ko": "상담 외에도 편안한 모임에서 서로 알아갈 수 있어요."
+  },
+  "给家长的一小时": {
+    "en-US": "An hour for parents",
+    "es": "Una hora para madres y padres",
+    "ja": "保護者のためのひと時間",
+    "ko": "부모를 위한 한 시간"
+  },
+  "家长交流": {
+    "en-US": "Parent circle",
+    "es": "Encuentro de familias",
+    "ja": "保護者の交流",
+    "ko": "부모 모임"
+  },
+  "聊聊日常的照护压力，听听彼此的小办法。可以分享，也可以只是听听。": {
+    "en-US": "Share everyday caregiving challenges and small ideas. You can talk, or simply listen.",
+    "es": "Comparte los retos diarios y pequeñas ideas. Puedes hablar o simplemente escuchar.",
+    "ja": "日々の子育てや小さな工夫を分かち合います。話しても、聴くだけでも。",
+    "ko": "일상 양육의 어려움과 작은 방법을 나눠요. 이야기하거나 듣기만 해도 괜찮아요."
+  },
+  "一起读一个故事": {
+    "en-US": "A story together",
+    "es": "Un cuento en compañía",
+    "ja": "一緒に物語を読もう",
+    "ko": "함께 읽는 이야기"
+  },
+  "亲子共读": {
+    "en-US": "Family reading",
+    "es": "Lectura en familia",
+    "ja": "親子で読書",
+    "ko": "가족 책 읽기"
+  },
+  "从一本绘本开始，留一点不赶时间的亲子相处。": {
+    "en-US": "Start with a picture book and enjoy a little unhurried time together.",
+    "es": "Comienza con un libro ilustrado y disfruta de un rato sin prisas.",
+    "ja": "絵本を一冊。急がずに親子の時間を楽しみましょう。",
+    "ko": "그림책 한 권으로 시작해 서두르지 않는 가족 시간을 가져요."
+  },
+  "温柔地说清边界": {
+    "en-US": "Kind, clear boundaries",
+    "es": "Límites claros y amables",
+    "ja": "やさしく伝える境界線",
+    "ko": "다정하고 분명한 경계"
+  },
+  "主题分享": {
+    "en-US": "Topic conversation",
+    "es": "Charla temática",
+    "ja": "テーマのお話",
+    "ko": "주제 이야기"
+  },
+  "用生活中的小情境，练习更清楚、更温和的家庭沟通。": {
+    "en-US": "Practice clearer, kinder family communication through everyday situations.",
+    "es": "Practica una comunicación familiar más clara y amable con situaciones cotidianas.",
+    "ja": "身近な場面から、わかりやすくやさしい家族の会話を練習します。",
+    "ko": "일상 속 작은 상황으로 더 명확하고 다정한 가족 대화를 연습해요."
+  },
+  "线上交流": {
+    "en-US": "Online gathering",
+    "es": "Encuentro en línea",
+    "ja": "オンライン交流",
+    "ko": "온라인 모임"
+  },
+  "线下共读": {
+    "en-US": "In-person reading",
+    "es": "Lectura presencial",
+    "ja": "対面で読書",
+    "ko": "대면 책 읽기"
+  },
+  "线上分享": {
+    "en-US": "Online conversation",
+    "es": "Charla en línea",
+    "ja": "オンラインのお話",
+    "ko": "온라인 이야기"
+  },
+  "工作日晚间 · 示例时段": {
+    "en-US": "Weekday evening · sample time",
+    "es": "Noche entre semana · horario de ejemplo",
+    "ja": "平日の夜 · サンプル時間",
+    "ko": "평일 저녁 · 예시 시간"
+  },
+  "周末上午 · 示例时段": {
+    "en-US": "Weekend morning · sample time",
+    "es": "Mañana de fin de semana · ejemplo",
+    "ja": "週末の午前 · サンプル時間",
+    "ko": "주말 오전 · 예시 시간"
+  },
+  "周末午后 · 示例时段": {
+    "en-US": "Weekend afternoon · sample time",
+    "es": "Tarde de fin de semana · ejemplo",
+    "ja": "週末の午後 · サンプル時間",
+    "ko": "주말 오후 · 예시 시간"
+  },
+  "60 分钟": {
+    "en-US": "60 minutes",
+    "es": "60 minutos",
+    "ja": "60分",
+    "ko": "60분"
+  },
+  "45 分钟": {
+    "en-US": "45 minutes",
+    "es": "45 minutos",
+    "ja": "45分",
+    "ko": "45분"
+  },
+  "成年照护者": {
+    "en-US": "Adult caregivers",
+    "es": "Personas cuidadoras adultas",
+    "ja": "成人の養育者",
+    "ko": "성인 양육자"
+  },
+  "家长与孩子": {
+    "en-US": "Parents and children",
+    "es": "Familias con niños",
+    "ja": "保護者と子ども",
+    "ko": "부모와 아이"
+  },
+  "示例活动": {
+    "en-US": "Sample event",
+    "es": "Actividad de ejemplo",
+    "ja": "サンプル活動",
+    "ko": "예시 활동"
+  },
+  "本机已记录意向": {
+    "en-US": "Interest saved locally",
+    "es": "Interés guardado localmente",
+    "ja": "この端末に関心を保存済み",
+    "ko": "이 기기에 관심 저장됨"
+  },
+  "了解活动 · RSVP": {
+    "en-US": "View event · RSVP",
+    "es": "Ver actividad · RSVP",
+    "ja": "活動を見る · RSVP",
+    "ko": "활동 보기 · RSVP"
+  },
+  "以上为示例活动。RSVP 仅在此浏览器记录参加意向，不会向主办方提交报名；真实时间、地点与报名将在后续接入。": {
+    "en-US": "These are sample events. RSVP saves your interest in this browser only; it does not register you with an organizer. Confirmed schedules, venues and registration will be added later.",
+    "es": "Son actividades de ejemplo. RSVP guarda tu interés solo en este navegador; no envía una inscripción. Los horarios, lugares y registros reales se añadirán más adelante.",
+    "ja": "サンプル活動です。RSVPはこのブラウザに参加の関心を保存するだけで、主催者への申込みではありません。実際の日時・会場・申込みは今後追加します。",
+    "ko": "예시 활동이에요. RSVP는 이 브라우저에 관심만 저장하며 주최자에게 신청되지 않아요. 실제 일정, 장소, 신청은 추후 연결할 예정이에요."
+  },
+  "示例活动 · RSVP 演示": {
+    "en-US": "Sample event · RSVP demo",
+    "es": "Actividad de ejemplo · Demo de RSVP",
+    "ja": "サンプル活動 · RSVPデモ",
+    "ko": "예시 활동 · RSVP 데모"
+  },
+  "活动形式": {
+    "en-US": "Format",
+    "es": "Formato",
+    "ja": "形式",
+    "ko": "활동 형식"
+  },
+  "参考时段": {
+    "en-US": "Sample schedule",
+    "es": "Horario de ejemplo",
+    "ja": "参考時間",
+    "ko": "예시 일정"
+  },
+  "活动时长": {
+    "en-US": "Duration",
+    "es": "Duración",
+    "ja": "所要時間",
+    "ko": "소요 시간"
+  },
+  "适合谁": {
+    "en-US": "Who it is for",
+    "es": "Para quién",
+    "ja": "対象",
+    "ko": "참여 대상"
+  },
+  "先留下意向，不必有负担。": {
+    "en-US": "A little interest, no pressure.",
+    "es": "Expresa tu interés, sin presión.",
+    "ja": "気軽に、関心だけでも。",
+    "ko": "부담 없이 관심만 남겨요."
+  },
+  "这是体验流程，不是真实报名。我们不会收集姓名或联系方式，也不会发送确认邮件、预留名额或收取费用。": {
+    "en-US": "This is a demo, not an event registration. We do not collect names or contact details, send confirmation emails, reserve places or charge fees.",
+    "es": "Es una demostración, no una inscripción. No recogemos nombres ni contactos, enviamos confirmaciones, reservamos plazas ni cobramos.",
+    "ja": "これはデモであり、実際の申込みではありません。名前・連絡先の収集、確認メール、席の確保、料金の請求は行いません。",
+    "ko": "실제 신청이 아닌 체험이에요. 이름과 연락처 수집, 확인 이메일, 자리 예약, 결제는 이루어지지 않아요."
+  },
+  "参加意向已保存在此浏览器，可随时取消。": {
+    "en-US": "Your interest is saved in this browser. You can remove it anytime.",
+    "es": "Tu interés está guardado en este navegador. Puedes cancelarlo cuando quieras.",
+    "ja": "このブラウザに参加の関心を保存しました。いつでも取り消せます。",
+    "ko": "참여 관심이 이 브라우저에 저장됐어요. 언제든 취소할 수 있어요."
+  },
+  "取消本机意向": {
+    "en-US": "Remove local interest",
+    "es": "Eliminar interés local",
+    "ja": "保存した関心を取り消す",
+    "ko": "기기에 저장된 관심 취소"
+  },
+  "记录参加意向 · 演示": {
+    "en-US": "Save interest · Demo",
+    "es": "Guardar interés · Demo",
+    "ja": "参加の関心を保存 · デモ",
+    "ko": "참여 관심 저장 · 데모"
+  },
+  "浏览器暂时无法保存，请允许本地存储后再试。": {
+    "en-US": "Your browser could not save this. Allow local storage and try again.",
+    "es": "El navegador no pudo guardarlo. Permite el almacenamiento local e inténtalo de nuevo.",
+    "ja": "保存できませんでした。ローカルストレージを許可して再度お試しください。",
+    "ko": "브라우저에 저장할 수 없어요. 로컬 저장을 허용한 후 다시 시도해 주세요."
+  },
+  "今天一起": {
+    "en-US": "Today Together",
+    "es": "Hoy juntos",
+    "ja": "今日いっしょに",
+    "ko": "오늘 함께"
+  },
+  "每天十分钟，靠近一点": {
+    "en-US": "Ten minutes, a little closer",
+    "es": "Diez minutos, un poco más cerca",
+    "ja": "毎日10分、少し近づく",
+    "ko": "매일 10분, 조금 더 가까이"
+  },
+  "今天可以和孩子玩点什么？": {
+    "en-US": "What can we do together today?",
+    "es": "¿Qué podemos hacer juntos hoy?",
+    "ja": "今日は子どもと何をしよう？",
+    "ko": "오늘 아이와 무엇을 할까요?"
+  }
+}

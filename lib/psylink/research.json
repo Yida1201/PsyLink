@@ -1,0 +1,276 @@
+[
+  {
+    "id": "research-reading",
+    "source": {
+      "id": "paper-reading",
+      "title": "Shared Picture Book Reading Interventions for Child Language Development: A Systematic Review and Meta-Analysis.",
+      "publisher": "Child Development",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30737957/",
+      "checked": "2026-10-09",
+      "year": "2020",
+      "authors": "Dowdall N et al.",
+      "doi": "10.1111/cdev.13225"
+    },
+    "title": "一起读书，\n一起说话",
+    "subtitle": "亲子共读与语言发展：一项系统综述。",
+    "category": "亲子沟通",
+    "minutes": 3,
+    "color": "clay",
+    "motif": "circles",
+    "sourceId": "paper-reading",
+    "kind": "research",
+    "keywords": [
+      "共读",
+      "阅读",
+      "绘本",
+      "语言",
+      "说话",
+      "reading",
+      "book",
+      "language",
+      "speech",
+      "leer",
+      "lectura",
+      "lenguaje",
+      "habla",
+      "絵本",
+      "読書",
+      "言葉",
+      "ことば",
+      "그림책",
+      "읽기",
+      "언어",
+      "말"
+    ],
+    "paragraphs": [
+      {
+        "heading": "研究发现",
+        "text": "这项综述汇总了19项随机对照试验。接受亲子共读训练的家庭，孩子的表达和理解语言能力平均有所改善，家长的共读技巧也有进步。"
+      },
+      {
+        "heading": "适用范围",
+        "text": "研究涉及约2594名儿童，年龄范围主要为1至6岁；它考察的是有指导的共读干预，而不只是家里有没有书。"
+      },
+      {
+        "heading": "如何理解",
+        "text": "可以把共读看成语言互动的机会，而不是考试。平均改善不保证每个孩子同样受益；这项研究也不能替代对语言发展担忧的专业评估。"
+      }
+    ]
+  },
+  {
+    "id": "research-sleep",
+    "source": {
+      "id": "paper-sleep",
+      "title": "A nightly bedtime routine: impact on sleep in young children and maternal mood.",
+      "publisher": "Sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19480226/",
+      "checked": "2026-10-09",
+      "year": "2009",
+      "authors": "Mindell JA et al.",
+      "doi": "10.1093/sleep/32.5.599"
+    },
+    "title": "睡前的规律，\n温柔的过渡",
+    "subtitle": "睡前规律研究，及它能说明和不能说明的事。",
+    "category": "日常养育",
+    "minutes": 3,
+    "color": "blue",
+    "motif": "waves",
+    "sourceId": "paper-sleep",
+    "kind": "research",
+    "keywords": [
+      "睡眠",
+      "睡觉",
+      "入睡",
+      "夜醒",
+      "睡前",
+      "sleep",
+      "bedtime",
+      "night waking",
+      "dormir",
+      "sueño",
+      "noche",
+      "睡眠",
+      "寝",
+      "夜泣き",
+      "잠",
+      "수면",
+      "밤"
+    ],
+    "paragraphs": [
+      {
+        "heading": "研究发现",
+        "text": "一项随机分组研究发现，实施固定睡前流程的家庭，孩子入睡和夜间醒来的情况有所改善，母亲的情绪也有改善。"
+      },
+      {
+        "heading": "适用范围",
+        "text": "研究包含405名母亲和7至36个月大的孩子，总时长只有3周，主要依据母亲报告。对更大儿童的效果，不能直接由此推断。"
+      },
+      {
+        "heading": "如何理解",
+        "text": "这支持把规律看成可尝试的日常安排，不支持保证整夜安睡。持续睡眠困难或呼吸异常，需要专业评估，不能只靠调整作息解释。"
+      }
+    ]
+  },
+  {
+    "id": "research-stress",
+    "source": {
+      "id": "paper-stress",
+      "title": "The Effect of Mindfulness Interventions for Parents on Parenting Stress and Youth Psychological Outcomes: A Systematic Review and Meta-Analysis.",
+      "publisher": "Frontiers in Psychology",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31244732/",
+      "checked": "2026-10-09",
+      "year": "2019",
+      "authors": "Burgdorf V, Szabó M, Abbott MJ.",
+      "doi": "10.3389/fpsyg.2019.01336"
+    },
+    "title": "给家长的压力，\n留一点空间",
+    "subtitle": "正念与家长压力：有希望，但证据仍有限。",
+    "category": "照顾自己",
+    "minutes": 3,
+    "color": "sage",
+    "motif": "leaf",
+    "sourceId": "paper-stress",
+    "kind": "research",
+    "keywords": [
+      "压力",
+      "累",
+      "疲惫",
+      "正念",
+      "焦虑",
+      "stress",
+      "tired",
+      "mindfulness",
+      "anxious",
+      "estrés",
+      "cansad",
+      "ansiedad",
+      "マインドフルネス",
+      "ストレス",
+      "疲れ",
+      "불안",
+      "스트레스",
+      "마음챙김",
+      "지쳐"
+    ],
+    "paragraphs": [
+      {
+        "heading": "研究发现",
+        "text": "这项综述纳入25项研究，发现面向家长的正念干预可能与养育压力减轻有关；部分儿童心理结局也有小幅改善。"
+      },
+      {
+        "heading": "适用范围",
+        "text": "只有6项研究是随机对照试验，多数采用单组设计；参与者背景和孩子年龄不同，整体偏倚风险较高。"
+      },
+      {
+        "heading": "如何理解",
+        "text": "可以把它理解为值得继续研究的支持方式，而不是已经证实的治疗。一个短暂呼吸练习不等于研究中的完整课程；持续困扰仍可寻求专业帮助。"
+      }
+    ]
+  },
+  {
+    "id": "research-screen",
+    "source": {
+      "id": "paper-screen",
+      "title": "Association Between Screen Time and Children's Performance on a Developmental Screening Test.",
+      "publisher": "JAMA Pediatrics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30688984/",
+      "checked": "2026-10-09",
+      "year": "2019",
+      "authors": "Madigan S et al.",
+      "doi": "10.1001/jamapediatrics.2018.5056"
+    },
+    "title": "屏幕之外，\n还有真实互动",
+    "subtitle": "屏幕时间研究：分清关联与因果。",
+    "category": "日常养育",
+    "minutes": 3,
+    "color": "ochre",
+    "motif": "sun",
+    "sourceId": "paper-screen",
+    "kind": "research",
+    "keywords": [
+      "屏幕",
+      "手机",
+      "电视",
+      "平板",
+      "screen",
+      "phone",
+      "tablet",
+      "television",
+      "pantalla",
+      "teléfono",
+      "画面",
+      "スマホ",
+      "テレビ",
+      "스크린",
+      "화면",
+      "휴대폰"
+    ],
+    "paragraphs": [
+      {
+        "heading": "研究发现",
+        "text": "加拿大一项纵向研究发现，较早年龄的屏幕时间较多，与之后发展筛查分数较低存在关联。研究提示值得关注家庭媒介使用，而不是给孩子贴标签。"
+      },
+      {
+        "heading": "适用范围",
+        "text": "研究跟踪2441个家庭，在孩子24、36和60个月时收集资料；屏幕时间和筛查结果主要由母亲报告。"
+      },
+      {
+        "heading": "如何理解",
+        "text": "这是观察性研究，不能证明屏幕直接造成发育迟缓，也不能凭使用时长诊断孩子。它没有确定某个分钟数是安全与不安全的分界。"
+      }
+    ]
+  },
+  {
+    "id": "research-responsive",
+    "source": {
+      "id": "paper-responsive",
+      "title": "Parenting interventions to promote early child development in the first three years of life: A global systematic review and meta-analysis.",
+      "publisher": "PLOS Medicine",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33970913/",
+      "checked": "2026-10-09",
+      "year": "2021",
+      "authors": "Jeong J et al.",
+      "doi": "10.1371/journal.pmed.1003602"
+    },
+    "title": "看见信号，\n回应孩子",
+    "subtitle": "回应式养育：全球随机试验的共同线索。",
+    "category": "亲子沟通",
+    "minutes": 3,
+    "color": "sage",
+    "motif": "leaf",
+    "sourceId": "paper-responsive",
+    "kind": "research",
+    "keywords": [
+      "回应",
+      "互动",
+      "发展",
+      "依恋",
+      "responsive",
+      "interaction",
+      "development",
+      "attachment",
+      "desarrollo",
+      "interacción",
+      "発達",
+      "応答",
+      "愛着",
+      "발달",
+      "상호작용",
+      "애착"
+    ],
+    "paragraphs": [
+      {
+        "heading": "研究发现",
+        "text": "汇总102项随机试验的研究发现，早期养育干预对儿童多项发展结局和亲子互动有平均改善。强调回应式照护的项目，在一些结局上的效果更好。"
+      },
+      {
+        "heading": "适用范围",
+        "text": "这些干预在儿童生命最初3年实施，项目内容、国家和证据质量差异很大。不能把平均效果直接套到所有3至6岁儿童。"
+      },
+      {
+        "heading": "如何理解",
+        "text": "研究支持重视日常互动，但并未发现家长抑郁症状有显著改善。养育建议不能替代家长自身的心理支持，也不是判断孩子是否有障碍的工具。"
+      }
+    ]
+  }
+]

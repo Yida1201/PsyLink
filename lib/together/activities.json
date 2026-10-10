@@ -1,0 +1,866 @@
+[
+  {
+    "id": "baby-picture",
+    "age": "baby",
+    "category": "read",
+    "minutes": 5,
+    "relatedArticleId": "research-reading",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "看一页，听你的声音",
+        "materials": [
+          "家里已有的绘本，或一张大幅图片"
+        ],
+        "steps": [
+          "选一页简单图片，你把书拿稳。",
+          "宝宝清醒、舒服时，让他看看，不必追着他的视线。",
+          "慢慢说出一个物品的名字，再停一停。",
+          "如果他转开或累了，就结束，也算一起读过了。"
+        ],
+        "why": "给宝宝留一点看、听和回应你的时间。"
+      },
+      "en-US": {
+        "title": "One picture, your voice",
+        "materials": [
+          "A book you already have, or a large picture"
+        ],
+        "steps": [
+          "Hold a page with a simple picture securely.",
+          "Offer a look when your baby is awake and comfortable; do not chase their gaze.",
+          "Name one thing slowly, then pause.",
+          "If they turn away or seem tired, stop. That still counts as reading together."
+        ],
+        "why": "A small opening for your baby to look, listen and respond."
+      }
+    }
+  },
+  {
+    "id": "baby-names",
+    "age": "baby",
+    "category": "read",
+    "minutes": 5,
+    "relatedArticleId": "research-responsive",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "给身边的东西起名字",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "抱稳宝宝或让他在安全位置躺好。",
+          "指一指远处的灯、门或窗，不把物品递到嘴边。",
+          "说“这是窗，窗外有光”，只用短句。",
+          "停下来听听宝宝的声音，用相近的声音回应。"
+        ],
+        "why": "把熟悉的声音和日常看到的东西连在一起。"
+      },
+      "en-US": {
+        "title": "Names around us",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Hold your baby securely or settle them safely.",
+          "Point to a light, door or window at a distance; keep objects away from their mouth.",
+          "Say a short phrase such as “A window. There is light outside.”",
+          "Pause for their sounds, then gently echo them."
+        ],
+        "why": "Connects familiar voices with things in everyday life."
+      }
+    }
+  },
+  {
+    "id": "baby-hello",
+    "age": "baby",
+    "category": "routine",
+    "minutes": 5,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "今天的你好小仪式",
+        "materials": [
+          "你的声音"
+        ],
+        "steps": [
+          "在宝宝清醒时，靠近到他舒服的距离。",
+          "说一句固定的问候，比如“早上好，我们见面啦”。",
+          "唱一句你熟悉的短歌。",
+          "看宝宝的反应，慢慢重复一次或就此结束。"
+        ],
+        "why": "重复的小问候让相处更有熟悉感。"
+      },
+      "en-US": {
+        "title": "A little hello ritual",
+        "materials": [
+          "Your voice"
+        ],
+        "steps": [
+          "When your baby is awake, get comfortably close.",
+          "Use a familiar greeting such as “Good morning, here we are.”",
+          "Sing one line of a song you know.",
+          "Watch their response; repeat gently once or finish."
+        ],
+        "why": "A repeated greeting makes shared time feel familiar."
+      }
+    }
+  },
+  {
+    "id": "baby-quiet",
+    "age": "baby",
+    "category": "routine",
+    "minutes": 5,
+    "relatedArticleId": "research-sleep",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "安静下来的一首歌",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "在睡前照护开始前，把环境声音放轻。",
+          "宝宝还清醒时，抱稳他，或坐在安全位置旁。",
+          "轻声唱一小段固定的歌，不强迫他入睡。",
+          "随后按你们原有的安全睡眠安排进行，不把书或玩具留在睡眠空间。"
+        ],
+        "why": "一段相同的轻声歌，可以作为日常过渡的提示。"
+      },
+      "en-US": {
+        "title": "One quiet song",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Before the bedtime routine, soften surrounding noise.",
+          "While your baby is awake, hold them securely or sit beside their safe space.",
+          "Sing a familiar short song softly; do not try to force sleep.",
+          "Continue your usual safe sleep arrangement, leaving books and toys out of the sleep space."
+        ],
+        "why": "A familiar soft song can mark an everyday transition."
+      }
+    }
+  },
+  {
+    "id": "baby-face",
+    "age": "baby",
+    "category": "emotion",
+    "minutes": 5,
+    "relatedArticleId": "research-responsive",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "看看你的表情",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "在宝宝舒服、清醒的时候，面对他坐好。",
+          "用自然的笑容，说“我看到你啦”。",
+          "停一下，看他有没有看你、动一动或发出声音。",
+          "用温和的表情回应；不做突然大声或吓人的动作。"
+        ],
+        "why": "练习留意彼此的小信号，不需要宝宝完成任务。"
+      },
+      "en-US": {
+        "title": "A face to notice",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Sit facing your baby when they are awake and comfortable.",
+          "Smile naturally and say “I see you.”",
+          "Pause to notice a look, movement or sound.",
+          "Respond gently, without sudden loud or startling gestures."
+        ],
+        "why": "A chance to notice little signals, without asking your baby to perform."
+      }
+    }
+  },
+  {
+    "id": "baby-mirror",
+    "age": "baby",
+    "category": "emotion",
+    "minutes": 5,
+    "relatedArticleId": "listen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "镜子里的我们",
+        "materials": [
+          "已有的完整防碎镜；没有就用面对面游戏"
+        ],
+        "steps": [
+          "由成人拿稳镜子，让宝宝保持安全姿势。",
+          "看着镜子，说“这是你，这是我”。",
+          "做一个慢慢的微笑，停下来观察。",
+          "宝宝不感兴趣时就收起镜子，不让他啃咬或独自拿镜子。"
+        ],
+        "why": "一起观察表情，为你们的回应留一点空间。"
+      },
+      "en-US": {
+        "title": "Us in the mirror",
+        "materials": [
+          "An intact shatterproof mirror, or simply face each other"
+        ],
+        "steps": [
+          "An adult holds the mirror securely while the baby stays safely positioned.",
+          "Say “Here is you. Here is me.”",
+          "Make a slow smile and pause to watch.",
+          "Put it away if they lose interest; do not let them mouth or hold the mirror alone."
+        ],
+        "why": "A quiet chance to look at expressions and respond together."
+      }
+    }
+  },
+  {
+    "id": "baby-follow",
+    "age": "baby",
+    "category": "move",
+    "minutes": 5,
+    "relatedArticleId": "research-responsive",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "看你的手慢慢走",
+        "materials": [
+          "你的手"
+        ],
+        "steps": [
+          "让清醒的宝宝在安全位置，头和身体有合适支撑。",
+          "把手放在他容易看到的位置，留出距离。",
+          "很慢地向一边移动一点，再停住。",
+          "跟随宝宝的兴趣，不拉动他的头、手脚，也不要求他追看。"
+        ],
+        "why": "用很小的移动，提供一次共同注意的机会。"
+      },
+      "en-US": {
+        "title": "Follow a slow hand",
+        "materials": [
+          "Your hand"
+        ],
+        "steps": [
+          "Settle your awake baby safely with appropriate head and body support.",
+          "Place your hand where they can easily see it, leaving space.",
+          "Move it a little to one side, very slowly, then pause.",
+          "Follow their interest; never pull their head or limbs or require them to track it."
+        ],
+        "why": "A small movement offers a moment of shared attention."
+      }
+    }
+  },
+  {
+    "id": "baby-window",
+    "age": "baby",
+    "category": "move",
+    "minutes": 5,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "窗边看一会儿",
+        "materials": [
+          "安全位置的一扇窗"
+        ],
+        "steps": [
+          "你抱稳宝宝，站在离窗、窗绳和热源安全的距离。",
+          "指向窗外一块颜色或一片树影。",
+          "轻声说“树叶在动”或“这里是绿色”。",
+          "停一停，再回到原来的位置；不把宝宝放在窗台上。"
+        ],
+        "why": "把日常环境变成一小段不赶时间的陪伴。"
+      },
+      "en-US": {
+        "title": "A moment by the window",
+        "materials": [
+          "A window viewed from a safe position"
+        ],
+        "steps": [
+          "Hold your baby securely, well away from the window, cords and heat sources.",
+          "Point to a color or a moving tree shadow outside.",
+          "Say “The leaves move” or “That is green.”",
+          "Pause, then return; never place the baby on a windowsill."
+        ],
+        "why": "Turns an ordinary view into a little unhurried time together."
+      }
+    }
+  },
+  {
+    "id": "toddler-book",
+    "age": "toddler",
+    "category": "read",
+    "minutes": 8,
+    "relatedArticleId": "research-reading",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "让孩子当翻页的人",
+        "materials": [
+          "一本已有的结实绘本"
+        ],
+        "steps": [
+          "选两三页，不需要从头读完。",
+          "让孩子指一指或翻一页，你帮忙拿稳。",
+          "描述他正在看的东西，再问一个简单问题。",
+          "把他的词接成短句；如果想结束，就一起合上书。"
+        ],
+        "why": "从孩子注意的地方开始，更容易轮流说一点。"
+      },
+      "en-US": {
+        "title": "Let your child turn the page",
+        "materials": [
+          "A sturdy book you already have"
+        ],
+        "steps": [
+          "Choose two or three pages; you do not need to finish the book.",
+          "Let your child point or turn a page while you steady it.",
+          "Describe what they notice, then ask one simple question.",
+          "Build on their words with a short sentence; close the book together when they are done."
+        ],
+        "why": "Starting with their interest makes room for a little back-and-forth."
+      }
+    }
+  },
+  {
+    "id": "toddler-clap",
+    "age": "toddler",
+    "category": "read",
+    "minutes": 5,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "拍两下，唱一句",
+        "materials": [
+          "你的双手和声音"
+        ],
+        "steps": [
+          "坐在安全、舒服的地方。",
+          "轻轻拍两下手，唱一句熟悉的儿歌。",
+          "停下来让孩子自由回应，不要求拍准。",
+          "换成孩子带节奏，你来学一学。"
+        ],
+        "why": "轮流带领一个小节奏，让孩子也有表达的机会。"
+      },
+      "en-US": {
+        "title": "Two claps, one song",
+        "materials": [
+          "Your hands and voice"
+        ],
+        "steps": [
+          "Sit somewhere safe and comfortable.",
+          "Clap softly twice and sing one familiar line.",
+          "Pause for any response; matching the beat is optional.",
+          "Let your child lead a rhythm and copy them."
+        ],
+        "why": "Taking turns with a little rhythm gives your child a way to express themselves."
+      }
+    }
+  },
+  {
+    "id": "toddler-tidy",
+    "age": "toddler",
+    "category": "routine",
+    "minutes": 5,
+    "relatedArticleId": "boundaries",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "两件玩具回家",
+        "materials": [
+          "两件已有的大玩具和收纳处"
+        ],
+        "steps": [
+          "选两件适龄、没有小零件的玩具。",
+          "一起指认它们要回到哪里。",
+          "你收一件，再邀请孩子收另一件，不强迫。",
+          "说“现在它们回家了”，就结束，不扩大成整屋任务。"
+        ],
+        "why": "把收拾变成一个范围很小、看得见的步骤。"
+      },
+      "en-US": {
+        "title": "Two toys go home",
+        "materials": [
+          "Two age-appropriate large toys and their storage place"
+        ],
+        "steps": [
+          "Choose two toys without small parts.",
+          "Point together to where they belong.",
+          "Put one away, then invite your child to do the other without forcing it.",
+          "Say “They are home now,” and stop; this is not a whole-room task."
+        ],
+        "why": "Makes tidying a small, visible step."
+      }
+    }
+  },
+  {
+    "id": "toddler-table",
+    "age": "toddler",
+    "category": "routine",
+    "minutes": 5,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "饭前的一句小问候",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "在吃饭前或吃完后，坐在一起。",
+          "说“今天你看到了什么？”也可以只讲自己的一个发现。",
+          "等孩子用话、手势或表情回答。",
+          "用一句短话回应；不在咀嚼时要求说话，也不把吃多少当条件。"
+        ],
+        "why": "在熟悉的日常时点，留一小段聊天的空隙。"
+      },
+      "en-US": {
+        "title": "A little table hello",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Sit together before or after a meal.",
+          "Ask “What did you notice today?” or share one thing you noticed.",
+          "Wait for words, gestures or an expression.",
+          "Respond briefly; do not ask for speech while chewing or make it depend on eating an amount."
+        ],
+        "why": "Leaves a small opening for conversation at a familiar point in the day."
+      }
+    }
+  },
+  {
+    "id": "toddler-faces",
+    "age": "toddler",
+    "category": "emotion",
+    "minutes": 5,
+    "relatedArticleId": "listen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "我们来做表情",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "你先做一个自然的笑脸。",
+          "问“这个脸看起来像什么心情？”孩子可以不回答。",
+          "试一个轻轻皱眉的表情，说一个日常小情境。",
+          "让孩子挑一个表情，你来模仿，不评价对错。"
+        ],
+        "why": "提供一些谈心情的词，不急着判断孩子的感受。"
+      },
+      "en-US": {
+        "title": "Faces we can make",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Start with a natural smile.",
+          "Ask “What feeling might this face show?” An answer is optional.",
+          "Try a gentle frown and describe an everyday situation.",
+          "Let your child choose a face for you to copy, without marking it right or wrong."
+        ],
+        "why": "Offers words for feelings without deciding what your child must feel."
+      }
+    }
+  },
+  {
+    "id": "toddler-bear",
+    "age": "toddler",
+    "category": "emotion",
+    "minutes": 8,
+    "relatedArticleId": "listen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "小熊今天怎么了",
+        "materials": [
+          "已有的适龄软玩具；没有就用你的手"
+        ],
+        "steps": [
+          "让玩具或你的手说“今天我有点不高兴”。",
+          "问“我们可以陪它做点什么？”",
+          "跟着孩子的办法，坐一会儿、说一句话或抱一抱。",
+          "问孩子愿不愿意也说说；不愿意就结束。"
+        ],
+        "why": "用游戏留出谈感受的空间，不要求孩子马上讲自己。"
+      },
+      "en-US": {
+        "title": "How is teddy today?",
+        "materials": [
+          "An age-appropriate soft toy, or your hand"
+        ],
+        "steps": [
+          "Let the toy or your hand say “I feel a little unhappy today.”",
+          "Ask “How could we keep it company?”",
+          "Follow your child’s idea: sit, say something or offer a hug.",
+          "Invite your child to share too, but finish if they do not want to."
+        ],
+        "why": "Play can leave space to talk about feelings without demanding a personal account."
+      }
+    }
+  },
+  {
+    "id": "toddler-path",
+    "age": "toddler",
+    "category": "move",
+    "minutes": 5,
+    "relatedArticleId": "research-screen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "想象中的小路",
+        "materials": [
+          "一块清空障碍物、防滑的地面"
+        ],
+        "steps": [
+          "先把地上的绊脚物收好。",
+          "用手指指一条短短的“想象小路”。",
+          "你们慢慢走几步，停下时说“到站啦”。",
+          "让孩子选择下一站；不需要跳高、爬家具或比赛。"
+        ],
+        "why": "把一点身体活动和轮流选择放在同一个小游戏里。"
+      },
+      "en-US": {
+        "title": "An imaginary path",
+        "materials": [
+          "A clear, non-slip floor space"
+        ],
+        "steps": [
+          "Remove anything that could trip you.",
+          "Point out a short imaginary path.",
+          "Walk a few slow steps and say “We arrived” when you stop.",
+          "Let your child choose the next stop; no high jumps, furniture climbing or racing."
+        ],
+        "why": "Combines a little movement with taking turns choosing."
+      }
+    }
+  },
+  {
+    "id": "toddler-colors",
+    "age": "toddler",
+    "category": "move",
+    "minutes": 10,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "散步找一种颜色",
+        "materials": [
+          "安全步行路线；也可以在室内"
+        ],
+        "steps": [
+          "选一个颜色，比如绿色。",
+          "成人全程陪伴，按你们平常的安全方式慢慢走。",
+          "看见这种颜色时指一指，停在安全的位置说一说。",
+          "找到两三个就回来，不摘、捡或吃不认识的东西。"
+        ],
+        "why": "给散步一个共同观察的小主题。"
+      },
+      "en-US": {
+        "title": "Find one color on a walk",
+        "materials": [
+          "A safe walking route, or an indoor space"
+        ],
+        "steps": [
+          "Choose one color, such as green.",
+          "An adult stays close and walks slowly using your usual safety arrangements.",
+          "Point it out and pause somewhere safe to talk.",
+          "Return after two or three finds; do not pick up or eat unfamiliar things."
+        ],
+        "why": "Gives a short walk a shared theme to notice."
+      }
+    }
+  },
+  {
+    "id": "preschool-story",
+    "age": "preschool",
+    "category": "read",
+    "minutes": 10,
+    "relatedArticleId": "research-reading",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "故事还有另一个结尾",
+        "materials": [
+          "一本已有的书，或你熟悉的小故事"
+        ],
+        "steps": [
+          "讲一段短故事，在结尾前停住。",
+          "问“你觉得接下来会怎样？”",
+          "听完孩子的版本，再分享你的一个版本。",
+          "选你们喜欢的结尾，再讲一遍，不需要标准答案。"
+        ],
+        "why": "给想象和轮流表达留出位置。"
+      },
+      "en-US": {
+        "title": "Another ending",
+        "materials": [
+          "A book you have, or a short story you know"
+        ],
+        "steps": [
+          "Tell a short story and pause before the ending.",
+          "Ask “What might happen next?”",
+          "Listen to your child’s version, then share one of your own.",
+          "Choose an ending you enjoy and retell it; there is no correct answer."
+        ],
+        "why": "Makes room for imagination and taking turns expressing ideas."
+      }
+    }
+  },
+  {
+    "id": "preschool-object",
+    "age": "preschool",
+    "category": "read",
+    "minutes": 5,
+    "relatedArticleId": "research-reading",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "如果杯子会说话",
+        "materials": [
+          "一个完整、无热液体的已有杯子，由成人拿稳"
+        ],
+        "steps": [
+          "你拿稳杯子，说“如果它会说话，会说什么？”",
+          "让孩子给它起个名字。",
+          "一起编两三句它今天的小经历。",
+          "最后让它说一句告别，把杯子放回安全位置。"
+        ],
+        "why": "从日常物品开始，把想法组织成一个小故事。"
+      },
+      "en-US": {
+        "title": "If a cup could talk",
+        "materials": [
+          "An intact cup with no hot liquid, held by an adult"
+        ],
+        "steps": [
+          "Hold the cup and ask “What would it say if it could talk?”",
+          "Let your child give it a name.",
+          "Make two or three lines about its day together.",
+          "Give it a goodbye line and put it safely away."
+        ],
+        "why": "An everyday object becomes a starting point for a little story."
+      }
+    }
+  },
+  {
+    "id": "preschool-bedtime",
+    "age": "preschool",
+    "category": "routine",
+    "minutes": 8,
+    "relatedArticleId": "research-sleep",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "睡前三件小事",
+        "materials": [
+          "不需要额外物品"
+        ],
+        "steps": [
+          "在睡前选一个舒服的聊天时刻。",
+          "轮流说今天一个开心或有趣的小事。",
+          "说一个今天需要帮忙的地方，孩子可以跳过。",
+          "最后一起说一句明天想做的小事，再接上原有的睡前安排。"
+        ],
+        "why": "用熟悉的顺序收尾，让聊天更容易开始。"
+      },
+      "en-US": {
+        "title": "Three little things before bed",
+        "materials": [
+          "No extra supplies"
+        ],
+        "steps": [
+          "Choose a comfortable moment before the usual bedtime routine.",
+          "Take turns naming one fun or interesting thing from today.",
+          "Name something you needed help with; your child may skip it.",
+          "Share one little thing you would like to do tomorrow, then continue your usual routine."
+        ],
+        "why": "A familiar sequence can make a closing conversation easier to start."
+      }
+    }
+  },
+  {
+    "id": "preschool-door",
+    "age": "preschool",
+    "category": "routine",
+    "minutes": 5,
+    "relatedArticleId": "boundaries",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "出门前的小检查",
+        "materials": [
+          "你们原本要带的物品"
+        ],
+        "steps": [
+          "一起想出出门前的三件事，比如鞋、外套、牵手。",
+          "让孩子用话或手势带着你检查。",
+          "少了一件，就一起补上，不责备。",
+          "用一句固定的“我们准备好啦”结束；靠近道路时仍由成人负责安全。"
+        ],
+        "why": "让过渡中的步骤更清楚，也给孩子一个参与的位置。"
+      },
+      "en-US": {
+        "title": "A little leaving-home check",
+        "materials": [
+          "Things you already need to take"
+        ],
+        "steps": [
+          "Choose three checks, such as shoes, a jacket and holding hands.",
+          "Let your child lead the checks with words or gestures.",
+          "If something is missing, get it together without blame.",
+          "Finish with “We are ready”; an adult remains responsible for road safety."
+        ],
+        "why": "Makes transition steps clearer and gives your child a part to play."
+      }
+    }
+  },
+  {
+    "id": "preschool-weather",
+    "age": "preschool",
+    "category": "emotion",
+    "minutes": 8,
+    "relatedArticleId": "listen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "心情像什么天气",
+        "materials": [
+          "不需要额外物品；可用已有纸笔画一画"
+        ],
+        "steps": [
+          "你先说“我的心情像有点云，也有点太阳”。",
+          "邀请孩子选自己的天气，不替他选。",
+          "问“你想有人陪着，还是先安静一会儿？”",
+          "一起选一个小办法；心情不必马上变好。"
+        ],
+        "why": "用比喻谈感受，尊重孩子自己怎么描述。"
+      },
+      "en-US": {
+        "title": "What weather is your feeling?",
+        "materials": [
+          "No extra supplies; optional paper and crayons you have"
+        ],
+        "steps": [
+          "Start with “My feeling is a little cloudy and a little sunny.”",
+          "Invite your child to choose their weather; do not choose for them.",
+          "Ask “Would you like company or a little quiet?”",
+          "Choose one small option together; feelings do not have to change right away."
+        ],
+        "why": "A metaphor offers a way to talk about feelings in their own words."
+      }
+    }
+  },
+  {
+    "id": "preschool-hands",
+    "age": "preschool",
+    "category": "emotion",
+    "minutes": 5,
+    "relatedArticleId": "listen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "两只手的小对话",
+        "materials": [
+          "你的双手"
+        ],
+        "steps": [
+          "把两只手当成两个小角色。",
+          "让一个说“我想玩”，另一个说“我想休息”。",
+          "请孩子想一个两个角色都能表达的办法。",
+          "照着演一小段，最后问哪句最想用在今天。"
+        ],
+        "why": "在轻松的角色里练习表达不同的需要。"
+      },
+      "en-US": {
+        "title": "A conversation between two hands",
+        "materials": [
+          "Your hands"
+        ],
+        "steps": [
+          "Turn your hands into two little characters.",
+          "Let one say “I want to play” and the other “I want to rest.”",
+          "Invite your child to find a way for both to express their needs.",
+          "Act out a short exchange, then choose a phrase to try today."
+        ],
+        "why": "A playful role lets you practice expressing different needs."
+      }
+    }
+  },
+  {
+    "id": "preschool-animals",
+    "age": "preschool",
+    "category": "move",
+    "minutes": 5,
+    "relatedArticleId": "research-screen",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "慢慢走的动物朋友",
+        "materials": [
+          "清空障碍物、防滑的地面"
+        ],
+        "steps": [
+          "确认有一小块安全空地。",
+          "选一种动物，用慢慢走路的方式模仿。",
+          "让孩子选下一种，你们轮流带领。",
+          "觉得累就停，不做高处跳跃、不爬家具，也不比赛快慢。"
+        ],
+        "why": "在短短的身体活动里分享选择和想象。"
+      },
+      "en-US": {
+        "title": "Slow animal friends",
+        "materials": [
+          "A clear, non-slip floor space"
+        ],
+        "steps": [
+          "Find a small safe open space.",
+          "Choose an animal and copy it with a slow walking movement.",
+          "Let your child choose the next one and take turns leading.",
+          "Stop when tired; no high jumps, furniture climbing or speed contests."
+        ],
+        "why": "A short movement game shares choice and imagination."
+      }
+    }
+  },
+  {
+    "id": "preschool-observe",
+    "age": "preschool",
+    "category": "move",
+    "minutes": 10,
+    "relatedArticleId": "together",
+    "reviewStatus": "draft",
+    "copy": {
+      "zh-CN": {
+        "title": "公园里看见三件事",
+        "materials": [
+          "安全的户外路线；室内窗边也可以"
+        ],
+        "steps": [
+          "成人陪着，选一个安全的观察位置。",
+          "各自找一件看到、听到或闻到的事。",
+          "轮流说说，也可以画在已有纸上。",
+          "找满三件就结束，不触碰陌生动物或采食植物。"
+        ],
+        "why": "把注意力一起放在身边的环境里。"
+      },
+      "en-US": {
+        "title": "Three things to notice",
+        "materials": [
+          "A safe outdoor route, or a safe indoor window view"
+        ],
+        "steps": [
+          "With an adult present, choose a safe place to observe.",
+          "Each notice something you can see, hear or smell.",
+          "Take turns sharing, or draw on paper you already have.",
+          "Finish after three things; do not touch unfamiliar animals or eat plants."
+        ],
+        "why": "Brings your attention together to the world around you."
+      }
+    }
+  }
+]
