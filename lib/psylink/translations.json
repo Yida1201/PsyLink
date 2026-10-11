@@ -2542,5 +2542,149 @@
     "es": "Cargando…",
     "ja": "読み込み中…",
     "ko": "불러오는 중…"
+  },
+  "当地紧急联系方式": {
+    "en-US": "Local emergency contacts",
+    "es": "Contactos de emergencia locales",
+    "ja": "現地の緊急連絡先",
+    "ko": "현지 긴급 연락처"
+  },
+  "你目前所在的国家或地区": {
+    "en-US": "Your current country or region",
+    "es": "Tu país o región actual",
+    "ja": "現在いる国・地域",
+    "ko": "현재 있는 국가 또는 지역"
+  },
+  "请选择所在地": {
+    "en-US": "Choose your location",
+    "es": "Selecciona tu ubicación",
+    "ja": "所在地を選択",
+    "ko": "현재 위치 선택"
+  },
+  "中国大陆": {
+    "en-US": "Mainland China",
+    "es": "China continental",
+    "ja": "中国本土",
+    "ko": "중국 본토"
+  },
+  "其他国家或地区": {
+    "en-US": "Other country or region",
+    "es": "Otro país o región",
+    "ja": "その他の国・地域",
+    "ko": "다른 국가 또는 지역"
+  },
+  "按你选择的所在地显示。": {
+    "en-US": "Showing contacts for your selected location.",
+    "es": "Contactos de la ubicación que seleccionaste.",
+    "ja": "選択した所在地の連絡先です。",
+    "ko": "선택한 위치의 연락처입니다."
+  },
+  "正在确认访问所在国家…": {
+    "en-US": "Checking the country of your connection…",
+    "es": "Comprobando el país de tu conexión…",
+    "ja": "接続元の国を確認しています…",
+    "ko": "접속 국가를 확인하고 있어요…"
+  },
+  "默认参考访问 IP 的国家；VPN 可能影响判断，请确认所在地。": {
+    "en-US": "Default based on your connection’s country. VPNs can affect this; confirm where you are.",
+    "es": "El país de tu conexión es solo una referencia. Una VPN puede alterarlo; confirma dónde estás.",
+    "ja": "接続元の国を参考にしています。VPNで変わる場合があるため、所在地を確認してください。",
+    "ko": "접속 국가를 참고합니다. VPN에 따라 달라질 수 있으니 현재 위치를 확인해 주세요."
+  },
+  "无法确认所在地，请手动选择。": {
+    "en-US": "Location could not be determined. Please select it.",
+    "es": "No se pudo determinar tu ubicación. Selecciónala.",
+    "ja": "所在地を確認できません。選択してください。",
+    "ko": "위치를 확인할 수 없어요. 직접 선택해 주세요."
+  },
+  "紧急救援：警方、消防、急救": {
+    "en-US": "Emergency: police, fire and ambulance",
+    "es": "Emergencias: policía, bomberos y ambulancia",
+    "ja": "警察・消防・救急",
+    "ko": "경찰·소방·응급 의료"
+  },
+  "心理危机支持：拨打或短信联系，全天可用": {
+    "en-US": "Mental health crisis support: call or text, available 24/7",
+    "es": "Apoyo en crisis de salud mental: llamada o mensaje, 24/7",
+    "ja": "心の危機の支援：電話・SMS、24時間対応",
+    "ko": "정신 건강 위기 지원: 전화·문자, 24시간 이용 가능"
+  },
+  "医疗急救": {
+    "en-US": "Medical emergency",
+    "es": "Emergencia médica",
+    "ja": "救急医療",
+    "ko": "응급 의료"
+  },
+  "警方": {
+    "en-US": "Police",
+    "es": "Policía",
+    "ja": "警察",
+    "ko": "경찰"
+  },
+  "消防": {
+    "en-US": "Fire service",
+    "es": "Bomberos",
+    "ja": "消防",
+    "ko": "소방"
+  },
+  "消防与医疗急救": {
+    "en-US": "Fire and medical emergency",
+    "es": "Bomberos y emergencia médica",
+    "ja": "消防・救急",
+    "ko": "소방·응급 의료"
+  },
+  "心理危机支持": {
+    "en-US": "Mental health crisis support",
+    "es": "Apoyo en crisis de salud mental",
+    "ja": "心の危機の支援",
+    "ko": "정신 건강 위기 지원"
+  },
+  "紧急救援": {
+    "en-US": "Emergency services",
+    "es": "Servicios de emergencia",
+    "ja": "緊急サービス",
+    "ko": "긴급 구조"
+  },
+  "拨打": {
+    "en-US": "Call",
+    "es": "Llamar al",
+    "ja": "電話する",
+    "ko": "전화"
+  },
+  "官方来源": {
+    "en-US": "Official source",
+    "es": "Fuente oficial",
+    "ja": "公式情報",
+    "ko": "공식 출처"
+  },
+  "发送短信至 988": {
+    "en-US": "Text 988",
+    "es": "Enviar mensaje al 988",
+    "ja": "988にSMSを送る",
+    "ko": "988로 문자 보내기"
+  },
+  "核验：": {
+    "en-US": "Checked: ",
+    "es": "Verificado: ",
+    "ja": "確認：",
+    "ko": "확인: "
+  },
+  "请联系所在地的官方紧急服务": {
+    "en-US": "Contact your local official emergency services",
+    "es": "Contacta con los servicios de emergencia locales",
+    "ja": "現地の公的な緊急サービスに連絡してください",
+    "ko": "현지 공식 긴급 서비스에 연락해 주세요"
+  },
+  "未确认所在地或目录尚未覆盖这里，不能假定 911、110 或 112 适用。请向身边的人、当地警方或最近的急诊求助。": {
+    "en-US": "Your location is unknown or not covered yet. Do not assume 911, 110 or 112 will work. Ask someone nearby, local police or the nearest emergency department for help.",
+    "es": "Tu ubicación no está confirmada o aún no está cubierta. No supongas que funcionan el 911, 110 o 112. Pide ayuda a alguien cercano, la policía local o urgencias.",
+    "ja": "所在地が不明、または未対応です。911・110・112が使えるとは限りません。近くの人、現地の警察や最寄りの救急外来に助けを求めてください。",
+    "ko": "위치가 확인되지 않았거나 아직 지원되지 않는 지역입니다. 911·110·112가 연결된다고 가정하지 마세요. 주변 사람, 현지 경찰 또는 가까운 응급실에 도움을 요청하세요."
+  },
+  "号码适用于所选所在地。点击会打开设备的拨号功能；Bloomie 不会代你呼叫，也没有真人值守。": {
+    "en-US": "Numbers apply to the selected location. Tapping opens your device’s dialer; Bloomie does not place calls or provide live monitoring.",
+    "es": "Los números corresponden a la ubicación elegida. Al pulsar se abre el marcador del dispositivo; Bloomie no llama por ti ni ofrece supervisión en vivo.",
+    "ja": "番号は選択した所在地で利用するものです。タップすると端末の電話機能が開きます。Bloomieは代理通報や常時監視を行いません。",
+    "ko": "번호는 선택한 지역에 해당합니다. 누르면 기기의 전화 기능이 열려요. Bloomie가 대신 신고하거나 실시간으로 모니터링하지는 않아요."
   }
 }

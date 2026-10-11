@@ -2,6 +2,7 @@
 import Image from "next/image";
 import bloomieIcon from "@/ICON2.png";
 import { LanguagePicker, useLocale } from "./locale";
+import { EmergencyHelp } from "./emergency-help";
 import { Welcome } from "./welcome";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -704,14 +705,7 @@ export function Bloomie() {
                 <h3>{t("先确保你和孩子的安全")}</h3>
               </div>
               <p className="modal-description">{t(safetyReply)}</p>
-              <div className="safety-box">
-                <strong>{t("当前尚未上线经本地核验的热线目录")}</strong>
-                <p>
-                  {t(
-                    "不能用测试联系人代替求助。请使用你所在地的官方急救、警方或医疗机构渠道。平台不能呼叫救援，没有真人值守。",
-                  )}
-                </p>
-              </div>
+              <EmergencyHelp />
               <p className="fine-print">
                 {t(
                   "聊天中的风险识别可能漏判或误判。无需等待系统识别，你随时可以主动寻求紧急帮助。",

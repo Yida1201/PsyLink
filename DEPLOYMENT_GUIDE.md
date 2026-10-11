@@ -219,3 +219,6 @@ Vercel 代码回滚不回滚 Supabase 数据库；迁移需另行管理。后续
 - [Next.js 部署到 Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs)
 - [Vercel 环境与生产分支](https://vercel.com/docs/deployments/environments)
 - [OpenAI 原语言转写与模型](https://developers.openai.com/api/docs/guides/speech-to-text)
+
+### Emergency contact baseline
+`/api/emergency-region` reads only Vercel's `x-vercel-ip-country` when `VERCEL=1`. No extra API key or precise location permission is needed. Responses are private/no-store; the application does not store or return the IP. Local/non-Vercel hosts return no country, so choose manually. The first verified directory covers the US, mainland China, Japan, South Korea and EU member states. Unknown/unsupported countries show manual selection and local emergency guidance, never a guessed number. A user's manual selection takes priority over a pending lookup. Each contact has a source URL and verification date in `lib/psylink/emergency.ts`; recheck sources when updating the directory. Phone links open the device dialer and do not call through Bloomie. UI language does not determine the country.
