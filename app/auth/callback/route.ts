@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { validSupabaseConfig } from "@/lib/supabase/config";
+import { authDestination } from "@/lib/supabase/auth-destination";
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code");
   let destination = "/?auth=error";
@@ -14,7 +15,7 @@ export async function GET(request: NextRequest) {
     try {
       const supabase = await createClient();
       const { error } = await supabase.auth.exchangeCodeForSession(code);
-      if (!error) destination = "/";
+      if (!error) destination = await authDestination(supabase, request.nextUrl.searchParams.get("next"));
     } catch {
       // An unavailable auth service should offer a fresh login, not a 500 page.
     }

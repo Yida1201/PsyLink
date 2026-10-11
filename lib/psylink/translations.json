@@ -840,10 +840,10 @@
     "ko": "완벽한 부모가 될 필요는 없어요."
   },
   "也给自己一点温柔。": {
-    "en-US": "Offer yourself a little kindness, too.",
-    "es": "También mereces un poco de amabilidad.",
-    "ja": "自分にも、少しのやさしさを。",
-    "ko": "나에게도 조금 다정해져요."
+    "en-US": "be kind to yourself, too.",
+    "es": "cuídate con cariño también.",
+    "ja": "自分にも、やさしさを。",
+    "ko": "나에게도 다정함을 주세요."
   },
   "有时，一次被听见，": {
     "en-US": "Sometimes, being heard",
@@ -2386,5 +2386,161 @@
     "es": "¿Qué podemos hacer juntos hoy?",
     "ja": "今日は子どもと何をしよう？",
     "ko": "오늘 아이와 무엇을 할까요?"
+  },
+  "一点一点，一起长大": {
+    "en-US": "Growing together, little by little",
+    "es": "Creciendo juntos, poquito a poco",
+    "ja": "少しずつ、一緒に育つ",
+    "ko": "조금씩, 함께 자라요"
+  },
+  "陪孩子长大，": {
+    "en-US": "As your child grows,",
+    "es": "Mientras tu peque crece,",
+    "ja": "子どもの成長に寄り添い、",
+    "ko": "아이의 성장을 함께하며,"
+  },
+  "不用成为完美的家长。在这里，聊聊心事、读一点好内容，找回日常里小小的连接。": {
+    "en-US": "You don’t have to be a perfect parent. Talk things through, discover thoughtful reads, and find little moments of connection.",
+    "es": "No tienes que ser una madre o un padre perfecto. Habla de lo que te preocupa, descubre lecturas y encuentra pequeños momentos de conexión.",
+    "ja": "完璧な親でなくても大丈夫。気持ちを話し、少し読み、日々の小さなつながりを見つけましょう。",
+    "ko": "완벽한 부모가 아니어도 괜찮아요. 마음을 나누고, 좋은 글을 읽으며 일상 속 작은 연결을 찾아보세요."
+  },
+  "心事，有处安放": {
+    "en-US": "A little room for your worries",
+    "es": "Un espacio para tus inquietudes",
+    "ja": "気持ちを話せる場所",
+    "ko": "마음을 나눌 수 있는 곳"
+  },
+  "带着问题来，看看有出处的建议": {
+    "en-US": "Bring your questions. Explore advice with sources.",
+    "es": "Trae tus preguntas y explora consejos con fuentes.",
+    "ja": "気になることを、出典のある情報とともに。",
+    "ko": "궁금한 점을 나누고 출처가 있는 조언을 살펴보세요."
+  },
+  "读一读、听一听，按自己的节奏": {
+    "en-US": "Read or listen, at your own pace.",
+    "es": "Lee o escucha, a tu ritmo.",
+    "ja": "読むのも、聴くのも、自分のペースで。",
+    "ko": "읽거나 들으며, 나만의 속도로."
+  },
+  "用家里现成的东西，一起做件小事": {
+    "en-US": "Simple things to do together, with what you have.",
+    "es": "Pequeñas actividades juntos, con lo que ya tienes.",
+    "ja": "家にあるもので、一緒に小さな活動を。",
+    "ko": "집에 있는 물건으로 작은 활동을 함께해요."
+  },
+  "从一个小时刻开始": {
+    "en-US": "Start with a little moment",
+    "es": "Empieza con un pequeño momento",
+    "ja": "小さなひとときから",
+    "ko": "작은 순간부터 시작해요"
+  },
+  "去邮箱看看吧。": {
+    "en-US": "Check your inbox.",
+    "es": "Revisa tu correo.",
+    "ja": "メールを確認してください。",
+    "ko": "메일함을 확인해 주세요."
+  },
+  "很高兴，在这里遇见你。": {
+    "en-US": "A softer start, right here.",
+    "es": "Un comienzo más tranquilo.",
+    "ja": "ここから、ほっとする一歩を。",
+    "ko": "여기서, 편안하게 시작해요."
+  },
+  "点击邮件里的链接就能回来。也可以先逛逛，不用等待。": {
+    "en-US": "Follow the link in your email to come back. You can explore while you wait.",
+    "es": "Vuelve con el enlace del correo. Mientras esperas, puedes explorar.",
+    "ja": "メールのリンクから戻れます。待っている間に、アプリを見てみても。",
+    "ko": "메일의 링크로 돌아올 수 있어요. 기다리는 동안 먼저 둘러봐도 좋아요."
+  },
+  "一个邮箱就能开始，无需设置密码。也可以先看看，慢慢来。": {
+    "en-US": "Just an email, no password to remember. Or take a look first. There’s no rush.",
+    "es": "Solo necesitas un correo, sin contraseña. O echa un vistazo primero, sin prisa.",
+    "ja": "メールアドレスだけで、パスワードは不要です。まずは見てみるだけでも。",
+    "ko": "이메일만 있으면 돼요. 비밀번호는 필요 없어요. 먼저 천천히 둘러봐도 좋아요."
+  },
+  "为你推荐更合适的小活动": {
+    "en-US": "Make activities a little more personal",
+    "es": "Actividades más adecuadas para ti",
+    "ja": "ご家族に合った活動を見つける",
+    "ko": "우리 가족에게 맞는 활동 찾기"
+  },
+  "选填": {
+    "en-US": "Optional",
+    "es": "Opcional",
+    "ja": "任意",
+    "ko": "선택 사항"
+  },
+  "孩子在哪个年龄段？可以多选，之后随时修改。": {
+    "en-US": "How old are your children? Choose any that fit. You can change this anytime.",
+    "es": "¿Qué edades tienen tus peques? Puedes elegir varias y cambiarlas cuando quieras.",
+    "ja": "お子さんの年齢を選んでください。複数選択でき、後から変更できます。",
+    "ko": "아이의 연령대를 골라주세요. 여러 개를 선택하고 언제든 바꿀 수 있어요."
+  },
+  "不需要姓名或生日，仅保存在当前浏览器。": {
+    "en-US": "No names or birthdays. Saved only in this browser.",
+    "es": "Sin nombres ni fechas de nacimiento. Se guarda solo en este navegador.",
+    "ja": "名前や誕生日は不要。このブラウザにのみ保存します。",
+    "ko": "이름이나 생일은 필요 없어요. 현재 브라우저에만 저장돼요."
+  },
+  "0–12 个月": {
+    "en-US": "0–12 months",
+    "es": "0–12 meses",
+    "ja": "0〜12か月",
+    "ko": "0–12개월"
+  },
+  "1–3 岁": {
+    "en-US": "1–3 years",
+    "es": "1–3 años",
+    "ja": "1〜3歳",
+    "ko": "1–3세"
+  },
+  "3–5 岁": {
+    "en-US": "3–5 years",
+    "es": "3–5 años",
+    "ja": "3〜5歳",
+    "ko": "3–5세"
+  },
+  "登录 / 注册，开始体验": {
+    "en-US": "Sign in or join Bloomie",
+    "es": "Entra o únete a Bloomie",
+    "ja": "ログイン・登録して始める",
+    "ko": "로그인 또는 가입하기"
+  },
+  "登录链接已发送": {
+    "en-US": "Your sign-in link is on its way",
+    "es": "Tu enlace de acceso está en camino",
+    "ja": "ログインリンクを送信しました",
+    "ko": "로그인 링크를 보냈어요"
+  },
+  "先随便看看": {
+    "en-US": "Take a look first",
+    "es": "Echar un vistazo primero",
+    "ja": "まずは見てみる",
+    "ko": "먼저 둘러보기"
+  },
+  "按你的节奏来，没有打卡压力。": {
+    "en-US": "Your pace. No streaks to keep up with.",
+    "es": "A tu ritmo, sin presión por las rachas.",
+    "ja": "自分のペースで。毎日続けるプレッシャーはありません。",
+    "ko": "나만의 속도로. 매일 해야 한다는 부담은 없어요."
+  },
+  "面向成年照护者；不替代专业诊断或治疗。": {
+    "en-US": "For adult caregivers. Does not replace professional diagnosis or treatment.",
+    "es": "Para personas adultas cuidadoras. No sustituye un diagnóstico ni tratamiento profesional.",
+    "ja": "成人の養育者向けです。専門家の診断や治療に代わるものではありません。",
+    "ko": "성인 보호자를 위한 서비스이며 전문적인 진단이나 치료를 대신하지 않습니다."
+  },
+  "跳过动画": {
+    "en-US": "Skip animation",
+    "es": "Omitir animación",
+    "ja": "アニメーションをスキップ",
+    "ko": "애니메이션 건너뛰기"
+  },
+  "正在加载…": {
+    "en-US": "Loading…",
+    "es": "Cargando…",
+    "ja": "読み込み中…",
+    "ko": "불러오는 중…"
   }
 }

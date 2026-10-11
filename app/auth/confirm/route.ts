@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { validSupabaseConfig } from "@/lib/supabase/config";
+import { authDestination } from "@/lib/supabase/auth-destination";
 
 // Use the token-hash email template in LOGIN_SETUP.md to allow a user to open
 // the email in a different browser from the one that requested it.
@@ -22,7 +23,7 @@ export async function GET(request: NextRequest) {
         token_hash: tokenHash,
         type: "email",
       });
-      if (!error) destination = "/";
+      if (!error) destination = await authDestination(supabase, request.nextUrl.searchParams.get("next"));
     } catch {
       // Do not expose authentication tokens or provider errors.
     }

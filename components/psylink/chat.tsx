@@ -6,6 +6,7 @@ import {useVoiceInput} from "./use-voice-input";
 import {voiceLabels} from "@/lib/psylink/voice-labels";
 import { useEffect, useRef, useState } from "react";
 import {
+  ChevronDown,
   ArrowUp,
   Mic,
   LoaderCircle,
@@ -59,11 +60,56 @@ export function Chat({
   const end = useRef<HTMLDivElement>(null);
   const input = useRef<HTMLTextAreaElement>(null);
   const composer = useRef<HTMLDivElement>(null);
+  const history = useRef<HTMLDivElement>(null);
+  const [historyScrolling, setHistoryScrolling] = useState(false);
   const voice=useVoiceInput({onLogin,onText:(text,autoSend)=>{setDraft(text);input.current?.focus();if(autoSend)void send(text);}});
   const v=voiceLabels[locale];
   const pointer=useRef<{id:number;x:number;y:number}|null>(null);
   useEffect(()=>{if(!active&&voice.phase!=='idle')voice.cancel();},[active,voice.phase]);
   useEffect(()=>{const escape=(e:KeyboardEvent)=>{if(e.key==='Escape'&&voice.phase!=='idle')voice.cancel();};window.addEventListener('keydown',escape);return()=>window.removeEventListener('keydown',escape);},[voice.phase]);
+
+  useEffect(() => {
+    const canvas = history.current;
+    const controls = composer.current;
+    if (!canvas || !controls || !active || !messages.length) {
+      setHistoryScrolling(false);
+      return;
+    }
+    let reading = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const reveal = () => {
+      reading = false;
+      clearTimeout(timer);
+      setHistoryScrolling(false);
+    };
+    const postponeReveal = () => {
+      clearTimeout(timer);
+      timer = setTimeout(reveal, 650);
+    };
+    const gesture = () => {
+      if (voice.phase !== 'idle' || busy || error || controls.contains(document.activeElement)) return;
+      reading = true;
+      setHistoryScrolling(true);
+      postponeReveal();
+    };
+    const scroll = () => {
+      if (reading) postponeReveal();
+    };
+    canvas.addEventListener('wheel', gesture, {passive: true});
+    canvas.addEventListener('touchmove', gesture, {passive: true});
+    // Only user gestures begin hiding; programmatic message scrolling does not.
+    canvas.addEventListener('scroll', scroll, {passive: true});
+    controls.addEventListener('focusin', reveal);
+    return () => {
+      clearTimeout(timer);
+      canvas.removeEventListener('wheel', gesture);
+      canvas.removeEventListener('touchmove', gesture);
+      canvas.removeEventListener('scroll', scroll);
+      controls.removeEventListener('focusin', reveal);
+      setHistoryScrolling(false);
+    };
+  }, [active, messages.length, voice.phase, busy, error]);
+  const hideComposer = historyScrolling && voice.phase === 'idle' && !busy && !error;
 
   useEffect(() => {
     if (!composer.current) return;
@@ -172,6 +218,7 @@ export function Chat({
           </button>
         </div>
         <div
+          ref={history}
           className={`conversation-body ${messages.length ? "has-messages" : ""}`}
         >
           {!messages.length ? (
@@ -315,14 +362,14 @@ export function Chat({
             </div>
           )}
         </div>
-        <div className="composer-area" ref={composer}>
+        <div className={`composer-area ${hideComposer ? "is-reading-history" : ""}`} ref={composer} inert={hideComposer} aria-hidden={hideComposer || undefined}>
           {error && (
             <p className="error-message" role="alert">
               {t(error)}
             </p>
           )}
           <div className="voice-guidance" aria-live="polite">
-            {voice.phase==='recording'?<><span className="voice-record-dot" aria-hidden="true"/><strong>{v.recording}<span aria-hidden="true"> · {voice.seconds}s</span></strong><span>{voice.intent==='send'?v.send:voice.intent==='cancel'?v.cancel:v.edit}</span><button type="button" aria-label={v.cancelButton} onClick={voice.cancel}><X size={15}/></button></>:voice.phase==='requesting'?v.requesting:voice.phase==='transcribing'?<><LoaderCircle size={14} className="voice-spinner"/>{voice.intent==='send'?v.sending:v.transcribing}</>:voice.notice?<span role={voice.notice==='ready'||voice.notice==='cancelled'?'status':'alert'}>{v[voice.notice as keyof typeof v]||v.provider}</span>:!draft.trim()?v.hint:null}
+            {voice.phase==='recording'?<><span className="voice-record-dot" aria-hidden="true"/><strong>{v.recording}<span aria-hidden="true"> · {voice.seconds}s</span></strong><span>{voice.intent==='send'?v.send:voice.intent==='cancel'?v.cancel:v.edit}</span><button type="button" aria-label={v.cancelButton} onClick={voice.cancel}><X size={15}/></button></>:voice.phase==='requesting'?v.requesting:voice.phase==='transcribing'?<><LoaderCircle size={14} className="voice-spinner"/>{voice.intent==='send'?v.sending:v.transcribing}</>:voice.notice?<span role={voice.notice==='ready'||voice.notice==='cancelled'?'status':'alert'}>{v[voice.notice as keyof typeof v]||v.provider}</span>:null}
           </div>
           <form
             className={`composer voice-${voice.phase} ${voice.intent==='send'?'voice-send-ready':''} ${voice.notice==='ready'?'voice-text-ready':''}`}
@@ -365,18 +412,19 @@ export function Chat({
               onKeyUp={e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();voice.finish('edit');}}}
             >{voice.phase==='transcribing'?<LoaderCircle size={20} className="voice-spinner"/>:voice.intent==='send'&&voice.phase==='recording'?<ArrowUp size={20}/>:<Mic size={20}/>}</button>}
           </form>
-          <p className="voice-privacy" id="voice-input-privacy">{v.privacy}</p>
-          <div className="composer-privacy">
-            <LockKeyhole size={12} />
-            {t("本次对话不会自动保存")}
-          </div>
-          <p className="composer-note">
-            {t(
-              ai
-                ? "AI 可能出错，不提供诊断；没有真人实时监看。"
-                : "当前为预设演示回复；请使用虚构情境体验。",
-            )}
-          </p>
+          <details className="composer-help">
+            <summary>
+              <LockKeyhole size={12} aria-hidden="true" />
+              <span>{t("本次对话不会自动保存")}{!ai ? ` · ${t("当前为预设演示回复；请使用虚构情境体验。")}` : ""}</span>
+              <span className="composer-help-label">{v.details}</span>
+              <ChevronDown size={12} aria-hidden="true" />
+            </summary>
+            <div className="composer-help-body">
+              <p>{v.hint}</p>
+              <p id="voice-input-privacy">{v.privacy}</p>
+              <p>{t(ai ? "AI 可能出错，不提供诊断；没有真人实时监看。" : "当前为预设演示回复；请使用虚构情境体验。")}</p>
+            </div>
+          </details>
         </div>
       </section>
       <aside className="chat-aside">

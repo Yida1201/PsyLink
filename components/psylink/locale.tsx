@@ -10,23 +10,26 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { Check, ChevronDown } from "lucide-react";
 import {
   translate,
+  preferredLocale,
   validLocale,
   locales,
   localeLabels,
   type Locale,
 } from "@/lib/psylink/i18n";
 const Context = createContext({
-  locale: "zh-CN" as Locale,
+  locale: "en-US" as Locale,
   setLocale: (_value: Locale) => {void _value;},
   t: (text: string) => text,
 });
 export function LocaleProvider({ children, titles }: { children: ReactNode; titles?: {"zh-CN":string;"en-US":string} }) {
-  const [locale, setLocale] = useState<Locale>("zh-CN");
+  const [locale, setLocale] = useState<Locale>("en-US");
   useEffect(() => {
+    let initial = preferredLocale(navigator.languages?.length ? navigator.languages : [navigator.language]);
     try {
       const value = localStorage.getItem("psylink-locale");
-      if (validLocale(value)) setLocale(value);
+      if (validLocale(value)) initial = value;
     } catch {}
+    setLocale(initial);
   }, []);
   useEffect(() => {
     document.documentElement.lang = locale;

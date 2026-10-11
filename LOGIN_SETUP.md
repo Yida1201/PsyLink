@@ -22,7 +22,7 @@
 <p><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email">登录 Bloomie</a></p>
 ```
 
-`/auth/confirm` 只接收 email 类型的验证，验证完成后回到首页。旧模板走 `/auth/callback` 的 PKCE 流程，通常要求在发起请求的同一浏览器中打开。模板修改只影响之后发送的邮件；之前的链接不变。关闭邮件服务的点击跟踪，避免改写验证链接。
+`/auth/confirm` 只接收 email 类型的验证，验证完成后，只允许回跳到首页或 `/admin`。没有回跳参数时，系统查询 `public.bloomie_staff`：`admin`、`editor`、`reviewer` 进入后台，其他账号进入首页。后台 API 仍独立验证权限；回跳参数不能授予权限。旧模板走 `/auth/callback` 的 PKCE 流程，通常要求在发起请求的同一浏览器中打开。模板修改只影响之后发送的邮件；之前的链接不变。关闭邮件服务的点击跟踪，避免改写验证链接。
 
 ## Vercel 配置和验收
 

@@ -16,6 +16,16 @@ export const localeLabels: Record<Locale, string> = {
   ja: "日本語",
   ko: "한국어",
 };
+/** Match browser preferences in order; only supported locales can be selected. */
+export function preferredLocale(languages: readonly string[]): Locale {
+  for (const language of languages) {
+    const base = language.toLowerCase().split(/[-_]/)[0];
+    if (base === "zh") return "zh-CN";
+    if (base === "en") return "en-US";
+    if (base === "es" || base === "ja" || base === "ko") return base;
+  }
+  return "en-US";
+}
 export function validLocale(value: unknown): value is Locale {
   return (
     typeof value === "string" && (locales as readonly string[]).includes(value)

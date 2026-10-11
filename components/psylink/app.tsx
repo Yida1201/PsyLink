@@ -2,6 +2,7 @@
 import Image from "next/image";
 import bloomieIcon from "@/ICON2.png";
 import { LanguagePicker, useLocale } from "./locale";
+import { Welcome } from "./welcome";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -60,6 +61,13 @@ export function Bloomie() {
   const { t, locale } = useLocale();
   const { sources } = useCatalog();
   const [ready, setReady] = useState(false);
+  const [welcomeSeen, setWelcomeSeen] = useState(false);
+  const [authResolved, setAuthResolved] = useState(!configured);
+  const [loginSent, setLoginSent] = useState(false);
+  function explore() {
+    try { localStorage.setItem("bloomie-welcome-seen", "true"); } catch {}
+    setWelcomeSeen(true);
+  }
   const [tab, setTab] = useState<Tab>("chat");
   const [todayFilter,setTodayFilter]=useState<Category|'all'>('all');
   function openTogether(category?:Category){setTodayFilter(category||'all');setTab('today');}
@@ -106,6 +114,7 @@ export function Bloomie() {
   const initialAuth = useRef(true);
   useEffect(() => {
     setReady(true);
+    setWelcomeSeen(localRead<unknown>("bloomie-welcome-seen", false) === true);
     const value = localRead<unknown>("psylink-favorites", []);
     const ids = Array.isArray(value)
       ? value.filter(
@@ -139,6 +148,7 @@ export function Bloomie() {
       initialAuth.current = false;
       activeUser.current = nextUser?.id || null;
       setUser(nextUser);
+      setAuthResolved(true);
       window.dispatchEvent(new Event("bloomie-auth-changed"));
       setSavingReady(false);
       setSaved(nextUser ? [] : localFavorites.current);
@@ -162,7 +172,7 @@ export function Bloomie() {
       }
       setSavingReady(true);
     }
-    supabase.auth.getUser().then(({ data }) => updateUser(data.user));
+    supabase.auth.getUser().then(({ data }) => updateUser(data.user)).catch(() => { if (alive) setAuthResolved(true); });
     const { data: subscription } = supabase.auth.onAuthStateChange(
       (_event, session) => {
         setTimeout(() => {
@@ -371,11 +381,14 @@ export function Bloomie() {
     if (!configured || authBusy) return;
     setAuthBusy(true);
     setAuthMessage("");
+    setLoginSent(false);
     try {
       const { error } = await createClient().auth.signInWithOtp({
         email: email.trim(),
         options: { emailRedirectTo: `${location.origin}/auth/callback` },
       });
+      setLoginSent(!error);
+      if (!error) { try { localStorage.setItem("bloomie-welcome-seen", "true"); } catch {} }
       setAuthMessage(
         error
           ? "暂时无法发送登录邮件，请稍后再试。"
@@ -414,6 +427,8 @@ export function Bloomie() {
     },
   ];
   const heading = nav.find((n) => n.id === tab)!;
+  if (!ready || (!welcomeSeen && !authResolved)) return <div className="welcome-loading" role="status" aria-label={t("正在加载…")}><span>Bloomie</span></div>;
+  if (!welcomeSeen && !user) return <Welcome configured={configured} email={email} onEmail={setEmail} onLogin={login} busy={authBusy} message={authMessage} sent={loginSent} onExplore={explore} />;
   return (
     <div className="app-shell" data-ready={ready}>
       <a href="#main" className="skip-link">

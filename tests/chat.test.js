@@ -11,6 +11,11 @@ let quota = true;
 let authError = null;
 let authThrows = false;
 let authArguments = null;
+let staffRole = null;
+let staffError = null;
+let userError = null;
+let publicationRows = [];
+let publicationError = null;
 async function exchangeAuth(value) {
   authArguments = value;
   if (authThrows) throw new Error("Auth service unavailable");
@@ -23,8 +28,13 @@ mock.module("../lib/supabase/server", () => ({
       verifyOtp: exchangeAuth,
       getUser: async () => ({
         data: { user: authenticated ? { id: "test-user" } : null },
+        error: userError,
       }),
     },
+    from: (table) => table === "together_publications"
+      ? {select: async () => ({data: publicationRows, error: publicationError})}
+      : table === "together_registrations" ? {select: () => ({eq: async () => ({data: [],error:null})})}
+      : { select: () => ({ eq: () => ({ maybeSingle: async () => ({ data: staffRole ? { role: staffRole } : null, error: staffError }) }) }) },
     rpc: async () => ({ data: quota, error: null }),
   }),
 }));
@@ -68,6 +78,11 @@ beforeEach(() => {
   authError = null;
   authThrows = false;
   authArguments = null;
+  staffRole = null;
+  staffError = null;
+  userError = null;
+  publicationRows = [];
+  publicationError = null;
   globalThis.fetch = mock(() => {
     throw new Error("Unexpected external request");
   });
@@ -556,6 +571,36 @@ describe("email login callbacks", () => {
     expect(response.headers.get("cache-control")).toContain("no-store");
     expect(response.headers.get("referrer-policy")).toBe("no-referrer");
   });
+  test("both callback types preserve the allowlisted admin destination", async () => {
+    live();
+    for (const [kind, query] of [["callback", "?code=test"], ["confirm", "?token_hash=test&type=email"]]) {
+      expect((await visit(kind, `${query}&next=/admin`)).headers.get("location")).toBe("/admin");
+      for (const next of ["//external.example", "https://external.example", "/admin/other", "/\\external.example"]) {
+        expect((await visit(kind, `${query}&next=${encodeURIComponent(next)}`)).headers.get("location")).toBe("/");
+      }
+    }
+  });
+  test("templates without next resolve staff roles and preserve ordinary user login", async () => {
+    live();
+    for (const [kind, query] of [["callback", "?code=test"], ["confirm", "?token_hash=test&type=email"]]) {
+      for (const role of ["admin", "editor", "reviewer"]) {
+        staffRole = role;
+        expect((await visit(kind, query)).headers.get("location")).toBe("/admin");
+      }
+      expect((await visit(kind, `${query}&next=/`)).headers.get("location")).toBe("/");
+      staffRole = "unrecognized";
+      expect((await visit(kind, query)).headers.get("location")).toBe("/");
+      staffRole = null;
+      expect((await visit(kind, query)).headers.get("location")).toBe("/");
+      staffRole = "admin";
+      staffError = { message: "missing table" };
+      expect((await visit(kind, query)).headers.get("location")).toBe("/");
+      staffError = null;
+      authenticated = false;
+      expect((await visit(kind, query)).headers.get("location")).toBe("/");
+      authenticated = true;
+    }
+  });
   test("missing setup, expired links and network failure recover without a 500", async () => {
     expect(
       (await visit("callback", "?code=test")).headers.get("location"),
@@ -778,4 +823,55 @@ describe('Today Together starter',()=>{
   globalThis.fetch=mock(async(url,options)=>{count++;if(String(url).endsWith('/responses')){payload=JSON.parse(options.body);return Response.json({output:[{content:[{type:'output_text',text:JSON.stringify({text:'A little time together is enough. You can stop whenever you like.',sourceIds:[],safety:false})}]}]});}return Response.json({results:[{flagged:false}]});});
   const response=await POST(request([{role:'user',content:'What can we do together today?'}],{locale:'en-US',todayTogether:true,ages:['private-age-marker'],note:'private-note-marker',activityId:'private-choice-marker'}));expect(response.status).toBe(200);expect(count).toBe(3);expect(payload.store).toBe(false);expect(payload.instructions).toContain('UI will attach exact daily activity cards locally');expect(JSON.stringify(payload)).not.toContain('private-age-marker');expect(JSON.stringify(payload)).not.toContain('private-note-marker');expect(JSON.stringify(payload)).not.toContain('private-choice-marker');
  });
+});
+
+
+describe("production starter activity catalog", () => {
+  async function catalog() {
+    const { GET } = await import("../app/api/together/route");
+    return GET(new Request("https://bloomie.example/api/together"));
+  }
+  test("anonymous visitors see bundled activities when the database has no publications", async () => {
+    live();
+    authenticated = false;
+    const { AuthSessionMissingError } = await import("@supabase/supabase-js");
+    userError = new AuthSessionMissingError();
+    const response = await catalog(), body = await response.json();
+    expect(response.status).toBe(200);
+    expect(body.activities).toHaveLength(24);
+    expect(body.activities.every(a => a.reviewStatus === "draft")).toBe(true);
+    expect(body.registrations).toEqual([]);
+  });
+  test("a fresh deployment without migration 006 shows drafts but no pretend RSVP", async () => {
+    live();
+    for (const code of ["PGRST205", "42P01"]) {
+      publicationError = {code};
+      const response = await catalog(), body = await response.json();
+      expect(response.status).toBe(200);
+      expect(body.activities).toHaveLength(24);
+      expect(body.circles).toEqual([]);
+      expect(body.mode).toBe("builtin");
+      expect(body.setupRequired).toBe(true);
+    }
+  });
+  test("published changes and withdrawals still override starter activities", async () => {
+    live();
+    const { seeds } = await import("../lib/together-admin/model");
+    const seed = seeds()[0];
+    publicationRows = [{id:seed.id,kind:seed.kind,data:{},active:false}];
+    const body = await (await catalog()).json();
+    expect(body.activities).toHaveLength(23);
+    expect(body.activities.some(a => a.id === seed.id)).toBe(false);
+    publicationRows = [{...seed, data:{...seed.data,reviewStatus:"reviewed"},active:true}];
+    expect((await (await catalog()).json()).activities.find(a=>a.id===seed.id).reviewStatus).toBe("reviewed");
+  });
+  test("database permission/network failures never restore potentially withdrawn starters", async () => {
+    live();
+    for (const code of ["42501","PGRST301","network-error"]) {
+      publicationError={code};
+      const response=await catalog();
+      expect(response.status).toBe(503);
+      expect((await response.json()).activities).toBeUndefined();
+    }
+  });
 });
