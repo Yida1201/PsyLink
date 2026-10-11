@@ -4,6 +4,8 @@ import { useEffect, useLayoutEffect, useRef, useState, type FormEvent } from "re
 import { ArrowRight, BookOpen, MessageCircle, Sun, Check, Mail } from "lucide-react";
 import icon from "@/ICON2.png";
 import { LanguagePicker, useLocale } from "./locale";
+import { ThemeSwitch } from "./material";
+import { Planter } from "./art";
 import { useTogether } from "./together-state";
 import "./welcome.css";
 
@@ -47,19 +49,13 @@ export function Welcome({ configured, email, onEmail, onLogin, busy, message, se
   }, [introPhase]);
   const features = [{icon:MessageCircle,title:"心事，有处安放",description:"带着问题来，看看有出处的建议"},{icon:BookOpen,title:"一点知识，一点陪伴",description:"读一读、听一听，按自己的节奏"},{icon:Sun,title:"每天十分钟，靠近一点",description:"用家里现成的东西，一起做件小事"}];
   return <div className="welcome-page" lang={locale} data-intro={introDone ? "done" : "playing"} data-phase={introPhase}>
-    <div className="welcome-language"><span>Language / 语言</span><LanguagePicker /></div>
+    <div className="welcome-language"><ThemeSwitch /><span>Language / 语言</span><LanguagePicker /></div>
     <header ref={brandRef} className="welcome-brand"><Image src={icon} alt="" width={42} height={42}/><span>Bloomie</span></header>
     {!introDone && <button className="welcome-skip" onClick={()=>setIntroPhase("done")}>{t("跳过动画")}<ArrowRight size={14}/></button>}
     <main className="welcome-main" id="main">
       <section className="welcome-story" aria-labelledby={introDone ? "welcome-title" : undefined}>
         <div className="welcome-garden" aria-hidden="true"><div className="welcome-halo"/><span className="welcome-spark spark-one">✦</span><span className="welcome-spark spark-two">✧</span>
-          <svg className="welcome-sprout" viewBox="0 0 360 290" fill="none">
-            <ellipse cx="180" cy="258" rx="100" ry="13" fill="#38594c" opacity=".08"/>
-            <g className="welcome-leaves"><path d="M181 202V114" stroke="#628168" strokeWidth="7" strokeLinecap="round"/><path d="M180 159C126 162 111 127 120 98C160 99 186 121 180 159Z" fill="url(#leaf)"/><path d="M181 139C177 94 204 67 245 72C252 111 219 140 181 139Z" fill="url(#leaf2)"/></g>
-            <path d="M123 186Q180 175 237 186L228 236Q225 255 180 256Q135 255 132 236Z" fill="url(#pot)"/><ellipse cx="180" cy="186" rx="57" ry="12" fill="#eee9dc"/><ellipse cx="180" cy="186" rx="45" ry="6" fill="#b5bca3"/>
-            <circle cx="163" cy="218" r="3" fill="#596953"/><circle cx="198" cy="218" r="3" fill="#596953"/><path d="M174 229Q181 235 188 229" stroke="#596953" strokeWidth="2.5" strokeLinecap="round"/><ellipse cx="152" cy="225" rx="6" ry="3" fill="#dfb5a0" opacity=".7"/><ellipse cx="210" cy="225" rx="6" ry="3" fill="#dfb5a0" opacity=".7"/>
-            <defs><linearGradient id="leaf" x1="122" y1="98" x2="182" y2="158" gradientUnits="userSpaceOnUse"><stop stopColor="#b8cbaa"/><stop offset="1" stopColor="#779576"/></linearGradient><linearGradient id="leaf2" x1="243" y1="72" x2="181" y2="139" gradientUnits="userSpaceOnUse"><stop stopColor="#d1dcc1"/><stop offset="1" stopColor="#8ba782"/></linearGradient><linearGradient id="pot" x1="123" y1="186" x2="237" y2="250" gradientUnits="userSpaceOnUse"><stop stopColor="#fffef9"/><stop offset=".6" stopColor="#f0e6d4"/><stop offset="1" stopColor="#d8cdb8"/></linearGradient></defs>
-          </svg>{introDone && <span className="welcome-garden-note">{t("一点一点，一起长大")}</span>}
+          <Planter face className="welcome-sprout" />{introDone && <span className="welcome-garden-note">{t("一点一点，一起长大")}</span>}
         </div>
         {introDone && <div className="welcome-copy"><p className="welcome-eyebrow">{t("给家庭一处安心的空间")}</p><h1 id="welcome-title">{t("陪孩子长大，")}<br/><span>{t("也给自己一点温柔。")}</span></h1><p className="welcome-description">{t("不用成为完美的家长。在这里，聊聊心事、读一点好内容，找回日常里小小的连接。")}</p><div className="welcome-features">{features.map(({icon:Icon,title,description})=><div className="welcome-feature" key={title}><span><Icon size={19}/></span><div><h2>{t(title)}</h2><p>{t(description)}</p></div></div>)}</div></div>}
       </section>

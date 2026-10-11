@@ -100,26 +100,29 @@ export function Care({ onSafety, onLogin, onTogether }: { onSafety: () => void; 
           </button>
         ))}
       </div>
-      <div className={`professional-grid${items.length===4?" balanced":""}`}>
+      <div className="pro-grid">
         {items.map((p) => (
-          <article className="professional-card paper" key={p.id}>
-            <div className="professional-top">
-              <div className={`portrait ${p.color}`} aria-hidden="true">
-                <span>{t(p.initial)}</span>
+          <article className="pro-card paper" key={p.id}>
+            <div className={`pro-avatar ${p.color}`} aria-hidden="true">
+              <span>{t(p.initial)}</span>
+            </div>
+            <div className="pro-id">
+              <h3>{t(p.name)}</h3>
+              <span className="pro-role">{t(p.role)}</span>
+              <p className="pro-focus">{t(p.focus)}</p>
+            </div>
+            <span className="pro-plate">{t(p.isDemo===false?"已审核资料":"示例人员")}</span>
+            <dl className="pro-spec">
+              <div>
+                <dt>{t(p.isDemo===false?"资质":"形式")}</dt>
+                <dd><Video size={14} />{p.isDemo===false ? t(p.qualification || "已审核资料") : t("站内视频 · 演示")}</dd>
               </div>
-              <span className="demo-tag">{t(p.isDemo===false?"已审核资料":"示例人员")}</span>
-            </div>
-            <h3>{t(p.name)}</h3>
-            <span className="professional-role">{t(p.role)}</span>
-            <p>{t(p.focus)}</p>
-            <div className="professional-details">
-              <span>
-                <Video size={15} />
-                {p.isDemo===false ? t(p.qualification || "已审核资料") : t("站内视频 · 演示")}
-              </span>
-              <span>{t(p.isDemo===false?"联系与服务安排以本人说明为准":"无需付费 · 不提供真实服务")}</span>
-            </div>
-            <button className="secondary-button" onClick={() => open(p)}>
+              <div>
+                <dt>{t(p.isDemo===false?"安排":"说明")}</dt>
+                <dd>{t(p.isDemo===false?"联系与服务安排以本人说明为准":"无需付费 · 不提供真实服务")}</dd>
+              </div>
+            </dl>
+            <button className="secondary-button pro-action" onClick={() => open(p)}>
               {t(p.isDemo===false?"查看联系渠道":"了解并体验预约")}
               <ArrowRight size={16} />
             </button>

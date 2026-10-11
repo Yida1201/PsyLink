@@ -3,17 +3,36 @@
 Modern tactile design for Chinese caregivers of preschool children. One continuous experience across conversation, library, daily activities and care. The product name is Bloomie.
 
 ## Direction
-Warm paper, ceramic objects, lightly frosted navigation, restrained dimensionality. Borrow iOS hierarchy, ColorOS fluidity, and Smartisan physical affordances; never copy proprietary assets. Avoid full-interface neumorphism: interactive edges remain visible.
+Modern tactile: a calm instrument for families. Warm stoneware, cloth-bound books and glazed ceramics in a softly lit room, combined with three influences tuned for anxious caregivers rather than copied: Apple Liquid Glass for floating layers, Smartisan-style physical controls (keycaps that press, sprung toggle switches, LED indicators, screws on devices), and Nothing-style dot grid plus mono micro-labels. Never copy proprietary assets. Interactive edges remain visible; no full-interface neumorphism.
+
+## Material system (2026-10-11)
+- **Tokens** live only in `app/tokens.css` (light + `[data-theme="dark"]`). `globals.css` owns layout and references tokens; `app/material.css` owns materials. Do not add raw hex colours to UI rules; illustrated objects (books, vinyl, ceramics, spheres) may keep literal colours.
+- **Room**: page background is a fine dot grid over two or three large blurred colour lights (sage, peach, sky) so glass has something to refract.
+- **Glass** is reserved for floating layers: sidebar, conversation shell and composer, modals, mobile tab bar, hero bands. A pointer-following specular highlight (`<Specular/>`) moves across glass panels; its selector list in `components/psylink/material.tsx` and `material.css` stays in sync.
+- **Stoneware plates** for content cards: opaque paper, top light, fine rim, soft long shadow.
+- **Keycaps**: primary = forest gradient with a 3px pressed edge; secondary = light keycap. Both travel down on `:active`. Segmented controls are inset wells with a raised selected key.
+- **Switches & LEDs**: settings toggles are inset tracks with a glossy sprung knob; checkboxes are small LED keys; status/active indicators are a breathing clay LED (the single warm signal colour).
+- **Process track**: activity steps are joined by a dotted line; the first node glows.
+- **Dark mode**: a quiet night-garden. `data-theme` on `<html>` is set before paint from `bloomie-theme` in localStorage, else `prefers-color-scheme`. The theme switch shows the current mode on the knob and the other in the track.
 
 ## Tokens
-- Background #f5f4ef; paper #fffefb; ink #293e38; secondary #69746c.
-- Primary forest #38594c; sage #e5ebe1; clay #b87d64; peach #f2e5da.
-- Text: PingFang SC / Microsoft YaHei; editorial headings: Songti SC / Noto Serif CJK SC. No external fonts.
-- Body 15–16px, line height 1.75; page title 28px; display 38px desktop / 30px mobile.
-- 4px spacing scale; 20–28px card radius, 12px controls, 44px touch targets.
-- Soft shadows plus fine borders. Books have spines, paper edges and shelf shadows.
-- Main shell fills the space beside the desktop 224px navigation; mobile uses a bottom tab bar. Reading and daily activity content can retain centered width limits for readability. Outer page headers and support sections follow the viewport width with balanced side padding.
-- Motion 180–260ms; respect prefers-reduced-motion.
+- Light: background #edece6, paper #fbfaf6, ink #1f2d28, forest #2f5444, clay #c0643f.
+- Dark: background #0e1110, paper #1a1f1c, ink #eef1ea, forest #8fc7a6, clay #ff7a4d.
+- Type: Space Grotesk for UI and display headings (self-hosted via `next/font`, no runtime requests), system CJK fallbacks (PingFang SC / Noto Sans SC); Space Mono for uppercase micro-labels (12px minimum for CJK); Doto only for large readouts (thin below ~20px). Book covers keep editorial serif because they are printed objects.
+- Body 15–16px, line height 1.7; 26px panel radius, 14px controls, 44px touch targets.
+- Motion 120–380ms with a spring for knobs; respect prefers-reduced-motion and prefers-reduced-transparency (glass becomes opaque paper).
+
+## Illustration
+One drawing per object, rendered as real materials:
+- **Planter** (`Planter` in `art.tsx`): speckled glazed stoneware with cylindrical shading, a glaze streak, thick rim, grainy soil, veined translucent leaves and a contact shadow. The welcome version keeps the smiling face; the library version sits in a glass halo.
+- **Books**: cloth weave, hinge groove, page block, blind-stamped motifs (light lower edge, dark upper edge).
+- **Spheres and sun dial**: glazed ceramic with a hotspot, rim light and soft cast shadow; orbits are fine wire.
+- **Turntable**: wood-tone plinth with brushed grain and four screws, metal platter, deep vinyl grooves.
+- In dark mode objects are dimmed slightly rather than recoloured.
+- **Hourglass** (Today Together hero): oak caps and posts with glass bulbs and a slow sand stream; replaces the earlier ceramic sun, which read as an abstract symbol rather than an object.
+- **Category tiles**: activity categories are small glazed ceramic tiles (reading sage, routine ochre, emotion clay, movement blue) with a debossed glyph. Don't redraw each activity as its own illustration; colour carries the category.
+- **Week lamps**: seven glass lamps in chrome bezels on a recessed brushed strip (dark anodised in dark mode); a lit lamp glows forest green with a leaf. No scores or streaks.
+- **Sample people** (Find support): round glazed ceramic pebbles with a groove ring and raised initial. Avoid arched shapes with a centred letter (they read as gravestones) and avoid realistic faces for fictional people. Cards are horizontal: identity, a stamped "sample person" plate, a dashed spec strip (label over value) and a compact keycap action. Demo time slots are keycaps; the chosen one stays pressed.
 
 ## Product rules
 Demo services have persistent labels and explicit action confirmation. No fabricated qualifications, reviews, expert endorsement or appointments. Editorial provenance does not imply clinical review. Chat is ephemeral. Notifications are opt-in. Icon buttons have labels; modals trap and restore focus.
@@ -26,7 +45,9 @@ Demo services have persistent labels and explicit action confirmation. No fabric
 Initial direction: 2026-10-09, based on the authorized brief.
 
 ## Listening corner
-Library includes reading and podcast formats. Turntable uses warm wood, brushed metal, vinyl grooves and paper sleeves; the same forest controls and muted palette continue across books and audio. Demo podcasts never imitate playback or imply expert recordings. Selection and local bookmarks work; the listening action explains missing audio and links to curated reading.
+Library includes reading and podcast formats. The turntable is a playable object: an oak plinth with a brushed champagne plate, screws, a machined platter with strobe ring, grooved vinyl under a static reflection, a chrome tonearm with counterweight and finger lift, an LCD time readout and a start key. Lowering the tonearm onto the record plays; lifting it pauses; dropping the stylus partway seeks; the arm tracks progress inwards. Keyboard and screen-reader users get the arm as a switch and a separate start key.
+
+Audio: only the "家长也需要充电 / Parents need to recharge, too" episode has a ~2-minute demo, voiced by two synthetic OpenAI TTS hosts (zh-CN and en-US files in `public/audio/`; other locales hear English and are told so). The audio itself opens with an AI/demo disclosure, the UI labels it "AI 合成演示音频", and the disclosure under the deck states the hosts are not real people or experts and the content awaits professional review. Episodes without audio let the arm drop, then return it with a notice. Never present demo audio as an expert recording.
 
 ## Conversation UI
 Chat uses a quiet sage canvas, white incoming bubbles and forest outgoing bubbles. Rounded asymmetric corners identify the speaker; readable 15–16px text replaces small editorial typography. A restrained translucent header and floating pill composer provide the control layer, with opaque message content. Source details expand below the response and recommendations remain secondary. Mobile input stays at 16px to avoid focus zoom; primary controls are at least 44px. Respect reduced motion/transparency settings. Keep demo/safety labels, provenance and service limitations visible.

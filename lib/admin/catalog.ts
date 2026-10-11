@@ -6,7 +6,7 @@ import {emptyPayload,validateRecord,type Publication} from "./model";
 export type Catalog={articles:Article[];sources:Source[];professionals:Professional[];podcasts:Podcast[];knowledge:Article[];mode:string;notice?:string};
 export function buildCatalog(rows:Publication[],locale:Locale,mode="builtin"):Catalog {
   const localized=(a:Article)=>({...a,title:translate(locale,a.title),subtitle:translate(locale,a.subtitle),paragraphs:a.paragraphs.map(p=>({heading:translate(locale,p.heading),text:translate(locale,p.text)}))});
-  const result:Catalog={articles:articles.map(localized),sources:[...sources],professionals:demoProfessionals(locale),podcasts:podcasts.map(p=>({...p,title:translate(locale,p.title),series:translate(locale,p.series),description:translate(locale,p.description),isDemo:true})),knowledge:articles.map(localized),mode};
+  const result:Catalog={articles:articles.map(localized),sources:[...sources],professionals:demoProfessionals(locale),podcasts:podcasts.map(p=>{const lang=locale==="zh-CN"?"zh-CN":"en-US";const demo="demoAudio" in p?p.demoAudio:undefined;return {...p,title:translate(locale,p.title),series:translate(locale,p.series),description:translate(locale,p.description),isDemo:true,demoAudioUrl:demo?.[lang],demoAudioLang:demo?lang:undefined};}),knowledge:articles.map(localized),mode};
   for(const row of rows.filter(r=>r.locale===locale)){
     if(!row.active){
       if(row.kind==="knowledge")result.knowledge=result.knowledge.filter(a=>a.id!==row.content_id);

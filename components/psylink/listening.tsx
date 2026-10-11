@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import {
   Bookmark,
   Headphones,
+  Pause,
   Play,
   SkipBack,
   SkipForward,
@@ -27,7 +28,7 @@ export function Listening({
   onRead: (article: Article) => void;
   emptySavedShelf?: boolean;
 }) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const { articles, podcasts } = useCatalog();
   const [selected, setSelected] = useState<string>(podcasts[0]?.id || "");
   const [preview, setPreview] = useState<Podcast | null>(null);
@@ -43,33 +44,16 @@ export function Listening({
           <span className="eyebrow">THE LISTENING CORNER</span>
           <h2>{t("换一种方式，慢慢听。")}</h2>
         </div>
-        <span className="demo-tag">{t(current?.isDemo===false?"已授权音源":"播客概念演示")}</span>
+        <span className="demo-tag">{t(current?.isDemo===false?"已授权音源":current?.demoAudioUrl?"AI 合成演示音频":"播客概念演示")}</span>
       </div>
       {current ? (
         <div className="listening-layout">
           <div className="turntable-panel">
-            <div className="turntable" aria-hidden="true">
-              <div className="turntable-brand">BLOOMIE AUDIO</div>
-              <div className="record-platter">
-                <div
-                  className={`vinyl-record ${current.color}`}
-                  key={current.id}
-                >
-                  <div className="record-label">
-                    <Headphones size={22} />
-                    <span>BLOOMIE</span>
-                    <small>{String(index + 1).padStart(2, "0")}</small>
-                  </div>
-                  <i className="record-spindle" />
-                </div>
-              </div>
-              <div className="tonearm-pivot" />
-              <div className="tonearm">
-                <i />
-              </div>
-              <div className="turntable-switch" />
-              <div className="turntable-speed">33⅓ · STEREO</div>
-            </div>
+            <Turntable
+              key={current.id}
+              episode={current}
+              index={index}
+            />
             <div className="record-caption">
               <span>{t(current.series)}</span>
               <h3>{t(current.title)}</h3>
@@ -84,7 +68,7 @@ export function Listening({
               >
                 <SkipBack size={18} />
               </button>
-              {current.isDemo!==false && <button
+              {!audioSrc(current) && <button
                 className="record-play"
                 onClick={() => setPreview(current)}
               >
@@ -104,9 +88,9 @@ export function Listening({
                 {String(items.length).padStart(2, "0")}
               </span>
             </div>
-            {current.isDemo===false && current.audioUrl && <audio key={current.id} controls preload="none" src={current.audioUrl} aria-label={t(current.title)} style={{width:"100%",marginTop:16}} />}
             <p className="record-disclosure">
-              {t(current.isDemo===false?"播放已获授权的音源，音频由提供方托管。":"黑胶机为视觉展示；尚无播客音源，不会播放或自动生成音频。")}
+              {t(current.isDemo===false?"播放已获授权的音源，音频由提供方托管。":current.demoAudioUrl?"演示音频由 AI 合成：两位主持人都不是真人，也不是专家录音。内容整理自 UNICEF 家长自我照顾资料，待专业复核。":"这一期还没有音频。把唱臂放到唱片上可以试试，也可以先读相关资料。")}
+              {current.demoAudioUrl && current.demoAudioLang === "en-US" && locale !== "en-US" && <> {t("演示音频为英文。")}</>}
             </p>
           </div>
           <div className="podcast-collection">
@@ -138,7 +122,7 @@ export function Listening({
                       <small>{t(episode.series)}</small>
                       <strong>{t(episode.title)}</strong>
                       <span>
-                        {episode.minutes} {t("分钟 · 示例节目")}
+                        {episode.minutes} {t(episode.demoAudioUrl ? "分钟 · AI 演示音频" : "分钟 · 示例节目")}
                       </span>
                     </span>
                   </button>
@@ -226,5 +210,188 @@ export function Listening({
         </Modal>
       )}
     </section>
+  );
+}
+
+const audioSrc = (episode: Podcast) =>
+  episode.isDemo === false ? episode.audioUrl : episode.demoAudioUrl;
+
+// Geometry, in container-width units (cqw). Pivot is the tonearm bearing.
+const REST = 0; // arm on its rest post
+const LEAD_IN = 50; // stylus on the outer groove
+const RUN_OUT = 66; // stylus near the label
+const DROP_AT = 38; // released past this angle = play
+
+function clock(seconds: number) {
+  if (!Number.isFinite(seconds) || seconds < 0) return "--:--";
+  const s = Math.floor(seconds);
+  return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+}
+
+/**
+ * A playable turntable: lower the tonearm onto the record to play, lift it to
+ * pause. The arm tracks progress inwards like a real stylus.
+ */
+function Turntable({ episode, index }: { episode: Podcast; index: number }) {
+  const { t } = useLocale();
+  const src = audioSrc(episode);
+  const audio = useRef<HTMLAudioElement | null>(null);
+  const deck = useRef<HTMLDivElement | null>(null);
+  const drag = useRef<{ moved: boolean; startX: number; startY: number } | null>(null);
+  const [down, setDown] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const [time, setTime] = useState(0);
+  const [duration, setDuration] = useState(NaN);
+  const [dragAngle, setDragAngle] = useState<number | null>(null);
+  const [notice, setNotice] = useState("");
+
+  useEffect(() => () => audio.current?.pause(), []);
+  useEffect(() => {
+    if (!notice) return;
+    const timer = setTimeout(() => setNotice(""), 2600);
+    return () => clearTimeout(timer);
+  }, [notice]);
+
+  async function lower() {
+    setDown(true);
+    if (!src || !audio.current) {
+      setNotice(t("这一期还没有音频，可以先读相关资料。"));
+      setTimeout(() => setDown(false), 900);
+      return;
+    }
+    try {
+      await audio.current.play();
+    } catch {
+      setDown(false);
+      setNotice(t("暂时无法播放，请稍后再试。"));
+    }
+  }
+  function lift() {
+    audio.current?.pause();
+    setDown(false);
+  }
+  const toggle = () => (down ? lift() : void lower());
+
+  const progress = duration > 0 ? Math.min(1, time / duration) : 0;
+  const playAngle = LEAD_IN + (RUN_OUT - LEAD_IN) * progress;
+  const angle = dragAngle ?? (down ? playAngle : REST);
+
+  function angleFrom(e: ReactPointerEvent) {
+    const box = deck.current!.getBoundingClientRect();
+    const unit = box.width / 100;
+    const px = box.left + 80.5 * unit;
+    const py = box.top + 14.5 * unit;
+    const deg = (Math.atan2(-(e.clientX - px), e.clientY - py) * 180) / Math.PI;
+    return Math.max(REST, Math.min(RUN_OUT + 2, deg));
+  }
+  function onArmDown(e: ReactPointerEvent<HTMLButtonElement>) {
+    if (e.button !== 0) return;
+    try { e.currentTarget.setPointerCapture(e.pointerId); } catch {}
+    drag.current = { moved: false, startX: e.clientX, startY: e.clientY };
+  }
+  function onArmMove(e: ReactPointerEvent<HTMLButtonElement>) {
+    const d = drag.current;
+    if (!d) return;
+    if (!d.moved && Math.hypot(e.clientX - d.startX, e.clientY - d.startY) < 6) return;
+    d.moved = true;
+    if (playing) audio.current?.pause();
+    setDragAngle(angleFrom(e));
+  }
+  function onArmUp(e: ReactPointerEvent<HTMLButtonElement>) {
+    const d = drag.current;
+    drag.current = null;
+    if (!d) return;
+    if (!d.moved) return toggle();
+    const released = angleFrom(e);
+    setDragAngle(null);
+    if (released < DROP_AT) return lift();
+    // Dropping the needle somewhere on the record seeks there.
+    if (src && audio.current && Number.isFinite(duration)) {
+      const at = Math.max(0, Math.min(1, (released - LEAD_IN) / (RUN_OUT - LEAD_IN)));
+      audio.current.currentTime = at * duration;
+    }
+    void lower();
+  }
+
+  return (
+    <div
+      className="deck"
+      ref={deck}
+      data-playing={playing || undefined}
+      data-down={down || undefined}
+      data-dragging={dragAngle !== null || undefined}
+    >
+      {src && (
+        <audio
+          ref={audio}
+          src={src}
+          preload="metadata"
+          onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+          onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
+          onPlay={() => setPlaying(true)}
+          onPause={() => setPlaying(false)}
+          onEnded={(e) => {
+            setPlaying(false);
+            setDown(false);
+            e.currentTarget.currentTime = 0;
+            setTime(0);
+          }}
+        />
+      )}
+      <div className="deck-plate" aria-hidden="true">
+        <i className="deck-screw" /><i className="deck-screw" /><i className="deck-screw" /><i className="deck-screw" />
+        <span className="deck-badge">Bloomie Audio</span>
+        <div className="deck-platter">
+          <div className={`deck-record ${episode.color}`}>
+            <div className="deck-label">
+              <Headphones size={18} />
+              <span>BLOOMIE</span>
+              <small>{String(index + 1).padStart(2, "0")}</small>
+            </div>
+          </div>
+          <i className="deck-sheen" />
+          <i className="deck-spindle" />
+        </div>
+        <div className="deck-rest" />
+        <div className="deck-bearing" />
+      </div>
+      <button
+        type="button"
+        className="deck-arm"
+        style={{ ["--arm" as string]: `${angle}deg` }}
+        role="switch"
+        aria-checked={down}
+        aria-label={t(down ? "抬起唱臂，暂停" : "放下唱臂，开始播放")}
+        onPointerDown={onArmDown}
+        onPointerMove={onArmMove}
+        onPointerUp={onArmUp}
+        onPointerCancel={() => { drag.current = null; setDragAngle(null); }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+        }}
+      >
+        <i className="deck-arm-weight" />
+        <i className="deck-arm-tube" />
+        <i className="deck-arm-head" />
+      </button>
+      <div className="deck-console">
+        <span className="deck-lcd" aria-live="off">
+          <span className="deck-led" />
+          {/* elapsed while a side is on, total length when idle */}
+          <span className="deck-digits">{src ? clock(down || time > 0 ? time : duration) : "--:--"}</span>
+        </span>
+        <button
+          type="button"
+          className="deck-start"
+          aria-pressed={down}
+          aria-label={t(down ? "暂停" : "播放")}
+          onClick={toggle}
+        >
+          {down ? <Pause size={14} fill="currentColor" /> : <Play size={14} fill="currentColor" />}
+        </button>
+      </div>
+      <span className="deck-speed" aria-hidden="true">33⅓ · STEREO</span>
+      <p className="deck-notice" role="status">{notice}</p>
+    </div>
   );
 }

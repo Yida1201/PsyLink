@@ -2686,5 +2686,101 @@
     "es": "Los números corresponden a la ubicación elegida. Al pulsar se abre el marcador del dispositivo; Bloomie no llama por ti ni ofrece supervisión en vivo.",
     "ja": "番号は選択した所在地で利用するものです。タップすると端末の電話機能が開きます。Bloomieは代理通報や常時監視を行いません。",
     "ko": "번호는 선택한 지역에 해당합니다. 누르면 기기의 전화 기능이 열려요. Bloomie가 대신 신고하거나 실시간으로 모니터링하지는 않아요."
+  },
+  "深色模式": {
+    "en-US": "Dark mode",
+    "es": "Modo oscuro",
+    "ja": "ダークモード",
+    "ko": "다크 모드"
+  },
+  "AI 合成演示音频": {
+    "en-US": "AI-voiced demo audio",
+    "es": "Audio de demostración con voz de IA",
+    "ja": "AI音声のデモ音源",
+    "ko": "AI 음성 데모 오디오"
+  },
+  "分钟 · AI 演示音频": {
+    "en-US": "min · AI demo audio",
+    "es": "min · audio de demostración con IA",
+    "ja": "分 · AIデモ音源",
+    "ko": "분 · AI 데모 오디오"
+  },
+  "演示音频由 AI 合成：两位主持人都不是真人，也不是专家录音。内容整理自 UNICEF 家长自我照顾资料，待专业复核。": {
+    "en-US": "Demo audio is AI-generated: neither host is a real person, and this is not an expert recording. Content is adapted from UNICEF self-care guidance for parents and is awaiting professional review.",
+    "es": "El audio de demostración está generado por IA: ninguno de los presentadores es una persona real y no es una grabación de expertos. El contenido se adapta de la guía de UNICEF sobre autocuidado para madres y padres y está pendiente de revisión profesional.",
+    "ja": "デモ音源はAIで生成しています。2人の話し手は実在の人物ではなく、専門家の録音でもありません。内容はUNICEFの保護者向けセルフケア資料をもとに整理したもので、専門家の確認待ちです。",
+    "ko": "데모 오디오는 AI로 생성되었습니다. 두 진행자 모두 실제 사람이 아니며 전문가 녹음도 아닙니다. 내용은 UNICEF 부모 자기 돌봄 자료를 정리한 것으로 전문가 검토를 기다리고 있습니다."
+  },
+  "这一期还没有音频。把唱臂放到唱片上可以试试，也可以先读相关资料。": {
+    "en-US": "This episode has no audio yet. You can still try the tonearm, or read the related resources first.",
+    "es": "Este episodio aún no tiene audio. Puedes probar el brazo del tocadiscos o leer primero los recursos relacionados.",
+    "ja": "この回にはまだ音源がありません。トーンアームを試すことも、先に関連資料を読むこともできます。",
+    "ko": "이 회차에는 아직 오디오가 없습니다. 톤암을 움직여 보거나 관련 자료를 먼저 읽어 보세요."
+  },
+  "演示音频为英文。": {
+    "en-US": "The demo audio is in English.",
+    "es": "El audio de demostración está en inglés.",
+    "ja": "デモ音源は英語です。",
+    "ko": "데모 오디오는 영어입니다."
+  },
+  "这一期还没有音频，可以先读相关资料。": {
+    "en-US": "No audio for this episode yet. Try the related reading.",
+    "es": "Este episodio aún no tiene audio. Prueba la lectura relacionada.",
+    "ja": "この回はまだ音源がありません。関連資料をどうぞ。",
+    "ko": "이 회차는 아직 오디오가 없습니다. 관련 자료를 읽어 보세요."
+  },
+  "暂时无法播放，请稍后再试。": {
+    "en-US": "Can't play right now. Please try again later.",
+    "es": "No se puede reproducir ahora. Inténtalo más tarde.",
+    "ja": "今は再生できません。しばらくしてからお試しください。",
+    "ko": "지금은 재생할 수 없습니다. 잠시 후 다시 시도해 주세요."
+  },
+  "抬起唱臂，暂停": {
+    "en-US": "Lift the tonearm to pause",
+    "es": "Levanta el brazo para pausar",
+    "ja": "トーンアームを上げて一時停止",
+    "ko": "톤암을 들어 일시정지"
+  },
+  "放下唱臂，开始播放": {
+    "en-US": "Lower the tonearm to play",
+    "es": "Baja el brazo para reproducir",
+    "ja": "トーンアームを下ろして再生",
+    "ko": "톤암을 내려 재생"
+  },
+  "播放": {
+    "en-US": "Play",
+    "es": "Reproducir",
+    "ja": "再生",
+    "ko": "재생"
+  },
+  "暂停": {
+    "en-US": "Pause",
+    "es": "Pausar",
+    "ja": "一時停止",
+    "ko": "일시정지"
+  },
+  "形式": {
+    "en-US": "Format",
+    "es": "Formato",
+    "ja": "形式",
+    "ko": "방식"
+  },
+  "说明": {
+    "en-US": "Note",
+    "es": "Nota",
+    "ja": "注記",
+    "ko": "안내"
+  },
+  "资质": {
+    "en-US": "Credentials",
+    "es": "Credenciales",
+    "ja": "資格",
+    "ko": "자격"
+  },
+  "安排": {
+    "en-US": "Arrangements",
+    "es": "Organización",
+    "ja": "手配",
+    "ko": "일정 안내"
   }
 }

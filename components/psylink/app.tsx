@@ -37,6 +37,7 @@ import { Modal } from "./modal";
 import { BookArt } from "./art";
 import {TodayTogether} from "./today-together";
 import {TogetherSettings,TogetherBanners} from "./together-controls";
+import { ThemeSwitch } from "./material";
 import type {Category} from "@/lib/together/model";
 type Tab = "chat" | "library" | "today" | "care";
 type Dialog = "settings" | "safety" | "about" | "reminder" | "login" | null;
@@ -479,6 +480,7 @@ export function Bloomie() {
               {t("你已经在用心了。")}
             </p>
           </div>
+          <ThemeSwitch showLabel />
           <button onClick={() => setDialog("safety")}>
             <ShieldCheck size={17} />
             {t("安全与求助")}
@@ -768,6 +770,10 @@ export function Bloomie() {
               <div className="settings-row">
                 <h3>{t("语言")}</h3>
                 <LanguagePicker />
+              </div>
+              <div className="settings-row">
+                <h3>{t("深色模式")}</h3>
+                <ThemeSwitch />
               </div>
               <div className="settings-row">
                 <div>

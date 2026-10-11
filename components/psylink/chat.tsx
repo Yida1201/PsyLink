@@ -51,6 +51,12 @@ export function Chat({
 }) {
   const { t, locale } = useLocale();
   const { articles, sources } = useCatalog();
+  // "References · 2 sources" / "资料依据 · 2 项" / "参考資料 · 2件"
+  const sourceCount = (count: number) => {
+    const latin = locale === "en-US" || locale === "es";
+    const unit = count === 1 && latin ? (locale === "es" ? "fuente" : "source") : t("项");
+    return `${t("资料依据 ·")} ${count}${locale === "ja" || locale === "ko" ? "" : " "}${unit}`;
+  };
   const {state:familyState,day:familyDay,activityCatalog,circleCatalog,catalogReady,catalogError,mode:togetherMode}=useTogether();
   const l=useTogetherText();
   const [messages, setMessages] = useState<Message[]>([]);
@@ -294,11 +300,7 @@ export function Chat({
                     </section>}
                     {m.sourceIds && m.sourceIds.length > 0 && (
                       <details className="source-details">
-                        <summary>
-                          {t("资料依据 ·")}
-                          {m.sourceIds.length}
-                          {t("项")}
-                        </summary>
+                        <summary>{sourceCount(m.sourceIds.length)}</summary>
                         {(m.sources || sources)
                           .filter((s) => m.sourceIds?.includes(s.id))
                           .map((s) => (

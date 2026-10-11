@@ -1,0 +1,106 @@
+/* Bloomie design tokens — the only place colours are defined.
+   Light is warm stoneware; dark is a quiet night-garden. Objects (books,
+   vinyl, ceramics) keep literal colours in globals.css. */
+:root {
+  color-scheme: light;
+  /* surfaces, from page to raised paper */
+  --background: #edece6;
+  --surface: #f4f3ee;
+  --paper: #fbfaf6;
+  --sage: #e6eadf;
+  --sage-2: #d9dfd0;
+  --sage-3: #bccab4;
+  --moss: #7f9a78;
+  --cream: #f7f0e4;
+  --peach: #efdfcf;
+  --sand: #d8bf9f;
+  /* ink */
+  --ink: #1f2d28;
+  --ink-2: #4f5d55;
+  --ink-3: #7c877e;
+  --ink-4: #a3aba1;
+  --muted: var(--ink-2);
+  --forest-ink: #2f5444;
+  --clay-ink: #94583d;
+  --on-accent: #fbfaf6;
+  /* accents: forest is the action colour, clay the single warm signal */
+  --forest: #2f5444;
+  --forest-hi: #3f6c58;
+  --forest-lo: #213d31;
+  --clay: #c0643f;
+  --clay-glow: #e07a4f;
+  /* lines & light */
+  --line-soft: #e6e7df;
+  --line: #d9dbd1;
+  --line-strong: #bfc5b6;
+  --peach-line: #e5cfbb;
+  --hi: #ffffff;
+  --shade: #23332b;
+  --shadow: 0 1px 1px color-mix(in srgb, var(--shade) 6%, transparent),
+    0 10px 30px -12px color-mix(in srgb, var(--shade) 22%, transparent);
+  /* materials */
+  --glass: color-mix(in srgb, var(--paper) 62%, transparent);
+  --glass-dense: color-mix(in srgb, var(--surface) 82%, transparent);
+  --glass-edge: color-mix(in srgb, var(--hi) 85%, transparent);
+  --glass-rim: color-mix(in srgb, var(--shade) 10%, transparent);
+  --well: color-mix(in srgb, var(--sage-2) 70%, var(--surface));
+  --dot: color-mix(in srgb, var(--shade) 13%, transparent);
+  --blob-a: #b9d2b4;
+  --blob-b: #f0c9ad;
+  --blob-c: #cfd9e6;
+  --key-top: #fdfcf9;
+  --key-bottom: #ebeae3;
+  --key-edge: #c9cbc0;
+  /* type */
+  --font-ui: var(--font-grotesk), -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-mono-ui: var(--font-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-dot: var(--font-doto), var(--font-mono-ui);
+  --r-panel: 26px;
+  --r-control: 14px;
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0e1110;
+  --surface: #141816;
+  --paper: #1a1f1c;
+  --sage: #1f2622;
+  --sage-2: #27302a;
+  --sage-3: #3a473f;
+  --moss: #7fa585;
+  --cream: #241f1a;
+  --peach: #33281f;
+  --sand: #6f5843;
+  --ink: #eef1ea;
+  --ink-2: #b6c0b8;
+  --ink-3: #8a958d;
+  --ink-4: #636d66;
+  --forest-ink: #9fd1b3;
+  --clay-ink: #f0a582;
+  --on-accent: #0e1110;
+  --forest: #8fc7a6;
+  --forest-hi: #b0dcc0;
+  --forest-lo: #5e9a78;
+  --clay: #ff7a4d;
+  --clay-glow: #ff9466;
+  --line-soft: #222925;
+  --line: #2c3430;
+  --line-strong: #3f4943;
+  --peach-line: #4a3a2e;
+  --hi: rgb(255 255 255 / 0.14);
+  --shade: #000000;
+  --shadow: 0 1px 1px rgb(0 0 0 / 0.4), 0 14px 34px -14px rgb(0 0 0 / 0.7);
+  --glass: color-mix(in srgb, var(--paper) 58%, transparent);
+  --glass-dense: color-mix(in srgb, var(--surface) 84%, transparent);
+  --glass-edge: rgb(255 255 255 / 0.1);
+  --glass-rim: rgb(0 0 0 / 0.55);
+  --well: #111513;
+  --dot: rgb(255 255 255 / 0.07);
+  --blob-a: #1f4a35;
+  --blob-b: #4a2a1c;
+  --blob-c: #1d2a3d;
+  --key-top: #262d29;
+  --key-bottom: #1b201d;
+  --key-edge: #070908;
+}

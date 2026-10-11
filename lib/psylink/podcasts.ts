@@ -5,9 +5,11 @@ export const podcasts = [
     title: "家长也需要充电",
     series: "给自己的十分钟",
     description: "把照顾自己的时间，放回日常里。",
-    minutes: 10,
+    minutes: 2,
     color: "sage",
     articleId: "pause",
+    // AI-voiced demo episode (two synthetic hosts, disclosed in the audio).
+    demoAudio: { "zh-CN": "/audio/recharge-demo-zh.m4a", "en-US": "/audio/recharge-demo-en.m4a" },
   },
   {
     id: "listen-first",
@@ -28,4 +30,4 @@ export const podcasts = [
     articleId: "boundaries",
   },
 ] as const;
-export type Podcast = {id:string;title:string;series:string;description:string;minutes:number;color:string;articleId:string;audioUrl?:string;isDemo?:boolean};
+export type Podcast = {id:string;title:string;series:string;description:string;minutes:number;color:string;articleId:string;audioUrl?:string;isDemo?:boolean;demoAudio?:{readonly "zh-CN":string;readonly "en-US":string};demoAudioUrl?:string;demoAudioLang?:"zh-CN"|"en-US"};
