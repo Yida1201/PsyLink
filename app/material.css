@@ -267,7 +267,7 @@ p { text-wrap: pretty; }
 :is(
   .secondary-button, .icon-button, .language-picker, .environment-pill, .user-avatar,
   .mobile-settings-button, .starters button, .modern-chat .conversation-top .text-button,
-  .podcast-save, .save-button, .welcome-skip, .reader-actions button:not(.primary-button),
+  .podcast-save, .save-button, .reader-actions button:not(.primary-button),
   .community-rsvp button:not(.primary-button), .together-age-options label,
   .emergency-call
 ) {
@@ -283,7 +283,7 @@ p { text-wrap: pretty; }
 :is(
   .secondary-button, .icon-button, .language-picker, .environment-pill, .user-avatar,
   .mobile-settings-button, .starters button, .modern-chat .conversation-top .text-button,
-  .podcast-save, .save-button, .welcome-skip, .reader-actions button:not(.primary-button),
+  .podcast-save, .save-button, .reader-actions button:not(.primary-button),
   .community-rsvp button:not(.primary-button), .together-age-options label,
   .emergency-call
 ):hover {
@@ -293,7 +293,7 @@ p { text-wrap: pretty; }
 :is(
   .secondary-button, .icon-button, .language-picker, .environment-pill, .user-avatar,
   .mobile-settings-button, .starters button, .modern-chat .conversation-top .text-button,
-  .podcast-save, .save-button, .welcome-skip, .reader-actions button:not(.primary-button),
+  .podcast-save, .save-button, .reader-actions button:not(.primary-button),
   .community-rsvp button:not(.primary-button), .emergency-call
 ):not(:disabled):active,
 .together-age-options label:active {
@@ -819,6 +819,30 @@ html:is([lang="zh-CN"], [lang="ja"], [lang="ko"]) .together-week-dots > span {
 }
 
 /* ---------- Welcome ----------------------------------------------------- */
+/* Skip-intro: a pill keycap centred with `translate` so pressing
+   (which uses transform) never knocks it off centre. */
+.welcome-skip {
+  transform: none !important;
+  translate: -50% 0;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px 0 20px !important;
+  border-radius: 999px !important;
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--ink-2) !important;
+  background: linear-gradient(180deg, var(--key-top), var(--key-bottom)) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow:
+    inset 0 1px 0 var(--glass-edge),
+    0 2px 0 var(--key-edge),
+    0 10px 20px -12px color-mix(in srgb, var(--shade) 45%, transparent);
+  transition: translate 0.12s ease, box-shadow 0.12s ease;
+}
+.welcome-skip:active {
+  translate: -50% 2px;
+  box-shadow: inset 0 1px 3px color-mix(in srgb, var(--shade) 18%, transparent), 0 0 0 var(--key-edge);
+}
 .welcome-page {
   background: transparent !important;
 }
