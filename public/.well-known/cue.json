@@ -1,0 +1,9 @@
+{
+  "name": "Bloomie",
+  "pages": [
+    { "label": "Today Together", "url": "/?guest=1&tab=today&event={code}", "about": "One suggested ten-minute activity a day for a parent and child, by age group; mark it done and see the week." },
+    { "label": "Little Library", "url": "/?guest=1&tab=library&event={code}", "about": "Short readings and podcasts on child development, emotions and caring for yourself, with sources." },
+    { "label": "Let's talk", "url": "/?guest=1&tab=chat&event={code}", "about": "An AI chat for parenting questions and hard moments, with sources under each answer." },
+    { "label": "Find support", "url": "/?guest=1&tab=care&event={code}", "about": "Sample professionals, the Weekly Family Circle with other parents, and local New Haven family events." }
+  ]
+}
