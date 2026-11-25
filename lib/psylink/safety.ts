@@ -62,3 +62,14 @@ export function demoReply(text: string) {
     articleId: "listen",
   };
 }
+
+/**
+ * Newer models sometimes write a source id inline, like "[paper-sleep]". Sources
+ * are already shown under the reply, so the bare id is removed from the text.
+ * Only ids that were actually offered to the model are touched.
+ */
+export function stripSourceTags(text: string, sourceIds: string[]) {
+  if (!sourceIds.length) return text;
+  return text.replace(/[ \t]*[\[【(（]\s*([A-Za-z0-9_-]+(?:\s*[,，、]\s*[A-Za-z0-9_-]+)*)\s*[\]】)）]/g, (match, inner: string) =>
+    inner.split(/\s*[,，、]\s*/).every(id => sourceIds.includes(id)) ? "" : match);
+}
