@@ -8,6 +8,7 @@ import {
   demoReply,
   needsSafetySupport,
   safetyReply,
+  stripSourceTags,
   validateMessages,
 } from "@/lib/psylink/safety";
 import { createClient } from "@/lib/supabase/server";
@@ -225,6 +226,7 @@ export async function POST(request: Request) {
       throw new Error("Invalid reply");
     if (reply.safety)
       return json({ text: safetyReply, mode: "safety", sourceIds: [] });
+    reply.text = stripSourceTags(reply.text, allowedSourceIds);
     if (containsUnverifiedContact(reply.text))
       throw new Error("Unverified contact in reply");
     const outputReview = await moderate(reply.text);
