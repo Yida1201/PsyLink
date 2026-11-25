@@ -40,7 +40,9 @@ export function Chat({
   onTogether,
   onSafety,
   onLogin,
+  eventCode,
 }: {
+  eventCode?: string | null;
   ai: boolean;
   active: boolean;
   onRead: (a: Article) => void;
@@ -165,6 +167,7 @@ export function Chat({
           messages: next.map(({ role, content }) => ({ role, content })),
           locale,
           ...(todayTogether?{todayTogether:true}:{}),
+          ...(eventCode?{eventCode}:{}),
         }),
         signal: controller.current.signal,
       });

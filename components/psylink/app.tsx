@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { parseEmbedParams } from "@/lib/psylink/embed";
 import bloomieIcon from "@/ICON2.png";
 import { LanguagePicker, useLocale } from "./locale";
 import { EmergencyHelp } from "./emergency-help";
@@ -71,6 +72,7 @@ export function Bloomie() {
     setWelcomeSeen(true);
   }
   const [tab, setTab] = useState<Tab>("chat");
+  const [eventCode, setEventCode] = useState<string | null>(null);
   const [todayFilter,setTodayFilter]=useState<Category|'all'>('all');
   function openTogether(category?:Category){setTodayFilter(category||'all');setTab('today');}
   useEffect(()=>{const open=(e:Event)=>{const target=(e as CustomEvent).detail?.tab;if(target==='care')setTab('care');else{setTodayFilter('all');setTab('today');}};const login=()=>setDialog('login');window.addEventListener('bloomie-login-open',login);window.addEventListener('bloomie-together-open',open);return()=>{window.removeEventListener('bloomie-login-open',login);window.removeEventListener('bloomie-together-open',open);};},[]);
@@ -116,7 +118,12 @@ export function Bloomie() {
   const initialAuth = useRef(true);
   useEffect(() => {
     setReady(true);
-    setWelcomeSeen(localRead<unknown>("bloomie-welcome-seen", false) === true);
+    const embed = parseEmbedParams(location.search);
+    // A guest link skips the welcome page for this visit only; it is not stored,
+    // so opening Bloomie normally afterwards still shows the welcome page.
+    setWelcomeSeen(embed.guest || localRead<unknown>("bloomie-welcome-seen", false) === true);
+    if (embed.tab) setTab(embed.tab);
+    setEventCode(embed.event);
     const value = localRead<unknown>("psylink-favorites", []);
     const ids = Array.isArray(value)
       ? value.filter(
@@ -527,6 +534,7 @@ export function Bloomie() {
         <TogetherBanners onToday={()=>openTogether()} onCare={()=>setTab("care")}/>
         <div hidden={tab !== "chat"}>
           <Chat
+            eventCode={eventCode}
             active={tab === "chat"}
             ai={ai}
             onRead={read}

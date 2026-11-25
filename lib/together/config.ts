@@ -13,6 +13,10 @@ export const familyCircleConfig={
   {id:'2026-11-08',weekOf:'2026-11-02',start:'2026-11-08T15:00:00-05:00',category:'read',title:{'zh-CN':'让孩子讲一个故事','en-US':'Let your child tell a story'}},
   {id:'2026-11-15',weekOf:'2026-11-09',start:'2026-11-15T15:00:00-05:00',category:'routine',title:{'zh-CN':'睡前留一个小时刻','en-US':'A little moment before bedtime'}},
   {id:'2026-11-22',weekOf:'2026-11-16',start:'2026-11-22T15:00:00-05:00',category:'emotion',title:{'zh-CN':'不同的需要，都能说出来','en-US':'Different needs, room for every voice'}},
-  {id:'2026-11-29',weekOf:'2026-11-23',start:'2026-11-29T15:00:00-05:00',category:'move',title:{'zh-CN':'家里也能动一动','en-US':'A little movement at home'}}
+  {id:'2026-11-29',weekOf:'2026-11-23',start:'2026-11-29T15:00:00-05:00',category:'move',title:{'zh-CN':'家里也能动一动','en-US':'A little movement at home'}},
+  {id:'2026-12-06',weekOf:'2026-11-30',start:'2026-12-06T15:00:00-05:00',category:'read',title:{'zh-CN':'唱一唱，读一读，讲一讲','en-US':'Sing, read and tell stories'}},
+  {id:'2026-12-13',weekOf:'2026-12-07',start:'2026-12-13T15:00:00-05:00',category:'move',title:{'zh-CN':'用手边的东西一起玩','en-US':'Play with what you have'}},
+  {id:'2026-12-20',weekOf:'2026-12-14',start:'2026-12-20T15:00:00-05:00',category:'emotion',title:{'zh-CN':'难熬的时刻，慢一点回应','en-US':'Hard moments, calmer responses'}},
+  {id:'2026-12-27',weekOf:'2026-12-21',start:'2026-12-27T15:00:00-05:00',category:'routine',title:{'zh-CN':'把喜欢的小事留下来','en-US':'Keeping the little things you love'}}
  ]
 } as const;

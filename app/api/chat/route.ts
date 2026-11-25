@@ -12,6 +12,7 @@ import {
 } from "@/lib/psylink/safety";
 import { createClient } from "@/lib/supabase/server";
 import { serviceStatus, localPreview } from "@/lib/psylink/service";
+import { eventConfig, codeMatches, consumeGuest, eventCookieHeader, readEventCookie } from "@/lib/psylink/event-access";
 import {
   translate,
   validLocale,
@@ -47,8 +48,9 @@ async function moderate(text: string) {
 }
 export async function POST(request: Request) {
   let locale: Locale = "zh-CN";
+  let guestCookie = "";
   const json = (data: Record<string, unknown>, status = 200) =>
-    NextResponse.json(
+    withGuestCookie(NextResponse.json(
       {
         ...data,
         ...(typeof data.text === "string"
@@ -59,7 +61,11 @@ export async function POST(request: Request) {
           : {}),
       },
       { status, headers: { "Cache-Control": "no-store" } },
-    );
+    ));
+  const withGuestCookie = (response: NextResponse) => {
+    if (guestCookie) response.headers.append("Set-Cookie", guestCookie);
+    return response;
+  };
 
   const origin = request.headers.get("origin");
   if (origin) {
@@ -108,7 +114,17 @@ export async function POST(request: Request) {
     if(body.todayTogether===true)return json({text:locale==='zh-CN'?'今天不需要准备很多。下面是你们今天的小活动，可以跟着孩子的兴趣慢慢试。':'You do not need much preparation today. Your little activities are below; follow your child’s interest and take your time.',mode:'activity',sourceIds:[]});
     return json({ ...demoReply(text), mode: "demo" });
   }
-  if (!localPreview(request)) {
+  // A facilitator's time-boxed event code lets guests use live chat without
+  // signing in. A wrong, missing or expired code falls through to sign-in.
+  const now = Date.now();
+  const event = eventConfig(process.env, now);
+  const eventGuest = !!event && codeMatches(event, body.eventCode);
+  if (event && eventGuest) {
+    const spent = consumeGuest(event, readEventCookie(request.headers.get("cookie")));
+    if (!spent.allowed)
+      return json({ error: "今天的聊天额度已用完，请稍后再试。" }, 429);
+    guestCookie = eventCookieHeader(event, spent.cookie, now, process.env.NODE_ENV === "production");
+  } else if (!localPreview(request)) {
     try {
       if (
         !process.env.NEXT_PUBLIC_SUPABASE_URL ||
