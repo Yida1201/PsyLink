@@ -660,6 +660,19 @@ svg {
   color: var(--ink-2);
   margin-bottom: 12px;
 }
+/* The composer floats over the conversation, so its error needs its own
+   opaque plate or it prints straight over the topic buttons behind it. */
+.composer-area .error-message {
+  width: fit-content;
+  max-width: 100%;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--clay-ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
 .consent-check {
   display: flex;
   align-items: flex-start;

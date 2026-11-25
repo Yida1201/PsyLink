@@ -52,3 +52,9 @@ describe('local family activities',()=>{
   expect(first).toContain('BEGIN:VCALENDAR');expect(first).toContain('DTSTART:20261011T190000Z');expect(dst).toContain('DTSTART:20261101T200000Z');expect(first).toContain('DURATION:PT90M');expect(first).toContain('STATUS:TENTATIVE');expect(first).toContain('Sample');expect(first).toContain('BEGIN:VALARM');expect(first).toContain('TRIGGER:-PT24H');expect(dst).not.toContain('BEGIN:VALARM');expect(first).not.toContain('ATTENDEE');expect(first).not.toContain('ORGANIZER');expect(()=>circleCalendar('bad','en-US',false)).toThrow();
  });
 });
+test('the sample circle schedule covers twelve consecutive Sundays through December',()=>{
+  const weeks=familyCircleConfig.weeks;expect(weeks).toHaveLength(12);
+  for(let i=0;i<weeks.length;i++){const start=new Date(weeks[i].start);expect(start.getUTCDay()).toBe(0);expect(weeks[i].id).toBe(weeks[i].start.slice(0,10));
+    if(i)expect(start.getTime()-new Date(weeks[i-1].start).getTime()).toBeGreaterThanOrEqual(7*864e5-36e5);}
+  expect(new Date(weeks.at(-1).start).getTime()).toBeGreaterThan(Date.parse('2026-12-20T00:00:00-05:00'));
+});

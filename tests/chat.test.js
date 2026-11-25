@@ -39,7 +39,12 @@ mock.module("../lib/supabase/server", () => ({
   }),
 }));
 const { POST } = await import("../app/api/chat/route");
+const { resetEventTotals } = await import("../lib/psylink/event-access");
 const keys = [
+  "EVENT_CODE",
+  "EVENT_CODE_EXPIRES",
+  "EVENT_GUEST_LIMIT",
+  "EVENT_TOTAL_LIMIT",
   "SCIENTIFIC_SEARCH_ENABLED",
   "TAVILY_API_KEY",
   "STT_ENABLED",
@@ -873,5 +878,57 @@ describe("production starter activity catalog", () => {
       expect(response.status).toBe(503);
       expect((await response.json()).activities).toBeUndefined();
     }
+  });
+});
+
+describe("event code guest access", () => {
+  const soon = () => new Date(Date.now() + 3600e3).toISOString();
+  const guest = (extra = {}, cookie) => new Request("http://localhost/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...(cookie ? { cookie } : {}) },
+    body: JSON.stringify({ messages: normal, ...extra }),
+  });
+  beforeEach(() => resetEventTotals());
+  test("a signed-out guest with the right code reaches the provider; without it sign-in is still required", async () => {
+    live();
+    authenticated = false;
+    Object.assign(process.env, { EVENT_CODE: "theater-1203", EVENT_CODE_EXPIRES: soon() });
+    expect((await POST(guest())).status).toBe(401);
+    expect((await POST(guest({ eventCode: "theater-9999" }))).status).toBe(401);
+    expect((await POST(guest({ eventCode: ["theater-1203"] }))).status).toBe(401);
+    expect(globalThis.fetch).not.toHaveBeenCalled();
+    // The mocked provider throws, so passing the gate surfaces as 503 after a provider call.
+    const r = await POST(guest({ eventCode: "theater-1203" }));
+    expect(r.status).toBe(503);
+    expect(globalThis.fetch).toHaveBeenCalled();
+    expect(r.headers.get("set-cookie")).toContain("bloomie-event=");
+  });
+  test("an expired or unset event never opens guest access", async () => {
+    live();
+    authenticated = false;
+    Object.assign(process.env, { EVENT_CODE: "theater-1203", EVENT_CODE_EXPIRES: new Date(Date.now() - 1000).toISOString() });
+    expect((await POST(guest({ eventCode: "theater-1203" }))).status).toBe(401);
+    delete process.env.EVENT_CODE_EXPIRES;
+    expect((await POST(guest({ eventCode: "theater-1203" }))).status).toBe(401);
+    expect(globalThis.fetch).not.toHaveBeenCalled();
+  });
+  test("the per-guest limit returns 429 before any provider call", async () => {
+    live();
+    authenticated = false;
+    Object.assign(process.env, { EVENT_CODE: "theater-1203", EVENT_CODE_EXPIRES: soon(), EVENT_GUEST_LIMIT: "1" });
+    const first = await POST(guest({ eventCode: "theater-1203" }));
+    const cookie = first.headers.get("set-cookie").split(";")[0];
+    globalThis.fetch = mock(() => { throw new Error("Unexpected external request"); });
+    expect((await POST(guest({ eventCode: "theater-1203" }, cookie))).status).toBe(429);
+    expect(globalThis.fetch).not.toHaveBeenCalled();
+  });
+  test("the event code does not switch on AI that is otherwise disabled, and safety replies still come first", async () => {
+    Object.assign(process.env, { EVENT_CODE: "theater-1203", EVENT_CODE_EXPIRES: soon(), OPENAI_API_KEY: "test-placeholder" });
+    const demo = await POST(guest({ eventCode: "theater-1203" }));
+    expect((await demo.json()).mode).toBe("demo");
+    live();
+    const risk = await POST(guest({ eventCode: "theater-1203", messages: [{ role: "user", content: "我不想活了" }] }));
+    expect((await risk.json()).mode).toBe("safety");
+    expect(globalThis.fetch).not.toHaveBeenCalled();
   });
 });
