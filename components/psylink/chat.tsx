@@ -1,4 +1,5 @@
 "use client";
+import {showsReviewLabel} from '@/lib/together/review-label';
 import { useLocale } from "./locale";
 import {useTogether,useTogetherText} from "./together-state";
 import {localized,selectedActivity,type Activity} from "@/lib/together/model";
@@ -59,7 +60,7 @@ export function Chat({
     const unit = count === 1 && latin ? (locale === "es" ? "fuente" : "source") : t("项");
     return `${t("资料依据 ·")} ${count}${locale === "ja" || locale === "ko" ? "" : " "}${unit}`;
   };
-  const {state:familyState,day:familyDay,activityCatalog,circleCatalog,catalogReady,catalogError,mode:togetherMode}=useTogether();
+  const {state:familyState,day:familyDay,activityCatalog,circleCatalog,catalogReady,catalogError,mode:togetherMode,eventPreview}=useTogether();
   const l=useTogetherText();
   const [messages, setMessages] = useState<Message[]>([]);
   const [draft, setDraft] = useState("");
@@ -293,7 +294,7 @@ export function Chat({
                         return <article className="chat-activity" key={a.id}>
                           <div className="chat-activity-meta"><span>{a.minutes} {l('分钟','min')}</span><span>{l(a.age==='baby'?'0–12 个月':a.age==='toddler'?'1–3 岁':'3–5 岁',a.age==='baby'?'0–12 months':a.age==='toddler'?'Ages 1–3':'Ages 3–5')}</span></div>
                           <h3>{c.title}</h3>
-                          <small className="chat-activity-review">{a.reviewStatus==='reviewed'?(togetherMode==='local'?l('本机审核流程预览','Local review workflow preview'):l('已通过发布审核','Reviewed for publication')):l('编辑初稿 · 待专业复核','Editorial draft · awaiting review')}</small>
+                          {showsReviewLabel(a.reviewStatus,eventPreview)&&<small className="chat-activity-review">{a.reviewStatus==='reviewed'?(togetherMode==='local'?l('本机审核流程预览','Local review workflow preview'):l('已通过发布审核','Reviewed for publication')):l('编辑初稿 · 待专业复核','Editorial draft · awaiting review')}</small>}
                           <div className="chat-activity-materials"><span>{l('准备这些就好','All you need')}</span><p>{c.materials.join(' · ')}</p></div>
                           <ol className="chat-activity-steps">{c.steps.map((step,j)=><li key={j}><span aria-hidden="true">{j+1}</span><p>{step}</p></li>)}</ol>
                           <div className="chat-activity-why"><span>{l('这一刻的意义','Why this helps')}</span><p>{c.why}</p></div>
