@@ -1,5 +1,5 @@
 import {test,expect,beforeEach} from 'bun:test';
-import {eventConfig,codeMatches,consumeGuest,eventCookieHeader,readEventCookie,resetEventTotals,validEventCode,EVENT_COOKIE} from '../lib/psylink/event-access';
+import {eventPreview,eventConfig,codeMatches,consumeGuest,eventCookieHeader,readEventCookie,resetEventTotals,validEventCode,EVENT_COOKIE} from '../lib/psylink/event-access';
 
 const now=Date.parse('2026-12-03T14:00:00-05:00');
 const env=(extra={})=>({EVENT_CODE:'theater-1203',EVENT_CODE_EXPIRES:'2026-12-03T18:00:00-05:00',OPENAI_API_KEY:'server-secret',...extra});
@@ -57,4 +57,11 @@ test('the cookie is HttpOnly, scoped to chat, expires with the event and works i
   expect(h).toContain('Secure; SameSite=None; Partitioned');
   expect(eventCookieHeader(c,'v',now,false)).toContain('SameSite=Lax');
   expect(readEventCookie(`a=1; ${EVENT_COOKIE}=x.2.y; b=2`)).toBe('x.2.y');expect(readEventCookie(null)).toBeUndefined();
+});
+
+test('a test session is recognised only by the exact, still-valid event code',()=>{
+  expect(eventPreview(env(),now,'theater-1203')).toBe(true);
+  for(const bad of ['theater-1204','',null,undefined,'x'.repeat(200)])expect(eventPreview(env(),now,bad)).toBe(false);
+  expect(eventPreview({},now,'theater-1203')).toBe(false);
+  expect(eventPreview(env(),Date.parse('2026-12-04T00:00:00-05:00'),'theater-1203')).toBe(false);
 });

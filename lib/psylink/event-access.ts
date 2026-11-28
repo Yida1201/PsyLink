@@ -49,6 +49,12 @@ export function eventConfig(env: Env, now: number): EventConfig | null {
   };
 }
 
+/** Whether a request carries the code of an event that is running right now. */
+export function eventPreview(env: Env, now: number, supplied: unknown) {
+  const config = eventConfig(env, now);
+  return !!config && codeMatches(config, supplied);
+}
+
 export function validEventCode(value: unknown): value is string {
   return typeof value === "string" && codePattern.test(value);
 }
